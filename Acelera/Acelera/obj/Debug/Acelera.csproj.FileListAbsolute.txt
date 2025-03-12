@@ -18,3 +18,14 @@ C:\Fatec\CS\Acelera\Acelera\obj\Debug\Acelera.csproj.GenerateResource.cache
 C:\Fatec\CS\Acelera\Acelera\obj\Debug\Acelera.csproj.CoreCompileInputs.cache
 C:\Fatec\CS\Acelera\Acelera\obj\Debug\Acelera.exe
 C:\Fatec\CS\Acelera\Acelera\obj\Debug\Acelera.pdb
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\bin\Debug\Acelera.exe.config
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\bin\Debug\Acelera.exe
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\bin\Debug\Acelera.pdb
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\obj\Debug\Acelera.csproj.AssemblyReference.cache
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\obj\Debug\Acelera.Forms.TelaLogin.resources
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\obj\Debug\Acelera.Properties.Resources.resources
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\obj\Debug\Acelera.csproj.GenerateResource.cache
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\obj\Debug\Acelera.csproj.CoreCompileInputs.cache
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\obj\Debug\Acelera.exe
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\obj\Debug\Acelera.pdb
+C:\Users\aluno\source\repos\Event\Acelera\Acelera\obj\Debug\Acelera.Forms.TelaCadastro.resources
