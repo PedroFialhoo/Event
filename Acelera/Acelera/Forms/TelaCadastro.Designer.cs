@@ -28,7 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.campoEmail = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // campoEmail
+            // 
+            this.campoEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.campoEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.campoEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.campoEmail.Location = new System.Drawing.Point(1009, 368);
+            this.campoEmail.Name = "campoEmail";
+            this.campoEmail.Size = new System.Drawing.Size(760, 37);
+            this.campoEmail.TabIndex = 2;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.textBox1.Location = new System.Drawing.Point(1009, 480);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(760, 37);
+            this.textBox1.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.textBox2.Location = new System.Drawing.Point(1009, 590);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(760, 37);
+            this.textBox2.TabIndex = 4;
             // 
             // TelaCadastro
             // 
@@ -36,13 +69,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaCadastro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1284, 701);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.campoEmail);
             this.Name = "TelaCadastro";
             this.Text = "TelaCadastro";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox campoEmail;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

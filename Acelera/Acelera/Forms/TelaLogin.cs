@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Acelera.Forms
 {
     public partial class TelaLogin : Form
     {
         public TelaLogin()
         {
-            InitializeComponent();
+            InitializeComponent();           
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
