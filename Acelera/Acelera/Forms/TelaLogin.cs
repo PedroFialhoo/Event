@@ -35,13 +35,28 @@ namespace Acelera.Forms
 
             telaCadastro.WindowState = FormWindowState.Maximized;
             telaCadastro.Show();
-            this.Hide(); // O Dispose(); ou o Close(); estava fazendo fechar antes de abrir a tela, ai to usando o Hide(); , porém ele deixa ativo em segundo plano.
-            telaCadastro.FormClosed += (s, args) => this.Close(); // essa função faz com que ao fechar a tela cadastro essa tela seja fechada, pra não causar conflito ou ocupar memória desnecessária.
+            this.Visible = false;
         }
 
         private void TelaLogin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void botaoEntrar_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail.Text.Trim();
+            string senha = txtSenha.Text.Trim();
+
+            if (!String.IsNullOrEmpty(email) && !String.IsNullOrEmpty(senha))
+            {
+                // aqui ele vai ser encaminhado para tela inicial do programa
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Informe seu e-mail e senha para prosseguir", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

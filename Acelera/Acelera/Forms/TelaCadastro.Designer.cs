@@ -28,40 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.campoEmail = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtConfirmaSenha = new System.Windows.Forms.TextBox();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // campoEmail
+            // txtEmail
             // 
-            this.campoEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.campoEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.campoEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
-            this.campoEmail.Location = new System.Drawing.Point(1009, 368);
-            this.campoEmail.Name = "campoEmail";
-            this.campoEmail.Size = new System.Drawing.Size(760, 37);
-            this.campoEmail.TabIndex = 2;
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.txtEmail.Location = new System.Drawing.Point(1009, 368);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(760, 37);
+            this.txtEmail.TabIndex = 2;
+            this.txtEmail.TextChanged += new System.EventHandler(this.campoEmail_TextChanged);
             // 
-            // textBox1
+            // txtSenha
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
-            this.textBox1.Location = new System.Drawing.Point(1009, 480);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(760, 37);
-            this.textBox1.TabIndex = 3;
+            this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.txtSenha.Location = new System.Drawing.Point(1009, 480);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(760, 37);
+            this.txtSenha.TabIndex = 3;
             // 
-            // textBox2
+            // txtConfirmaSenha
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
-            this.textBox2.Location = new System.Drawing.Point(1009, 590);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(760, 37);
-            this.textBox2.TabIndex = 4;
+            this.txtConfirmaSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.txtConfirmaSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConfirmaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.txtConfirmaSenha.Location = new System.Drawing.Point(1009, 590);
+            this.txtConfirmaSenha.Name = "txtConfirmaSenha";
+            this.txtConfirmaSenha.Size = new System.Drawing.Size(760, 37);
+            this.txtConfirmaSenha.TabIndex = 4;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Location = new System.Drawing.Point(1664, 694);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 5;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.button1_Click);
             // 
             // TelaCadastro
             // 
@@ -70,11 +82,13 @@
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaCadastro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.campoEmail);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.txtConfirmaSenha);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.txtEmail);
             this.Name = "TelaCadastro";
             this.Text = "TelaCadastro";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TelaCadastro_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,8 +96,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox campoEmail;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.TextBox txtConfirmaSenha;
+        private System.Windows.Forms.Button btnSalvar;
     }
 }
