@@ -28,22 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.campoEmail = new System.Windows.Forms.TextBox();
             this.campoSenha = new System.Windows.Forms.TextBox();
             this.campoRepetirSenha = new System.Windows.Forms.TextBox();
             this.botaoConfirmar = new System.Windows.Forms.Button();
+=======
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtConfirmaSenha = new System.Windows.Forms.TextBox();
+            this.btnSalvar = new System.Windows.Forms.Button();
+>>>>>>> a9db86ca44f3c909c975eafb6a07f5db9d061e37
             this.SuspendLayout();
             // 
-            // campoEmail
+            // txtEmail
             // 
-            this.campoEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.campoEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.campoEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
-            this.campoEmail.Location = new System.Drawing.Point(1009, 368);
-            this.campoEmail.Name = "campoEmail";
-            this.campoEmail.Size = new System.Drawing.Size(760, 37);
-            this.campoEmail.TabIndex = 2;
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.txtEmail.Location = new System.Drawing.Point(1009, 368);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(760, 37);
+            this.txtEmail.TabIndex = 2;
+            this.txtEmail.TextChanged += new System.EventHandler(this.campoEmail_TextChanged);
             // 
+<<<<<<< HEAD
             // campoSenha
             // 
             this.campoSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
@@ -77,6 +86,37 @@
             this.botaoConfirmar.Text = "Confirmar";
             this.botaoConfirmar.UseVisualStyleBackColor = false;
             this.botaoConfirmar.Click += new System.EventHandler(this.botaoEntrar_Click);
+=======
+            // txtSenha
+            // 
+            this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.txtSenha.Location = new System.Drawing.Point(1009, 480);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(760, 37);
+            this.txtSenha.TabIndex = 3;
+            // 
+            // txtConfirmaSenha
+            // 
+            this.txtConfirmaSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.txtConfirmaSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConfirmaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.txtConfirmaSenha.Location = new System.Drawing.Point(1009, 590);
+            this.txtConfirmaSenha.Name = "txtConfirmaSenha";
+            this.txtConfirmaSenha.Size = new System.Drawing.Size(760, 37);
+            this.txtConfirmaSenha.TabIndex = 4;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Location = new System.Drawing.Point(1664, 694);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 5;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.button1_Click);
+>>>>>>> a9db86ca44f3c909c975eafb6a07f5db9d061e37
             // 
             // TelaCadastro
             // 
@@ -85,6 +125,7 @@
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaCadastro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+<<<<<<< HEAD
             this.Controls.Add(this.botaoConfirmar);
             this.Controls.Add(this.campoRepetirSenha);
             this.Controls.Add(this.campoSenha);
@@ -92,6 +133,15 @@
             this.Name = "TelaCadastro";
             this.ShowIcon = false;
             this.Text = "Event";
+=======
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.txtConfirmaSenha);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.txtEmail);
+            this.Name = "TelaCadastro";
+            this.Text = "TelaCadastro";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TelaCadastro_FormClosed);
+>>>>>>> a9db86ca44f3c909c975eafb6a07f5db9d061e37
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,9 +149,16 @@
 
         #endregion
 
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox campoEmail;
         private System.Windows.Forms.TextBox campoSenha;
         private System.Windows.Forms.TextBox campoRepetirSenha;
         private System.Windows.Forms.Button botaoConfirmar;
+=======
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.TextBox txtConfirmaSenha;
+        private System.Windows.Forms.Button btnSalvar;
+>>>>>>> a9db86ca44f3c909c975eafb6a07f5db9d061e37
     }
 }

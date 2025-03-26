@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acelera.ferramentas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace Acelera.Forms
         public TelaCriarPerfil()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaCriarPerfil_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FecharJanelas.CloseSystem();
         }
     }
 }

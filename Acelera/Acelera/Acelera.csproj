@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ferramentas\FecharJanelas.cs" />
     <Compile Include="Forms\TelaCriarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
