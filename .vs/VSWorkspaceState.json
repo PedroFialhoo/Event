@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Acelera",
+    "\\Acelera\\Acelera",
+    "\\Acelera\\Acelera\\Forms"
   ],
-  "SelectedNode": "\\Acelera.sln",
+  "SelectedNode": "\\Acelera\\Acelera\\Forms\\TelaLogin.Designer.cs",
   "PreviewInSolutionExplorer": false
 }

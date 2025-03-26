@@ -40,20 +40,11 @@
             // 
             // campoNome
             // 
-<<<<<<< HEAD
             this.campoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.campoNome.Location = new System.Drawing.Point(439, 367);
             this.campoNome.Name = "campoNome";
             this.campoNome.Size = new System.Drawing.Size(678, 38);
             this.campoNome.TabIndex = 0;
-=======
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.textBox1.Location = new System.Drawing.Point(439, 367);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(678, 38);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
->>>>>>> a9db86ca44f3c909c975eafb6a07f5db9d061e37
             // 
             // campoCidade
             // 
@@ -155,14 +146,10 @@
             this.Controls.Add(this.campoCidade);
             this.Controls.Add(this.campoNome);
             this.Name = "TelaCriarPerfil";
-<<<<<<< HEAD
             this.ShowIcon = false;
             this.Text = "Event";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-=======
-            this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TelaCriarPerfil_FormClosed);
->>>>>>> a9db86ca44f3c909c975eafb6a07f5db9d061e37
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

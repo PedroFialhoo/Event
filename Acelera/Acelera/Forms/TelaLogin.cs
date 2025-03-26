@@ -43,7 +43,7 @@ namespace Acelera.Forms
 
         }
 
-<<<<<<< HEAD
+
         private void button2_Click(object sender, EventArgs e)
         {
             TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil();            
@@ -56,7 +56,7 @@ namespace Acelera.Forms
         private void botaoEntrar_Click(object sender, EventArgs e)
         {
 
-            if (!string.IsNullOrWhiteSpace(campoEmail.Text) && !string.IsNullOrWhiteSpace(campoSenha.Text))
+            if (!string.IsNullOrWhiteSpace(txtEmail.Text) && !string.IsNullOrWhiteSpace(txtSenha.Text))
             {
                 //if para verificar login
             }
@@ -70,8 +70,13 @@ namespace Acelera.Forms
         {
 
         }
-=======
-        private void botaoEntrar_Click(object sender, EventArgs e)
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
         {
             string email = txtEmail.Text.Trim();
             string senha = txtSenha.Text.Trim();
@@ -86,6 +91,6 @@ namespace Acelera.Forms
                 MessageBox.Show("Informe seu e-mail e senha para prosseguir", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
->>>>>>> a9db86ca44f3c909c975eafb6a07f5db9d061e37
+
     }
 }

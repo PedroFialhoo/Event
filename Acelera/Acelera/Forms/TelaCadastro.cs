@@ -58,8 +58,8 @@ namespace Acelera.Forms
 
         private void botaoEntrar_Click(object sender, EventArgs e)
         {          
-            if (!string.IsNullOrWhiteSpace(campoEmail.Text) && !string.IsNullOrWhiteSpace(campoRepetirSenha.Text) &&
-        !string.IsNullOrWhiteSpace(campoSenha.Text))
+            if (!string.IsNullOrWhiteSpace(txtEmail.Text) && !string.IsNullOrWhiteSpace(txtConfirmaSenha.Text) &&
+        !string.IsNullOrWhiteSpace(txtSenha.Text))
             {
                 TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil();
                 telaCriarPerfil.WindowState = FormWindowState.Maximized;

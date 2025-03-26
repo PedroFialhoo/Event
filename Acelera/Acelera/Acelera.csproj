@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ferramentas\FecharJanelas.cs" />
+    <Compile Include="ferramentas\TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\TelaCriarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
