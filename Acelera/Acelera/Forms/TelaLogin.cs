@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Acelera.Forms
 {
-    public partial class TelaLogin : Form
+    public partial class Event : Form
     {
-        public TelaLogin()
+        public Event()
         {
             InitializeComponent();           
 
@@ -40,6 +40,33 @@ namespace Acelera.Forms
         }
 
         private void TelaLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil();            
+            telaCriarPerfil.WindowState = FormWindowState.Maximized;
+            telaCriarPerfil.Show();
+            this.Hide(); 
+            telaCriarPerfil.FormClosed += (s, args) => this.Close();
+        }
+
+        private void botaoEntrar_Click(object sender, EventArgs e)
+        {
+
+            if (!string.IsNullOrWhiteSpace(campoEmail.Text) && !string.IsNullOrWhiteSpace(campoSenha.Text))
+            {
+                //if para verificar login
+            }
+            else
+            {
+                MessageBox.Show("Por favor, preencha todos os campos antes de continuar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void campoEmail_TextChanged(object sender, EventArgs e)
         {
 
         }

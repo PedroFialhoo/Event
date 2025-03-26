@@ -28,63 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.campoNome = new System.Windows.Forms.TextBox();
+            this.campoCidade = new System.Windows.Forms.TextBox();
+            this.campoEstado = new System.Windows.Forms.ComboBox();
+            this.campoTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.campoCPF = new System.Windows.Forms.MaskedTextBox();
+            this.campoIdade = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // campoNome
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.textBox1.Location = new System.Drawing.Point(439, 367);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(678, 38);
-            this.textBox1.TabIndex = 0;
+            this.campoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.campoNome.Location = new System.Drawing.Point(439, 367);
+            this.campoNome.Name = "campoNome";
+            this.campoNome.Size = new System.Drawing.Size(678, 38);
+            this.campoNome.TabIndex = 0;
             // 
-            // textBox2
+            // campoCidade
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.textBox2.Location = new System.Drawing.Point(439, 520);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(678, 38);
-            this.textBox2.TabIndex = 1;
+            this.campoCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.campoCidade.Location = new System.Drawing.Point(439, 787);
+            this.campoCidade.Name = "campoCidade";
+            this.campoCidade.Size = new System.Drawing.Size(678, 38);
+            this.campoCidade.TabIndex = 4;
+            this.campoCidade.Text = "\n\r\n";
             // 
-            // textBox3
+            // campoEstado
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.textBox3.Location = new System.Drawing.Point(439, 664);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(678, 38);
-            this.textBox3.TabIndex = 2;
+            this.campoEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.campoEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.campoEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.campoEstado.FormattingEnabled = true;
+            this.campoEstado.Items.AddRange(new object[] {
+            "Acre - AC",
+            "Alagoas - AL",
+            "Amapá - AP",
+            "Amazonas - AM",
+            "Bahia - BA",
+            "Ceará - CE",
+            "Distrito Federal - DF",
+            "Espírito Santo - ES",
+            "Goiás - GO",
+            "Maranhão - MA",
+            "Mato Grosso - MT",
+            "Mato Grosso do Sul - MS",
+            "Minas Gerais - MG",
+            "Pará - PA",
+            "Paraíba - PB",
+            "Paraná - PR",
+            "Pernambuco - PE",
+            "Piauí - PI",
+            "Rio de Janeiro - RJ",
+            "Rio Grande do Norte - RN",
+            "Rio Grande do Sul - RS",
+            "Rondônia - RO",
+            "Roraima - RR",
+            "Santa Catarina - SC",
+            "São Paulo - SP",
+            "Sergipe - SE",
+            "Tocantins - TO"});
+            this.campoEstado.Location = new System.Drawing.Point(439, 933);
+            this.campoEstado.Name = "campoEstado";
+            this.campoEstado.Size = new System.Drawing.Size(452, 39);
+            this.campoEstado.TabIndex = 5;
             // 
-            // textBox5
+            // campoTelefone
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.textBox5.Location = new System.Drawing.Point(439, 787);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(678, 38);
-            this.textBox5.TabIndex = 4;
+            this.campoTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.campoTelefone.HidePromptOnLeave = true;
+            this.campoTelefone.Location = new System.Drawing.Point(439, 520);
+            this.campoTelefone.Mask = "(00) 00000-0000";
+            this.campoTelefone.Name = "campoTelefone";
+            this.campoTelefone.Size = new System.Drawing.Size(213, 38);
+            this.campoTelefone.TabIndex = 7;
             // 
-            // comboBox1
+            // campoCPF
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(439, 933);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(452, 39);
-            this.comboBox1.TabIndex = 5;
+            this.campoCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.campoCPF.HidePromptOnLeave = true;
+            this.campoCPF.Location = new System.Drawing.Point(439, 661);
+            this.campoCPF.Mask = "000,000,000-00";
+            this.campoCPF.Name = "campoCPF";
+            this.campoCPF.Size = new System.Drawing.Size(213, 38);
+            this.campoCPF.TabIndex = 8;
             // 
-            // comboBox2
+            // campoIdade
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(1282, 366);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(179, 39);
-            this.comboBox2.TabIndex = 6;
+            this.campoIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.campoIdade.Location = new System.Drawing.Point(1286, 367);
+            this.campoIdade.Name = "campoIdade";
+            this.campoIdade.Size = new System.Drawing.Size(100, 38);
+            this.campoIdade.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Acelera.Properties.Resources.cara;
+            this.pictureBox1.Location = new System.Drawing.Point(50, 308);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(298, 325);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // TelaCriarPerfil
             // 
@@ -92,14 +138,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarPerfil;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.campoIdade);
+            this.Controls.Add(this.campoCPF);
+            this.Controls.Add(this.campoTelefone);
+            this.Controls.Add(this.campoEstado);
+            this.Controls.Add(this.campoCidade);
+            this.Controls.Add(this.campoNome);
             this.Name = "TelaCriarPerfil";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Text = "Event";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,11 +156,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox campoNome;
+        private System.Windows.Forms.TextBox campoCidade;
+        private System.Windows.Forms.ComboBox campoEstado;
+        private System.Windows.Forms.MaskedTextBox campoTelefone;
+        private System.Windows.Forms.MaskedTextBox campoCPF;
+        private System.Windows.Forms.TextBox campoIdade;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

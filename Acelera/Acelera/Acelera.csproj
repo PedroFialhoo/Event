@@ -103,13 +103,16 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\TelaLogin.png" />
+    <None Include="Resources\TelaLogin.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaCadastro.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaCriarPerfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cara.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
