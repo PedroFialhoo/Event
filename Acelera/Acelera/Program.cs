@@ -17,7 +17,7 @@ namespace Acelera
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Event telaLogin = new Event();  
+            TelaLogin telaLogin = new TelaLogin();  
             telaLogin.WindowState = FormWindowState.Maximized;
             Application.Run(telaLogin);
         }

@@ -1,41 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Fatec\\Acelera\\Event\\Acelera\\",
+  "WorkspaceRootPath": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\forms\\telacadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\users\\diogo\\onedrive\\documentos\\acelera\\event\\event\\acelera\\acelera\\forms\\telacadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telacadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\forms\\telacadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\acelera\\forms\\telacadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telacadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\forms\\telacadastro.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\acelera\\forms\\telacadastro.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telacadastro.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\ferramentas\\fecharjanelas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\acelera\\ferramentas\\fecharjanelas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\ferramentas\\fecharjanelas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\forms\\telacriarperfil.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\acelera\\forms\\telacriarperfil.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telacriarperfil.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\forms\\telalogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\acelera\\forms\\telalogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telalogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\forms\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\acelera\\forms\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\forms\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\acelera\\forms\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\forms\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\acelera\\forms\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -46,23 +46,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "TelaCadastro.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaCadastro.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.cs",
+              "ToolTip": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.cs",
               "RelativeToolTip": "Acelera\\Forms\\TelaCadastro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -73,102 +69,94 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "FecharJanelas.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\ferramentas\\FecharJanelas.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\ferramentas\\FecharJanelas.cs",
               "RelativeDocumentMoniker": "Acelera\\ferramentas\\FecharJanelas.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\ferramentas\\FecharJanelas.cs",
+              "ToolTip": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\ferramentas\\FecharJanelas.cs",
               "RelativeToolTip": "Acelera\\ferramentas\\FecharJanelas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T22:17:35.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T22:17:35.918Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "TelaCriarPerfil.Designer.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCriarPerfil.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaCriarPerfil.Designer.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaCriarPerfil.Designer.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCriarPerfil.Designer.cs",
+              "ToolTip": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaCriarPerfil.Designer.cs",
               "RelativeToolTip": "Acelera\\Forms\\TelaCriarPerfil.Designer.cs",
               "ViewState": "AgIAAIwAAAAAAAAAAAAowKgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T22:15:29.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T22:15:29.169Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "TelaLogin.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaLogin.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.cs",
+              "ToolTip": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.cs",
               "RelativeToolTip": "Acelera\\Forms\\TelaLogin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T22:14:06.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T22:14:06.909Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "TelaCadastro.Designer.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.Designer.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaCadastro.Designer.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.Designer.cs",
+              "ToolTip": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.Designer.cs",
               "RelativeToolTip": "Acelera\\Forms\\TelaCadastro.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T22:05:42.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T22:05:42.402Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "TelaLogin.Designer.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.Designer.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaLogin.Designer.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.Designer.cs",
+              "ToolTip": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.Designer.cs",
               "RelativeToolTip": "Acelera\\Forms\\TelaLogin.Designer.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAAuwH4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T22:03:14.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T22:03:14.97Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "TelaCadastro.cs [Design]",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaCadastro.cs",
               "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.cs [Design]",
-              "RelativeToolTip": "Acelera\\Forms\\TelaCadastro.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T22:03:15.028Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-26T22:03:15.028Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "TelaCriarPerfil.cs [Design]",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCriarPerfil.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaCriarPerfil.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaCriarPerfil.cs",
               "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCriarPerfil.cs [Design]",
-              "RelativeToolTip": "Acelera\\Forms\\TelaCriarPerfil.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCriarPerfil.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T22:03:15.03Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-26T22:03:15.03Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "TelaLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaLogin.cs",
               "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.cs [Design]",
-              "RelativeToolTip": "Acelera\\Forms\\TelaLogin.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T22:03:15.03Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-26T22:03:15.03Z"
             }
           ]
         }

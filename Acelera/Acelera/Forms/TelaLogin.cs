@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Acelera.Forms
 {
-    public partial class Event : Form
+    public partial class TelaLogin : Form
     {
-        public Event()
+        public TelaLogin()
         {
             InitializeComponent();           
 
