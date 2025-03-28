@@ -27,5 +27,10 @@ namespace Acelera.Forms
         {
             FecharJanelas.CloseSystem();
         }
+
+        private void TelaCriarPerfil_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
