@@ -115,5 +115,17 @@
   <ItemGroup>
     <None Include="Resources\cara.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adicionar-foto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarPerfil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarPerfil2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

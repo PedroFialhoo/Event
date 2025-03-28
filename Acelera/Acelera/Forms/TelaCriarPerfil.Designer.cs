@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCriarPerfil));
             this.campoNome = new System.Windows.Forms.TextBox();
             this.campoCidade = new System.Windows.Forms.TextBox();
             this.campoEstado = new System.Windows.Forms.ComboBox();
             this.campoTelefone = new System.Windows.Forms.MaskedTextBox();
             this.campoCPF = new System.Windows.Forms.MaskedTextBox();
             this.campoIdade = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picturePerfil = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // campoNome
@@ -122,23 +126,71 @@
             this.campoIdade.Size = new System.Drawing.Size(100, 38);
             this.campoIdade.TabIndex = 9;
             // 
-            // pictureBox1
+            // picturePerfil
             // 
-            this.pictureBox1.Image = global::Acelera.Properties.Resources.cara;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 308);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(298, 325);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.picturePerfil.Image = global::Acelera.Properties.Resources.cara;
+            this.picturePerfil.Location = new System.Drawing.Point(50, 308);
+            this.picturePerfil.Name = "picturePerfil";
+            this.picturePerfil.Size = new System.Drawing.Size(298, 325);
+            this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturePerfil.TabIndex = 10;
+            this.picturePerfil.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Acelera.Properties.Resources.adicionar_foto;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(315, 639);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(33, 47);
+            this.button1.TabIndex = 11;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnEntrar
+            // 
+            this.btnEntrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEntrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEntrar.FlatAppearance.BorderSize = 0;
+            this.btnEntrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEntrar.Location = new System.Drawing.Point(1752, 934);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(123, 95);
+            this.btnEntrar.TabIndex = 12;
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(94, 861);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(181, 71);
+            this.button2.TabIndex = 13;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // TelaCriarPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarPerfil;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.pictureBox1);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1904, 1061);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnEntrar);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.picturePerfil);
             this.Controls.Add(this.campoIdade);
             this.Controls.Add(this.campoCPF);
             this.Controls.Add(this.campoTelefone);
@@ -153,7 +205,7 @@
             this.Text = "Event";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TelaCriarPerfil_FormClosed);
             this.Load += new System.EventHandler(this.TelaCriarPerfil_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,6 +219,9 @@
         private System.Windows.Forms.MaskedTextBox campoTelefone;
         private System.Windows.Forms.MaskedTextBox campoCPF;
         private System.Windows.Forms.TextBox campoIdade;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picturePerfil;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.Button button2;
     }
 }
