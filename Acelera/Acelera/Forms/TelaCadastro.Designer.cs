@@ -104,7 +104,7 @@
             this.MaximizeBox = false;
             this.Name = "TelaCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TelaCadastro";
+            this.Text = "Event";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TelaCadastro_FormClosed);
             this.Load += new System.EventHandler(this.TelaCadastro_Load);
             this.ResumeLayout(false);

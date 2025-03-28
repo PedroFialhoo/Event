@@ -65,6 +65,18 @@
     <Compile Include="Forms\TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TelaPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaPerfil.Designer.cs">
+      <DependentUpon>TelaPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaPrincipal.Designer.cs">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\TelaCadastro.resx">
@@ -75,6 +87,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaPerfil.resx">
+      <DependentUpon>TelaPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaPrincipal.resx">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,6 +144,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaCriarPerfil2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaPrincipal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaPerfil.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

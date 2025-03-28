@@ -43,5 +43,11 @@ namespace Acelera.Forms
                 picturePerfil.Image = Image.FromFile(openFileDialog.FileName);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();  
+            telaPrincipal.Show();
+        }
     }
 }
