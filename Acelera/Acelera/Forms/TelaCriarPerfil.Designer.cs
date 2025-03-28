@@ -39,23 +39,28 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // campoNome
             // 
+            this.campoNome.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.campoNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.campoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.campoNome.Location = new System.Drawing.Point(439, 367);
             this.campoNome.Name = "campoNome";
-            this.campoNome.Size = new System.Drawing.Size(678, 38);
+            this.campoNome.Size = new System.Drawing.Size(678, 31);
             this.campoNome.TabIndex = 0;
             // 
             // campoCidade
             // 
+            this.campoCidade.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.campoCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.campoCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.campoCidade.Location = new System.Drawing.Point(439, 787);
             this.campoCidade.Name = "campoCidade";
-            this.campoCidade.Size = new System.Drawing.Size(678, 38);
+            this.campoCidade.Size = new System.Drawing.Size(678, 31);
             this.campoCidade.TabIndex = 4;
             this.campoCidade.Text = "\n\r\n";
             // 
@@ -63,6 +68,8 @@
             // 
             this.campoEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.campoEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.campoEstado.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.campoEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.campoEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.campoEstado.FormattingEnabled = true;
             this.campoEstado.Items.AddRange(new object[] {
@@ -100,30 +107,36 @@
             // 
             // campoTelefone
             // 
+            this.campoTelefone.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.campoTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.campoTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.campoTelefone.HidePromptOnLeave = true;
             this.campoTelefone.Location = new System.Drawing.Point(439, 520);
             this.campoTelefone.Mask = "(00) 00000-0000";
             this.campoTelefone.Name = "campoTelefone";
-            this.campoTelefone.Size = new System.Drawing.Size(213, 38);
+            this.campoTelefone.Size = new System.Drawing.Size(213, 31);
             this.campoTelefone.TabIndex = 7;
             // 
             // campoCPF
             // 
+            this.campoCPF.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.campoCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.campoCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.campoCPF.HidePromptOnLeave = true;
             this.campoCPF.Location = new System.Drawing.Point(439, 661);
             this.campoCPF.Mask = "000,000,000-00";
             this.campoCPF.Name = "campoCPF";
-            this.campoCPF.Size = new System.Drawing.Size(213, 38);
+            this.campoCPF.Size = new System.Drawing.Size(213, 31);
             this.campoCPF.TabIndex = 8;
             // 
             // campoIdade
             // 
+            this.campoIdade.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.campoIdade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.campoIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.campoIdade.Location = new System.Drawing.Point(1286, 367);
             this.campoIdade.Name = "campoIdade";
-            this.campoIdade.Size = new System.Drawing.Size(100, 38);
+            this.campoIdade.Size = new System.Drawing.Size(100, 31);
             this.campoIdade.TabIndex = 9;
             // 
             // picturePerfil
@@ -182,12 +195,29 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Educação",
+            "Esporte",
+            "Saúde",
+            "Musica",
+            "Workshops"});
+            this.checkedListBox1.Location = new System.Drawing.Point(1286, 546);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(378, 312);
+            this.checkedListBox1.TabIndex = 14;
+            // 
             // TelaCriarPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1061);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.button1);
@@ -224,5 +254,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }
