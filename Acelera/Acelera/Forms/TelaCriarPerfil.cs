@@ -32,5 +32,16 @@ namespace Acelera.Forms
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.bmp";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {                
+                picturePerfil.Image = Image.FromFile(openFileDialog.FileName);
+            }
+        }
     }
 }

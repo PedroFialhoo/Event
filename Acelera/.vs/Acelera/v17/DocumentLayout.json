@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Fatec\\Acelera\\Event\\Acelera\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\forms\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\forms\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\forms\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -15,8 +19,12 @@
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telacadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\forms\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\forms\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\forms\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\forms\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +50,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Acelera\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Properties\\Resources.resx",
+              "RelativeToolTip": "Acelera\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-28T18:39:40.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TelaCriarPerfil.cs",
+              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCriarPerfil.cs",
+              "RelativeDocumentMoniker": "Acelera\\Forms\\TelaCriarPerfil.cs",
+              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCriarPerfil.cs",
+              "RelativeToolTip": "Acelera\\Forms\\TelaCriarPerfil.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:33:50.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TelaLogin.cs",
               "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaLogin.cs",
@@ -55,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TelaCadastro.cs [Design]",
               "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaCadastro.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaCadastro.cs",
@@ -67,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TelaLogin.cs [Design]",
               "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Forms\\TelaLogin.cs",
               "RelativeDocumentMoniker": "Acelera\\Forms\\TelaLogin.cs",
