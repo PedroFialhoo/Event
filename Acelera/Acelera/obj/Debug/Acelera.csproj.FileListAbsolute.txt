@@ -53,3 +53,5 @@ C:\Fatec\Acelera\Event\Acelera\Acelera\bin\Debug\Acelera.exe.config
 C:\Fatec\Acelera\Event\Acelera\Acelera\bin\Debug\Acelera.exe
 C:\Fatec\Acelera\Event\Acelera\Acelera\bin\Debug\Acelera.pdb
 C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Forms.TelaLogin.resources
+C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Forms.TelaPrincipal.resources
+C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Forms.TelaPerfil.resources
