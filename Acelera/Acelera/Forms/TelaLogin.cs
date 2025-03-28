@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera.ferramentas;
 
 
 namespace Acelera.Forms
@@ -95,5 +96,13 @@ namespace Acelera.Forms
             telaCadastro.Show();
             telaCadastro.FormClosed += (s, args) => this.Close();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+              
+            
+        }
+
     }
 }
+
