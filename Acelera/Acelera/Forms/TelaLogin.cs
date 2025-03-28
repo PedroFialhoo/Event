@@ -32,8 +32,6 @@ namespace Acelera.Forms
         private void button1_Click_1(object sender, EventArgs e)
         {            
             TelaCadastro telaCadastro = new TelaCadastro();
-
-            telaCadastro.WindowState = FormWindowState.Maximized;
             telaCadastro.Show();
             this.Visible = false;
         }
@@ -46,8 +44,7 @@ namespace Acelera.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil();            
-            telaCriarPerfil.WindowState = FormWindowState.Maximized;
+            TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil(); 
             telaCriarPerfil.Show();
             this.Hide(); 
             telaCriarPerfil.FormClosed += (s, args) => this.Close();
@@ -92,5 +89,11 @@ namespace Acelera.Forms
             }
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            TelaCadastro telaCadastro = new TelaCadastro();
+            telaCadastro.Show();
+            telaCadastro.FormClosed += (s, args) => this.Close();
+        }
     }
 }

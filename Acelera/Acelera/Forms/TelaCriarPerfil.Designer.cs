@@ -145,10 +145,14 @@
             this.Controls.Add(this.campoEstado);
             this.Controls.Add(this.campoCidade);
             this.Controls.Add(this.campoNome);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "TelaCriarPerfil";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TelaCriarPerfil_FormClosed);
+            this.Load += new System.EventHandler(this.TelaCriarPerfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

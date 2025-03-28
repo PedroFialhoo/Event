@@ -62,7 +62,6 @@ namespace Acelera.Forms
         !string.IsNullOrWhiteSpace(txtSenha.Text))
             {
                 TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil();
-                telaCriarPerfil.WindowState = FormWindowState.Maximized;
                 telaCriarPerfil.Show();
                 this.Hide();
                 telaCriarPerfil.FormClosed += (s, args) => this.Close();
@@ -73,5 +72,9 @@ namespace Acelera.Forms
             }
         }
 
+        private void TelaCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
