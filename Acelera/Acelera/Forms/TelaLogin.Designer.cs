@@ -40,10 +40,10 @@
             // 
             this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtEmail.Location = new System.Drawing.Point(975, 396);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(760, 37);
+            this.txtEmail.Size = new System.Drawing.Size(760, 31);
             this.txtEmail.TabIndex = 1;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
@@ -51,10 +51,10 @@
             // 
             this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtSenha.Location = new System.Drawing.Point(975, 506);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(715, 37);
+            this.txtSenha.Size = new System.Drawing.Size(715, 31);
             this.txtSenha.TabIndex = 2;
             // 
             // btnEntrar
@@ -105,10 +105,10 @@
             this.linkLabel2.LinkColor = System.Drawing.Color.Black;
             this.linkLabel2.Location = new System.Drawing.Point(975, 575);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(138, 18);
+            this.linkLabel2.Size = new System.Drawing.Size(142, 18);
             this.linkLabel2.TabIndex = 6;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Esqueceu a senha?";
+            this.linkLabel2.Text = "Esqueceu a senha? ";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // TelaLogin

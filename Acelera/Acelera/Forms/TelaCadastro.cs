@@ -76,5 +76,10 @@ namespace Acelera.Forms
         {
 
         }
+
+        private void txtConfirmaSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

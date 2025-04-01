@@ -99,7 +99,8 @@ namespace Acelera.Forms
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-              
+            TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha();
+            telaEsquceuSenha.Show();
             
         }
 

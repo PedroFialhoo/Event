@@ -39,10 +39,10 @@
             // 
             this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
-            this.txtEmail.Location = new System.Drawing.Point(995, 313);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtEmail.Location = new System.Drawing.Point(995, 323);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(760, 37);
+            this.txtEmail.Size = new System.Drawing.Size(760, 31);
             this.txtEmail.TabIndex = 2;
             this.txtEmail.TextChanged += new System.EventHandler(this.campoEmail_TextChanged);
             // 
@@ -50,21 +50,22 @@
             // 
             this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
-            this.txtSenha.Location = new System.Drawing.Point(995, 429);
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtSenha.Location = new System.Drawing.Point(995, 435);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(760, 37);
+            this.txtSenha.Size = new System.Drawing.Size(760, 31);
             this.txtSenha.TabIndex = 3;
             // 
             // txtConfirmaSenha
             // 
             this.txtConfirmaSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.txtConfirmaSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConfirmaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
-            this.txtConfirmaSenha.Location = new System.Drawing.Point(995, 539);
+            this.txtConfirmaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtConfirmaSenha.Location = new System.Drawing.Point(995, 548);
             this.txtConfirmaSenha.Name = "txtConfirmaSenha";
-            this.txtConfirmaSenha.Size = new System.Drawing.Size(760, 37);
+            this.txtConfirmaSenha.Size = new System.Drawing.Size(760, 31);
             this.txtConfirmaSenha.TabIndex = 4;
+            this.txtConfirmaSenha.TextChanged += new System.EventHandler(this.txtConfirmaSenha_TextChanged);
             // 
             // btnSalvar
             // 
