@@ -55,3 +55,4 @@ C:\Fatec\Acelera\Event\Acelera\Acelera\bin\Debug\Acelera.pdb
 C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Forms.TelaLogin.resources
 C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Forms.TelaPrincipal.resources
 C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Forms.TelaPerfil.resources
+C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Forms.TelaEsquceuSenha.resources
