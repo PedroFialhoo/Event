@@ -34,32 +34,6 @@ namespace Acelera.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string email = txtEmail.Text.Trim();
-            string senha = txtSenha.Text.Trim();
-            string cofirmaSenha = txtRepeteSenha.Text.Trim();
-
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha) || string.IsNullOrEmpty(cofirmaSenha))
-            {
-                MessageBox.Show("Todos os campos devem ser preenchidos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            if (senha != cofirmaSenha)
-            {
-                MessageBox.Show("As senhas não coincidem!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            MessageBox.Show("Usuário salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            this.TelaLogin.Visible = true;
-            this.Close();
-        }
-
-        private void TelaCadastro_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            FecharJanelas.CloseSystem();
-        }
-
-        private void botaoEntrar_Click(object sender, EventArgs e)
-        {
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
             string repeteSenha = txtRepeteSenha.Text;
@@ -85,9 +59,19 @@ namespace Acelera.Forms
                 MessageBox.Show("As senhas devem coincidir", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            
+            MessageBox.Show("Usuário salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil();
             telaCriarPerfil.Show();
+
         }
+
+        private void TelaCadastro_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FecharJanelas.CloseSystem();
+        }
+
+       
 
         private void TelaCadastro_Load(object sender, EventArgs e)
         {
