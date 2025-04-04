@@ -1,4 +1,5 @@
-﻿using Acelera.ferramentas;
+﻿using Acelera.Controllers;
+using Acelera.ferramentas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Acelera.Forms
 {
@@ -34,7 +36,7 @@ namespace Acelera.Forms
         {
             string email = txtEmail.Text.Trim();
             string senha = txtSenha.Text.Trim();
-            string cofirmaSenha = txtConfirmaSenha.Text.Trim();
+            string cofirmaSenha = txtRepeteSenha.Text.Trim();
 
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha) || string.IsNullOrEmpty(cofirmaSenha))
             {
@@ -57,19 +59,34 @@ namespace Acelera.Forms
         }
 
         private void botaoEntrar_Click(object sender, EventArgs e)
-        {          
-            if (!string.IsNullOrWhiteSpace(txtEmail.Text) && !string.IsNullOrWhiteSpace(txtConfirmaSenha.Text) &&
-        !string.IsNullOrWhiteSpace(txtSenha.Text))
+        {
+            string email = txtEmail.Text;
+            string senha = txtSenha.Text;
+            string repeteSenha = txtRepeteSenha.Text;
+
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(senha) || string.IsNullOrWhiteSpace(repeteSenha))
             {
-                TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil();
-                telaCriarPerfil.Show();
-                this.Hide();
-                telaCriarPerfil.FormClosed += (s, args) => this.Close();
-            }
-            else
-            {                
                 MessageBox.Show("Por favor, preencha todos os campos antes de continuar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
+
+            if (!VerificarCampos.VerificarCampoEmail(email))
+            {
+                MessageBox.Show("E-mail inválido! Digite um e-mail correto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!VerificarCampos.VerificarCampoSenha(senha))
+            {
+                MessageBox.Show("A senha deve conter no mínimo 6 dígitos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (senha != repeteSenha)
+            {
+                MessageBox.Show("As senhas devem coincidir", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil();
+            telaCriarPerfil.Show();
         }
 
         private void TelaCadastro_Load(object sender, EventArgs e)
