@@ -52,6 +52,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(445, 31);
             this.txtSenha.TabIndex = 3;
+            txtSenha.UseSystemPasswordChar = true;
             // 
             // txtRepeteSenha
             // 
@@ -62,6 +63,7 @@
             this.txtRepeteSenha.Name = "txtRepeteSenha";
             this.txtRepeteSenha.Size = new System.Drawing.Size(445, 31);
             this.txtRepeteSenha.TabIndex = 4;
+            txtRepeteSenha.UseSystemPasswordChar = true;
             // 
             // TelaEsquceuSenha
             // 
