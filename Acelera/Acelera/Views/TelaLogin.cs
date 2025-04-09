@@ -95,6 +95,7 @@ namespace Acelera.Forms
             {
                 MessageBox.Show("Informe seu e-mail e senha para prosseguir", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
 
         }
 
@@ -112,6 +113,17 @@ namespace Acelera.Forms
             
         }
 
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            if(txtSenha.UseSystemPasswordChar == true)
+            {
+                txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtSenha.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
 

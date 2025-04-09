@@ -1,3 +1,21 @@
+# Ignore arquivos e pastas do Visual Studio
+.vs/
+*.suo
+*.user
+
+# Pastas de build
 bin/
 obj/
-.vs/
+
+# Arquivos gerados automaticamente
+*.exe
+*.pdb
+*.cache
+*.json
+*.dtbcache.json
+*.Designer.cs
+
+# Outros temporários
+*.dbmdl
+*.log
+*.tmp
