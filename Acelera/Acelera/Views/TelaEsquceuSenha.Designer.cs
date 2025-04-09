@@ -52,7 +52,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(445, 31);
             this.txtSenha.TabIndex = 3;
-            txtSenha.UseSystemPasswordChar = true;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtRepeteSenha
             // 
@@ -63,17 +63,19 @@
             this.txtRepeteSenha.Name = "txtRepeteSenha";
             this.txtRepeteSenha.Size = new System.Drawing.Size(445, 31);
             this.txtRepeteSenha.TabIndex = 4;
-            txtRepeteSenha.UseSystemPasswordChar = true;
+            this.txtRepeteSenha.UseSystemPasswordChar = true;
             // 
             // TelaEsquceuSenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaEsqueceuSenha;
-            this.ClientSize = new System.Drawing.Size(784, 841);
+            this.ClientSize = new System.Drawing.Size(800, 880);
             this.Controls.Add(this.txtRepeteSenha);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtEmail);
+            this.MaximumSize = new System.Drawing.Size(800, 880);
+            this.MinimumSize = new System.Drawing.Size(800, 880);
             this.Name = "TelaEsquceuSenha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaEsquceuSenha";
