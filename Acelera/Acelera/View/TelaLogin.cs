@@ -104,6 +104,17 @@ namespace Acelera.Forms
             
         }
 
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            if(this.txtSenha.UseSystemPasswordChar == false)
+            {
+                this.txtSenha.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                this.txtSenha.UseSystemPasswordChar = false;
+            }
+        }
     }
 }
 

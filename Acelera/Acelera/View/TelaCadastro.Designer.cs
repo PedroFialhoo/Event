@@ -55,6 +55,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(760, 31);
             this.txtSenha.TabIndex = 3;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtConfirmaSenha
             // 
@@ -66,6 +67,7 @@
             this.txtConfirmaSenha.Size = new System.Drawing.Size(760, 31);
             this.txtConfirmaSenha.TabIndex = 4;
             this.txtConfirmaSenha.TextChanged += new System.EventHandler(this.txtConfirmaSenha_TextChanged);
+            this.txtConfirmaSenha.UseSystemPasswordChar = true;
             // 
             // btnSalvar
             // 

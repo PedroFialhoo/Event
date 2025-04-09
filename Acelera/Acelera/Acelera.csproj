@@ -46,61 +46,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ferramentas\FecharJanelas.cs" />
-    <Compile Include="Forms\TelaCriarPerfil.cs">
+    <Compile Include="Controllers\FecharJanelas.cs" />
+    <Compile Include="View\TelaCriarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TelaCriarPerfil.Designer.cs">
+    <Compile Include="View\TelaCriarPerfil.Designer.cs">
       <DependentUpon>TelaCriarPerfil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TelaCadastro.cs">
+    <Compile Include="View\TelaCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TelaCadastro.Designer.cs">
+    <Compile Include="View\TelaCadastro.Designer.cs">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TelaEsquceuSenha.cs">
+    <Compile Include="View\TelaEsquceuSenha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TelaEsquceuSenha.Designer.cs">
+    <Compile Include="View\TelaEsquceuSenha.Designer.cs">
       <DependentUpon>TelaEsquceuSenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TelaLogin.cs">
+    <Compile Include="View\TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TelaLogin.Designer.cs">
+    <Compile Include="View\TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TelaPerfil.cs">
+    <Compile Include="View\TelaPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TelaPerfil.Designer.cs">
+    <Compile Include="View\TelaPerfil.Designer.cs">
       <DependentUpon>TelaPerfil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TelaPrincipal.cs">
+    <Compile Include="View\TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TelaPrincipal.Designer.cs">
+    <Compile Include="View\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\TelaCadastro.resx">
+    <EmbeddedResource Include="View\TelaCadastro.resx">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TelaCriarPerfil.resx">
+    <EmbeddedResource Include="View\TelaCriarPerfil.resx">
       <DependentUpon>TelaCriarPerfil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TelaEsquceuSenha.resx">
+    <EmbeddedResource Include="View\TelaEsquceuSenha.resx">
       <DependentUpon>TelaEsquceuSenha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TelaLogin.resx">
+    <EmbeddedResource Include="View\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TelaPerfil.resx">
+    <EmbeddedResource Include="View\TelaPerfil.resx">
       <DependentUpon>TelaPerfil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TelaPrincipal.resx">
+    <EmbeddedResource Include="View\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
