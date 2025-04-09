@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Controllers\FecharJanelas.cs" />
     <Compile Include="Controllers\VerificarCampos.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="Views\TelaCriarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datachair\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaCadastro3.png" />

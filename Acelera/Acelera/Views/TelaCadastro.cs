@@ -1,5 +1,7 @@
 ﻿using Acelera.Controllers;
 using Acelera.ferramentas;
+using Acelera.Models;
+using Acelera.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,12 +11,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Acelera.Forms
 {
     public partial class TelaCadastro : Form
     {
+        UsuarioRepository usuarioRepo = new UsuarioRepository();
+
         private Form TelaLogin;
         public TelaCadastro()
         {
@@ -29,7 +34,14 @@ namespace Acelera.Forms
         }
         private void campoEmail_TextChanged(object sender, EventArgs e)
         {
+            string email = Console.ReadLine();
+            usuarioRepo.Adicionar(new Usuario { Email = email});
+        }
 
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+            string senha = Console.ReadLine();
+            usuarioRepo.Adicionar(new Usuario { Senha = senha });
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -82,5 +94,7 @@ namespace Acelera.Forms
         {
 
         }
+
+        
     }
 }
