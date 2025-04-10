@@ -46,7 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\DocumentController.cs" />
+    <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\FecharJanelas.cs" />
+    <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\VerificarCampos.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
