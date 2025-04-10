@@ -108,6 +108,15 @@ namespace Acelera.Forms
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            EmailRecuperacao email = new EmailRecuperacao();
+            string destinatario = txtEmail.Text;
+            string codigo = CodigoRecuperacao.GerarCodigoNumerico();
+
+            if (email.EnviarEmail(destinatario, codigo))
+            {
+                MessageBox.Show("E-mail de recuperação enviado com sucesso!");
+            }
+
             TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha();
             telaEsquceuSenha.Show();
             
