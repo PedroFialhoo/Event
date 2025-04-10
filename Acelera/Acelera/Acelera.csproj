@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CodigoRecuperacao.cs" />
     <Compile Include="Controllers\DocumentController.cs" />
     <Compile Include="Controllers\EmailController.cs" />
+    <Compile Include="Controllers\EmailRecuperacao.cs" />
     <Compile Include="Controllers\FecharJanelas.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\VerificarCampos.cs" />
@@ -167,6 +169,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaEsqueceuSenha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEsqueceuSenha1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
