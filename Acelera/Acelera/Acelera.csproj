@@ -53,6 +53,8 @@
     <Compile Include="Controllers\FecharJanelas.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\VerificarCampos.cs" />
+    <Compile Include="Models\Colaborador.cs" />
+    <Compile Include="Models\Eventos.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="Views\TelaCriarPerfil.cs">
@@ -134,9 +136,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Datachair\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\TelaCadastro3.png" />
   </ItemGroup>

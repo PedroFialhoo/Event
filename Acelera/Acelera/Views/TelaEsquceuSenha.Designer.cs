@@ -33,6 +33,7 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtRepeteSenha = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -78,12 +79,27 @@
             this.txtCodigo.TabIndex = 5;
             this.txtCodigo.UseSystemPasswordChar = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(311, 687);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(177, 41);
+            this.button1.TabIndex = 6;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TelaEsquceuSenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(784, 841);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtRepeteSenha);
             this.Controls.Add(this.txtSenha);
@@ -91,6 +107,7 @@
             this.Name = "TelaEsquceuSenha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaEsquceuSenha";
+            this.Load += new System.EventHandler(this.TelaEsquceuSenha_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,5 +119,6 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtRepeteSenha;
         private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.Button button1;
     }
 }
