@@ -117,7 +117,7 @@ namespace Acelera.Forms
                 MessageBox.Show("E-mail de recuperação enviado com sucesso!");
             }
 
-            TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha();
+            TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha(codigo);
             telaEsquceuSenha.Show();
             
         }
