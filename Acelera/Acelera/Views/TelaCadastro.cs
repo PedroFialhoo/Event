@@ -18,7 +18,6 @@ namespace Acelera.Forms
 {
     public partial class TelaCadastro : Form
     {
-        UsuarioRepository usuarioRepo = new UsuarioRepository();
 
         private Form TelaLogin;
         public TelaCadastro()
@@ -34,14 +33,12 @@ namespace Acelera.Forms
         }
         private void campoEmail_TextChanged(object sender, EventArgs e)
         {
-            string email = Console.ReadLine();
-            usuarioRepo.Adicionar(new Usuario { Email = email});
+
         }
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
         {
-            string senha = Console.ReadLine();
-            usuarioRepo.Adicionar(new Usuario { Senha = senha });
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,10 +68,10 @@ namespace Acelera.Forms
                 MessageBox.Show("As senhas devem coincidir", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            
+            LoginRepository.Cadastrar (email, senha);
             MessageBox.Show("Usuário salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil();
-            telaCriarPerfil.Show();
+            TelaLogin telaLogin = new TelaLogin();
+            telaLogin.Show();
 
         }
 
