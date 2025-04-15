@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera.Repositories;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Acelera.Forms
 {
@@ -29,7 +31,28 @@ namespace Acelera.Forms
         {
             if (txtCodigo.Text == codigo)
             {
-                //processo pra salvar nova senha
+                string novaSenha = txtSenha.Text;
+                string email = txtEmail.Text;
+                bool alterado = LoginRepository.RedefinirSenha(email, novaSenha);
+                if( txtSenha.Text == txtRepeteSenha.Text)
+                {
+                    if (alterado)
+                    {
+                        MessageBox.Show("Senha redefinida com sucesso!");
+                        TelaLogin telaLogin = new TelaLogin();
+                        telaLogin.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao redefinir a senha. E-mail não encontrado.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Senhas diferentes");
+                }
+                
+
             }
             else
             {

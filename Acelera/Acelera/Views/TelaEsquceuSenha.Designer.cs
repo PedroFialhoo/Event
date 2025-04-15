@@ -77,7 +77,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(445, 31);
             this.txtCodigo.TabIndex = 5;
-            this.txtCodigo.UseSystemPasswordChar = true;
+            this.txtCodigo.UseSystemPasswordChar = false;
             // 
             // button1
             // 
