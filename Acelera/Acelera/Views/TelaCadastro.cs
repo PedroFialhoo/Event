@@ -68,10 +68,39 @@ namespace Acelera.Forms
                 MessageBox.Show("As senhas devem coincidir", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            LoginRepository.Cadastrar (email, senha);
-            MessageBox.Show("Usuário salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            TelaLogin telaLogin = new TelaLogin();
-            telaLogin.Show();
+            bool cadastrado = LoginRepository.Cadastrar(email, senha);
+            EmailRecuperacao emailRecuperacao = new EmailRecuperacao();
+
+            if (cadastrado)
+            {
+                MessageBox.Show("Usuário cadastrado com sucesso!");
+                TelaLogin telaLogin = new TelaLogin();
+                telaLogin.Show();
+            }
+            else
+            {
+                DialogResult resposta = MessageBox.Show(
+                    "E-mail já está cadastrado. Deseja redefinir a senha?",
+                    "Atenção",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (resposta == DialogResult.Yes)
+                {
+                    
+                    string destinatario = txtEmail.Text;
+                    string codigo = CodigoRecuperacao.GerarCodigoNumerico();
+
+                    if (emailRecuperacao.EnviarEmail(destinatario, codigo))
+                    {
+                        MessageBox.Show("E-mail de recuperação enviado com sucesso!");
+                    }
+
+                    TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha(codigo);
+                    telaEsquceuSenha.Show();
+                }
+            }            
 
         }
 
