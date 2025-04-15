@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera.Controllers;
+using Acelera.Models;
+using Acelera.Repositories;
 
 
 namespace Acelera.Forms
@@ -67,8 +69,32 @@ namespace Acelera.Forms
                 MessageBox.Show("E-mail inválido! Digite um e-mail correto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
-            MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Login login = LoginRepository.Autenticar(email, senha);
+
+            if (login != null)
+            {
+                // Se o login for bem-sucedido
+                MessageBox.Show($"Bem-vindo, {login.Email}!");
+
+                // Agora, listar todos os usuários cadastrados
+                var todosLogins = LoginRepository.ListarTodos();
+
+                // Exibir os detalhes de todos os logins
+                string lista = "Usuários cadastrados:\n";
+                foreach (var user in todosLogins)
+                {
+                    lista += $"ID: {user.Id}, Email: {user.Email}\n";
+                }
+
+                // Mostrar na interface gráfica (por exemplo, em uma TextBox ou MessageBox)
+                MessageBox.Show(lista);
+            }
+            else
+            {
+                // Se o login falhar
+                MessageBox.Show("Email ou senha inválidos.");
+            }
         }
 
         private void campoEmail_TextChanged(object sender, EventArgs e)

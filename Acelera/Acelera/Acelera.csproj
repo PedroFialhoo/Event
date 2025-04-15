@@ -55,7 +55,10 @@
     <Compile Include="Controllers\VerificarCampos.cs" />
     <Compile Include="Models\Colaborador.cs" />
     <Compile Include="Models\Eventos.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Repositories\ColaboradorRepository.cs" />
+    <Compile Include="Repositories\LoginRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="Views\TelaCriarPerfil.cs">
       <SubType>Form</SubType>
