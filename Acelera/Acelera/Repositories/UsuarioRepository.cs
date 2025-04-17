@@ -1,22 +1,36 @@
-﻿using Acelera.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Acelera.Models;
 
 namespace Acelera.Repositories
 {
-    class UsuarioRepository
+    public static class UsuarioRepository
     {
-        private List<Usuario> usuarios = new List<Usuario>();
+        // Lista para armazenar os dados dos usuários
+        private static List<Usuario> usuarios = new List<Usuario>();
 
-        public void Adicionar(Usuario usuario)
+        // Método para salvar as informações de um novo usuário no repositório
+        public static bool SalvarUsuario(Usuario usuario)
         {
+            // Verifica se o usuário com o mesmo id já existe
+            var usuarioExistente = usuarios.Find(u => u.Id == usuario.Id);
+            if (usuarioExistente != null)
+            {
+                return false; // Usuário com o mesmo ID já existe
+            }
+
             usuarios.Add(usuario);
+            return true;
         }
 
-        public List<Usuario> Listar()
+        // Método para encontrar um usuário pelo ID
+        public static Usuario ObterUsuarioPorId(int id)
+        {
+            return usuarios.Find(u => u.Id == id);
+        }
+
+        // Método para listar todos os usuários (para fins de debug ou consulta)
+        public static List<Usuario> ListarUsuarios()
         {
             return usuarios;
         }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using Acelera.Models;
 
 namespace Acelera.Repositories
@@ -11,6 +10,9 @@ namespace Acelera.Repositories
     public static class LoginRepository
     {
         public static List<Login> logins = new List<Login>();
+
+        // Variável estática para armazenar o ID do usuário logado
+        private static int? usuarioLogadoId;
 
         public static bool Cadastrar(string email, string senha)
         {
@@ -21,8 +23,8 @@ namespace Acelera.Repositories
                 return false;
             }
 
-            int novoId = logins.Count;
-            Login novoLogin = new Login(novoId, email, senha);
+            int Id = logins.Count; 
+            Login novoLogin = new Login(Id, email, senha);
             logins.Add(novoLogin);
 
             return true;
@@ -33,15 +35,38 @@ namespace Acelera.Repositories
             foreach (var login in logins)
             {
                 if (login.Email == email && login.Senha == senha)
-                    return login;
+                {
+                   
+                    usuarioLogadoId = login.Id;
+                    return login; 
+                }
             }
-            return null;
+            return null; 
+        }
+
+        // Método para verificar se um usuário está logado
+        public static bool UsuarioEstaLogado()
+        {
+            return usuarioLogadoId.HasValue; // Retorna true se estiver logado, false caso contrário
+        }
+
+        // Método para obter o ID do usuário logado
+        public static int? GetUsuarioLogadoId()
+        {
+            return usuarioLogadoId;
+        }
+
+        // Método para deslogar o usuário (limpar o ID)
+        public static void Sair()
+        {
+            usuarioLogadoId = null;
         }
 
         public static List<Login> ListarTodos()
         {
             return logins;
         }
+
         public static bool RedefinirSenha(string email, string novaSenha)
         {
             var login = logins.FirstOrDefault(l => l.Email == email);
@@ -52,8 +77,7 @@ namespace Acelera.Repositories
                 return true;
             }
 
-            return false; // e-mail não encontrado
+            return false; 
         }
     }
-
 }

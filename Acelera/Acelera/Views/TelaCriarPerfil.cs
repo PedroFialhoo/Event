@@ -1,4 +1,6 @@
 ﻿using Acelera.ferramentas;
+using Acelera.Models;
+using Acelera.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,8 +48,40 @@ namespace Acelera.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TelaPrincipal telaPrincipal = new TelaPrincipal();  
-            telaPrincipal.Show();
+            int? idUsuarioLogado = LoginRepository.GetUsuarioLogadoId();
+
+            if (idUsuarioLogado == null)
+            {
+                MessageBox.Show("Erro: Nenhum usuário está logado.");
+                return;
+            }
+
+            // Cria um novo objeto Usuario
+            Usuario usuario = new Usuario
+            {
+                Id = idUsuarioLogado.Value, // Usa o ID do usuário logado
+                Nome = txtNome.Text,
+                Idade = int.Parse(txtIdade.Text),
+                Telefone = txtTelefone.Text,
+                Cpf = txtCPF.Text,
+                Cidade = txtCidade.Text,
+                Estado = txtEstado.Text,
+                Imagem = picturePerfil.Image
+
+            };
+
+            bool sucesso = UsuarioRepository.SalvarUsuario(usuario);
+
+            if (sucesso)
+            {
+                MessageBox.Show("Perfil criado com sucesso!");
+                TelaPerfil telaPerfil = new TelaPerfil(usuario);
+                telaPerfil.Show();
+            }
+            else
+            {
+                MessageBox.Show("Já existe um perfil para esse usuário.");
+            }
         }
     }
 }
