@@ -1,20 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
+using Acelera.Repositories;
 
 namespace Acelera.Models
 {
-    class Usuario
+    public class Usuario
     {
-        public string Email { get; set; }
-        public string Senha { get; set; }
+        public int Id { get; set; } // ID do usuário, que será vinculado ao Login
         public string Nome { get; set; }
         public int Idade { get; set; }
         public string Telefone { get; set; }
         public string Cpf { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
+
+        public Image Imagem { get; set; }
     }
 }

@@ -74,21 +74,20 @@ namespace Acelera.Forms
 
             if (login != null)
             {
-                // Se o login for bem-sucedido
-                MessageBox.Show($"Bem-vindo, {login.Email}!");
+                int idUsuarioLogado = login.Id;
+                var perfil = UsuarioRepository.ObterUsuarioPorId(login.Id);
 
-                // Agora, listar todos os usuários cadastrados
-                var todosLogins = LoginRepository.ListarTodos();
-
-                // Exibir os detalhes de todos os logins
-                string lista = "Usuários cadastrados:\n";
-                foreach (var user in todosLogins)
+                if (perfil == null)
                 {
-                    lista += $"ID: {user.Id}, Email: {user.Email}\n";
+                    // Não existe perfil, abre a tela de criação
+                    TelaCriarPerfil criarPerfil = new TelaCriarPerfil();
+                    criarPerfil.Show();
                 }
-
-                // Mostrar na interface gráfica (por exemplo, em uma TextBox ou MessageBox)
-                MessageBox.Show(lista);
+                else
+                {
+                    TelaPerfil telaPerfil = new TelaPerfil(perfil);
+                    telaPerfil.Show();
+                }
             }
             else
             {

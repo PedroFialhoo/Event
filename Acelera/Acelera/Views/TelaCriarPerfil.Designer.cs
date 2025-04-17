@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCriarPerfil));
-            this.campoNome = new System.Windows.Forms.TextBox();
-            this.campoCidade = new System.Windows.Forms.TextBox();
-            this.campoEstado = new System.Windows.Forms.ComboBox();
-            this.campoTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.campoCPF = new System.Windows.Forms.MaskedTextBox();
-            this.campoIdade = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.ComboBox();
+            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
+            this.txtIdade = new System.Windows.Forms.TextBox();
             this.picturePerfil = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEntrar = new System.Windows.Forms.Button();
@@ -43,36 +43,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.SuspendLayout();
             // 
-            // campoNome
+            // txtNome
             // 
-            this.campoNome.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.campoNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.campoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.campoNome.Location = new System.Drawing.Point(439, 367);
-            this.campoNome.Name = "campoNome";
-            this.campoNome.Size = new System.Drawing.Size(678, 31);
-            this.campoNome.TabIndex = 0;
+            this.txtNome.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtNome.Location = new System.Drawing.Point(439, 367);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(678, 31);
+            this.txtNome.TabIndex = 0;
             // 
-            // campoCidade
+            // txtCidade
             // 
-            this.campoCidade.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.campoCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.campoCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.campoCidade.Location = new System.Drawing.Point(439, 787);
-            this.campoCidade.Name = "campoCidade";
-            this.campoCidade.Size = new System.Drawing.Size(678, 31);
-            this.campoCidade.TabIndex = 4;
-            this.campoCidade.Text = "\n\r\n";
+            this.txtCidade.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtCidade.Location = new System.Drawing.Point(439, 787);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(678, 31);
+            this.txtCidade.TabIndex = 4;
+            this.txtCidade.Text = "\n\r\n";
             // 
-            // campoEstado
+            // txtEstado
             // 
-            this.campoEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.campoEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.campoEstado.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.campoEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.campoEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.campoEstado.FormattingEnabled = true;
-            this.campoEstado.Items.AddRange(new object[] {
+            this.txtEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtEstado.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtEstado.FormattingEnabled = true;
+            this.txtEstado.Items.AddRange(new object[] {
             "Acre - AC",
             "Alagoas - AL",
             "Amapá - AP",
@@ -100,44 +100,44 @@
             "São Paulo - SP",
             "Sergipe - SE",
             "Tocantins - TO"});
-            this.campoEstado.Location = new System.Drawing.Point(439, 933);
-            this.campoEstado.Name = "campoEstado";
-            this.campoEstado.Size = new System.Drawing.Size(452, 39);
-            this.campoEstado.TabIndex = 5;
+            this.txtEstado.Location = new System.Drawing.Point(439, 933);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(452, 39);
+            this.txtEstado.TabIndex = 5;
             // 
-            // campoTelefone
+            // txtTelefone
             // 
-            this.campoTelefone.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.campoTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.campoTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.campoTelefone.HidePromptOnLeave = true;
-            this.campoTelefone.Location = new System.Drawing.Point(439, 520);
-            this.campoTelefone.Mask = "(00) 00000-0000";
-            this.campoTelefone.Name = "campoTelefone";
-            this.campoTelefone.Size = new System.Drawing.Size(213, 31);
-            this.campoTelefone.TabIndex = 7;
+            this.txtTelefone.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtTelefone.HidePromptOnLeave = true;
+            this.txtTelefone.Location = new System.Drawing.Point(439, 520);
+            this.txtTelefone.Mask = "(00) 00000-0000";
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(213, 31);
+            this.txtTelefone.TabIndex = 7;
             // 
-            // campoCPF
+            // txtCPF
             // 
-            this.campoCPF.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.campoCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.campoCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.campoCPF.HidePromptOnLeave = true;
-            this.campoCPF.Location = new System.Drawing.Point(439, 661);
-            this.campoCPF.Mask = "000,000,000-00";
-            this.campoCPF.Name = "campoCPF";
-            this.campoCPF.Size = new System.Drawing.Size(213, 31);
-            this.campoCPF.TabIndex = 8;
+            this.txtCPF.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtCPF.HidePromptOnLeave = true;
+            this.txtCPF.Location = new System.Drawing.Point(439, 661);
+            this.txtCPF.Mask = "000,000,000-00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(213, 31);
+            this.txtCPF.TabIndex = 8;
             // 
-            // campoIdade
+            // txtIdade
             // 
-            this.campoIdade.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.campoIdade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.campoIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.campoIdade.Location = new System.Drawing.Point(1286, 367);
-            this.campoIdade.Name = "campoIdade";
-            this.campoIdade.Size = new System.Drawing.Size(100, 31);
-            this.campoIdade.TabIndex = 9;
+            this.txtIdade.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtIdade.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtIdade.Location = new System.Drawing.Point(1286, 367);
+            this.txtIdade.Name = "txtIdade";
+            this.txtIdade.Size = new System.Drawing.Size(100, 31);
+            this.txtIdade.TabIndex = 9;
             // 
             // picturePerfil
             // 
@@ -222,12 +222,12 @@
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.picturePerfil);
-            this.Controls.Add(this.campoIdade);
-            this.Controls.Add(this.campoCPF);
-            this.Controls.Add(this.campoTelefone);
-            this.Controls.Add(this.campoEstado);
-            this.Controls.Add(this.campoCidade);
-            this.Controls.Add(this.campoNome);
+            this.Controls.Add(this.txtIdade);
+            this.Controls.Add(this.txtCPF);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtCidade);
+            this.Controls.Add(this.txtNome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "TelaCriarPerfil";
@@ -244,12 +244,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox campoNome;
-        private System.Windows.Forms.TextBox campoCidade;
-        private System.Windows.Forms.ComboBox campoEstado;
-        private System.Windows.Forms.MaskedTextBox campoTelefone;
-        private System.Windows.Forms.MaskedTextBox campoCPF;
-        private System.Windows.Forms.TextBox campoIdade;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.ComboBox txtEstado;
+        private System.Windows.Forms.MaskedTextBox txtTelefone;
+        private System.Windows.Forms.MaskedTextBox txtCPF;
+        private System.Windows.Forms.TextBox txtIdade;
         private System.Windows.Forms.PictureBox picturePerfil;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEntrar;
