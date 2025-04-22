@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Acelera.Models
 {
-    internal class Eventos
+    public class Eventos
     {
         public int Id { get; set; }
         public string NomeEvento { get; set; }
@@ -16,5 +16,18 @@ namespace Acelera.Models
         public string Data { get; set; }// ver o type date.time, as vzs é melhor que string
         public string Local {  get; set; }
         public string Colaborador { get; set; }
+
+        public Eventos(int id, string nome, string descricao, string tipo, string cidade, string data, string local, string colaborador)
+        {
+            Id = id;
+            NomeEvento = nome;
+            Descricao = descricao;  
+            Tipo = tipo;
+            Cidade = cidade;
+            Data = data;
+            Local = local;
+            Colaborador = colaborador;
+
+        }
     }
 }

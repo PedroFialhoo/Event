@@ -6,10 +6,8 @@ namespace Acelera.Repositories
 {
     public static class UsuarioRepository
     {
-        // Lista para armazenar os dados dos usuários
         private static List<Usuario> usuarios = new List<Usuario>();
 
-        // Método para salvar as informações de um novo usuário no repositório
         public static bool SalvarUsuario(Usuario usuario)
         {
             // Verifica se o usuário com o mesmo id já existe

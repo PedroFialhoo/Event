@@ -58,7 +58,9 @@
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Repositories\ColaboradorRepository.cs" />
+    <Compile Include="Repositories\EventoRepository.cs" />
     <Compile Include="Repositories\ImageRepository.cs" />
+    <Compile Include="Repositories\LoginColaboradorRepository.cs" />
     <Compile Include="Repositories\LoginRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="Views\TelaCriarPerfil.cs">
