@@ -55,6 +55,68 @@ namespace Acelera.Forms
 
         private void botaoEntrar_Click(object sender, EventArgs e)
         {
+        }
+
+        private void campoEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            TelaCadastro telaCadastro = new TelaCadastro();
+            telaCadastro.Show();
+            telaCadastro.FormClosed += (s, args) => this.Close();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            EmailRecuperacao email = new EmailRecuperacao();
+            string destinatario = txtEmail.Text;
+            string codigo = CodigoRecuperacao.GerarCodigoNumerico();
+
+            if (email.EnviarEmail(destinatario, codigo))
+            {
+                MessageBox.Show("E-mail de recuperação enviado com sucesso!");
+            }
+
+            TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha(codigo);
+            telaEsquceuSenha.Show();
+            
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            if(txtSenha.UseSystemPasswordChar == true)
+            {
+                txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtSenha.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (LoginRepository.ExcluirConta(txtEmail.Text, txtSenha.Text))
+            {
+                MessageBox.Show("excluido");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
             string email = txtEmail.Text.Trim();
             string senha = txtSenha.Text.Trim();
 
@@ -94,69 +156,7 @@ namespace Acelera.Forms
                 // Se o login falhar
                 MessageBox.Show("Email ou senha inválidos.");
             }
-        }
 
-        private void campoEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnEntrar_Click(object sender, EventArgs e)
-        {
-            string email = txtEmail.Text.Trim();
-            string senha = txtSenha.Text.Trim();
-
-            if (!String.IsNullOrEmpty(email) && !String.IsNullOrEmpty(senha))
-            {
-                // aqui ele vai ser encaminhado para tela inicial do programa
-                this.Visible = false;
-            }
-            else
-            {
-                MessageBox.Show("Informe seu e-mail e senha para prosseguir", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            
-
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            TelaCadastro telaCadastro = new TelaCadastro();
-            telaCadastro.Show();
-            telaCadastro.FormClosed += (s, args) => this.Close();
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            EmailRecuperacao email = new EmailRecuperacao();
-            string destinatario = txtEmail.Text;
-            string codigo = CodigoRecuperacao.GerarCodigoNumerico();
-
-            if (email.EnviarEmail(destinatario, codigo))
-            {
-                MessageBox.Show("E-mail de recuperação enviado com sucesso!");
-            }
-
-            TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha(codigo);
-            telaEsquceuSenha.Show();
-            
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-            if(txtSenha.UseSystemPasswordChar == true)
-            {
-                txtSenha.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtSenha.UseSystemPasswordChar = true;
-            }
         }
     }
 }
