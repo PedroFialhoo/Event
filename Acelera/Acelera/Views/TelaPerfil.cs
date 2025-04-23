@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera.Models;
+using Acelera.Repositories;
 
 namespace Acelera.Forms
 {
@@ -29,9 +30,9 @@ namespace Acelera.Forms
         private void TelaPerfil_Load(object sender, EventArgs e)
         {
             lblNome.Text = usuario.Nome;
-            lblIdade.Text = usuario.Idade.ToString();
+            //lblIdade.Text = usuario.Idade.ToString();
             lblTelefone.Text = usuario.Telefone;
-            lblCpf.Text = usuario.Cpf;
+            //lblCpf.Text = usuario.Cpf;
             lblCidade.Text = usuario.Cidade;
             lblEstado.Text = usuario.Estado;
 
@@ -39,6 +40,18 @@ namespace Acelera.Forms
             {
                 pictureBoxPerfil.Image = usuario.Imagem;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LoginRepository.Sair();
+            TelaLogin telaLogin = new TelaLogin();
+            telaLogin.Show();
+        }
+
+        private void lblEstado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
