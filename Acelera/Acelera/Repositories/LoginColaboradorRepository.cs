@@ -12,7 +12,13 @@ namespace Acelera.Repositories
         public static List<Login> logins = new List<Login>();
 
         private static int? usuarioLogadoId;
+        
+        private static int lastIdGenerated = 0;
 
+        public static int generateId()
+        {
+            return lastIdGenerated ++;
+        }
         public static bool Cadastrar(string email, string senha)
         {
             bool existe = logins.Any(login => login.Email == email);
@@ -22,7 +28,7 @@ namespace Acelera.Repositories
                 return false;
             }
 
-            int Id = logins.Count;
+            int Id = generateId();
             Login novoLogin = new Login(Id, email, senha);
             logins.Add(novoLogin);
 
@@ -78,5 +84,16 @@ namespace Acelera.Repositories
 
             return false;
         }
+        public static bool ExcluirConta(string email, string senha)
+        {
+            var login = logins.FirstOrDefault(l => l.Email == email && l.Senha == senha);
+            if (login == null)
+            {
+                logins.Remove(login);
+                return true;
+            }
+            return false;
+        }
+
     }
 }

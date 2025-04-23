@@ -21,13 +21,11 @@ namespace Acelera.Repositories
             return true;
         }
 
-        // Método para encontrar um usuário pelo ID
         public static Usuario ObterUsuarioPorId(int id)
         {
             return usuarios.Find(u => u.Id == id);
         }
 
-        // Método para listar todos os usuários (para fins de debug ou consulta)
         public static List<Usuario> ListarUsuarios()
         {
             return usuarios;
