@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Acelera.Controllers;
 using Acelera.Models;
 using Acelera.Repositories;
+using Acelera.Views;
 
 
 namespace Acelera.Forms
@@ -96,14 +97,6 @@ namespace Acelera.Forms
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            if(txtSenha.UseSystemPasswordChar == true)
-            {
-                txtSenha.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtSenha.UseSystemPasswordChar = true;
-            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -157,6 +150,24 @@ namespace Acelera.Forms
                 MessageBox.Show("Email ou senha inválidos.");
             }
 
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            if (txtSenha.UseSystemPasswordChar == true)
+            {
+                txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtSenha.UseSystemPasswordChar= true;
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            TelaLoginColaborador telaLoginColaborador = new TelaLoginColaborador();
+            telaLoginColaborador.Show();
         }
     }
 }

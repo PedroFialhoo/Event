@@ -71,3 +71,5 @@ C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.csproj.GenerateResource
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.csproj.CoreCompileInputs.cache
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.exe
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.pdb
+C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaLoginColaborador.resources
+C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaCadastroColaborador.resources

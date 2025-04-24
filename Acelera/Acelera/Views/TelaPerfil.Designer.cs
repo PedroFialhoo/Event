@@ -104,6 +104,7 @@
             this.pictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxPerfil.TabIndex = 1;
             this.pictureBoxPerfil.TabStop = false;
+            this.pictureBoxPerfil.Click += new System.EventHandler(this.pictureBoxPerfil_Click);
             // 
             // lblCidade
             // 
