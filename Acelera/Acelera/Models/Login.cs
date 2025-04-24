@@ -11,13 +11,22 @@ namespace Acelera.Models
             public int Id { get; set; }
             public string Email { get; set; }
             public string Senha { get; set; }
+            public string Cnpj { get; set; }
+
 
             public Login(int id, string email, string senha)
             {
                 Id = id;
                 Email = email;
                 Senha = senha;
-            }        
+            }
+            public Login(int id, string email, string senha, string cnpj)
+            {
+                Id = id;
+                Email = email;
+                Senha = senha;
+                Cnpj = cnpj;
+            }
 
     }
 }

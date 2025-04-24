@@ -63,7 +63,7 @@
             this.txtRepeteSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.txtRepeteSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRepeteSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtRepeteSenha.Location = new System.Drawing.Point(995, 548);
+            this.txtRepeteSenha.Location = new System.Drawing.Point(995, 554);
             this.txtRepeteSenha.Name = "txtRepeteSenha";
             this.txtRepeteSenha.Size = new System.Drawing.Size(760, 31);
             this.txtRepeteSenha.TabIndex = 4;

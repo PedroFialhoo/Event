@@ -63,6 +63,12 @@
     <Compile Include="Repositories\LoginColaboradorRepository.cs" />
     <Compile Include="Repositories\LoginRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
+    <Compile Include="Views\TelaCadastroColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaCadastroColaborador.Designer.cs">
+      <DependentUpon>TelaCadastroColaborador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaCriarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     <Compile Include="Views\TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaLoginColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaLoginColaborador.Designer.cs">
+      <DependentUpon>TelaLoginColaborador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,9 @@
     <EmbeddedResource Include="Views\TelaCadastro.resx">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaCadastroColaborador.resx">
+      <DependentUpon>TelaCadastroColaborador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaCriarPerfil.resx">
       <DependentUpon>TelaCriarPerfil.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaLoginColaborador.resx">
+      <DependentUpon>TelaLoginColaborador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaPerfil.resx">
       <DependentUpon>TelaPerfil.cs</DependentUpon>
@@ -180,6 +198,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaEsqueceuSenha1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaLogin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaLoginColaborador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCadastroColaborador.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,6 +15,7 @@ namespace Acelera.Forms
     public partial class TelaPerfil: Form
     {
         private Usuario usuario;
+
         public TelaPerfil(Usuario usuarioLogado)
         {
             InitializeComponent();
@@ -50,6 +51,11 @@ namespace Acelera.Forms
         }
 
         private void lblEstado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxPerfil_Click(object sender, EventArgs e)
         {
 
         }

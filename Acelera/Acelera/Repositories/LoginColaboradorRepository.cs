@@ -19,7 +19,7 @@ namespace Acelera.Repositories
         {
             return lastIdGenerated ++;
         }
-        public static bool Cadastrar(string email, string senha)
+        public static bool Cadastrar(string email, string senha, string cnpj)
         {
             bool existe = logins.Any(login => login.Email == email);
 
@@ -29,7 +29,7 @@ namespace Acelera.Repositories
             }
 
             int Id = generateId();
-            Login novoLogin = new Login(Id, email, senha);
+            Login novoLogin = new Login(Id, email, senha, cnpj);
             logins.Add(novoLogin);
 
             return true;

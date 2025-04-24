@@ -25,7 +25,7 @@ namespace Acelera.Repositories
             return true;
         }
 
-        public static Colaborador ObterColaborador(int id)
+        public static Colaborador ObterColaboradorPorId(int id)
         {
             return colaboradores.Find(c => c.Id == id);
         }
