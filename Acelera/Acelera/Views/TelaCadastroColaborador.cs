@@ -20,14 +20,8 @@ namespace Acelera.Views
             InitializeComponent();
         }
 
-        private void txtRepeteSenha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
             string repeteSenha = txtRepeteSenha.Text;
@@ -55,7 +49,7 @@ namespace Acelera.Views
                 return;
             }
             if (!DocumentController.VerificaCNPJ(txtCnpj.Text))
-            { 
+            {
                 MessageBox.Show("Insira um CNPJ válido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -92,11 +86,6 @@ namespace Acelera.Views
                     telaEsquceuSenha.Show();
                 }
             }
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
         }
     }
 }

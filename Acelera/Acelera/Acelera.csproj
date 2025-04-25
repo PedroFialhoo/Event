@@ -69,6 +69,12 @@
     <Compile Include="Views\TelaCadastroColaborador.Designer.cs">
       <DependentUpon>TelaCadastroColaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaCriarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaCriarEvento.Designer.cs">
+      <DependentUpon>TelaCriarEvento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaCriarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaCadastroColaborador.resx">
       <DependentUpon>TelaCadastroColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaCriarEvento.resx">
+      <DependentUpon>TelaCriarEvento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaCriarPerfil.resx">
       <DependentUpon>TelaCriarPerfil.cs</DependentUpon>
@@ -207,6 +216,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaCadastroColaborador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaLoginColaborador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarEvento.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

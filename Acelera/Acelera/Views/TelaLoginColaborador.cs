@@ -28,9 +28,20 @@ namespace Acelera.Views
             telaCadastro.FormClosed += (s, args) => this.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.UseSystemPasswordChar == true)
+            {
+                txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtSenha.UseSystemPasswordChar = true;
+            }
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
-
             string email = txtEmail.Text.Trim();
             string senha = txtSenha.Text.Trim();
 
@@ -53,17 +64,17 @@ namespace Acelera.Views
                 int idUsuarioLogado = login.Id;
                 var perfil = ColaboradorRepository.ObterColaboradorPorId(login.Id);
 
-               /* if (perfil == null)
-                {
-                    // Não existe perfil, abre a tela de criação
-                    TelaCriarPerfil criarPerfil = new TelaCriarPerfil();
-                    criarPerfil.Show();
-                }
-                else
-                {
-                    TelaPerfil telaPerfil = new TelaPerfil(perfil);
-                    telaPerfil.Show();
-                }*/
+                /* if (perfil == null)
+                 {
+                     // Não existe perfil, abre a tela de criação
+                     TelaCriarPerfil criarPerfil = new TelaCriarPerfil();
+                     criarPerfil.Show(); // criar tela perfil de colaborador
+                 }
+                 else
+                 {
+                     TelaCriarEvento telaCriarEvento = new TelaCriarEvento();
+                    telaCriarEvento.Show();
+                 }*/
             }
             else
             {
@@ -85,18 +96,6 @@ namespace Acelera.Views
 
             TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha(codigo);
             telaEsquceuSenha.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (txtSenha.UseSystemPasswordChar == true)
-            {
-                txtSenha.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtSenha.UseSystemPasswordChar = true;
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
