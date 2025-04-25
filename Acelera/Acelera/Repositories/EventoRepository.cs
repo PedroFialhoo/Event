@@ -11,13 +11,37 @@ namespace Acelera.Repositories
     {
         public static List<Eventos> eventos = new List<Eventos>();
 
-        public static bool CadastrarEvento(string nome, string descricao, string tipo, string cidade, string local, string data, string colaborador)
+        public static bool CadastrarEvento(Eventos novoEvento)
         {
-            int id = eventos.Count;
-            Eventos novoEvento = new Eventos(id, nome, descricao, tipo, cidade, data, local, colaborador);
             eventos.Add(novoEvento);
 
             return true;
+        }
+
+        public static List <Eventos> ListarEventos()
+        {
+            return eventos;
+        }
+
+        public static Eventos obterEventoPorTipo(string tipo)
+        {
+            return eventos.Find(e => e.Tipo == tipo);
+        }
+        public static Eventos obterEventoPorEstado(string estado)
+        {
+            return eventos.Find(e => e.Estado == estado);
+        }
+        public static Eventos RemoverEvento(string nomeEvento, string colaborador)
+        {
+            var evento = eventos.Find(e => e.NomeEvento == nomeEvento && e.Colaborador == colaborador);
+
+            if (evento != null)
+            {
+                eventos.Remove(evento);
+                return evento;
+            }
+
+            return null;
         }
 
     }

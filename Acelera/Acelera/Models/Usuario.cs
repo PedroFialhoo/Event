@@ -13,7 +13,7 @@ namespace Acelera.Models
         public string Cpf { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
-
         public Image Imagem { get; set; }
+
     }
 }
