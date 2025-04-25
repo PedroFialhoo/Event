@@ -29,5 +29,11 @@ namespace Acelera.Repositories
         {
             return colaboradores.Find(c => c.Id == id);
         }
+        public static string ObterNomeColaboradorPorId(int id)
+        {
+            var colaborador = colaboradores.Find(c => c.Id == id);
+            return colaborador != null ? colaborador.Nome : null;
+        }
+
     }
 }
