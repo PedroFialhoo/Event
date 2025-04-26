@@ -11,9 +11,9 @@ obj/
 *.exe
 *.pdb
 *.cache
-*.json
+#*.json
 *.dtbcache.json
-*.Designer.cs
+#*.Designer.cs
 
 # Outros temporários
 *.dbmdl
