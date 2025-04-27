@@ -28,18 +28,6 @@ namespace Acelera.Views
             telaCadastro.FormClosed += (s, args) => this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (txtSenha.UseSystemPasswordChar == true)
-            {
-                txtSenha.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtSenha.UseSystemPasswordChar = true;
-            }
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             string email = txtEmail.Text.Trim();
@@ -64,22 +52,34 @@ namespace Acelera.Views
                 int idUsuarioLogado = login.Id;
                 var perfil = ColaboradorRepository.ObterColaboradorPorId(login.Id);
 
-                /* if (perfil == null)
+                 if (perfil == null)
                  {
-                     // Não existe perfil, abre a tela de criação
-                     TelaCriarPerfil criarPerfil = new TelaCriarPerfil();
+                      //Não existe perfil, abre a tela de criação
+                     TelaCriarPerfilColaborador criarPerfil = new TelaCriarPerfilColaborador();
                      criarPerfil.Show(); // criar tela perfil de colaborador
                  }
                  else
                  {
                      TelaCriarEvento telaCriarEvento = new TelaCriarEvento();
                     telaCriarEvento.Show();
-                 }*/
+                 }
             }
             else
             {
                 // Se o login falhar
                 MessageBox.Show("Email ou senha inválidos.");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.UseSystemPasswordChar == true)
+            {
+                txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtSenha.UseSystemPasswordChar = true;
             }
         }
 
@@ -104,4 +104,5 @@ namespace Acelera.Views
             telaLogin.Show();
         }
     }
-}
+ }
+

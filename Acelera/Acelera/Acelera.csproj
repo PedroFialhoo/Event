@@ -87,6 +87,12 @@
     <Compile Include="Views\TelaCadastro.Designer.cs">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaCriarPerfilColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaCriarPerfilColaborador.Designer.cs">
+      <DependentUpon>TelaCriarPerfilColaborador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaEsquceuSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     </Compile>
     <Compile Include="Views\TelaPerfil.Designer.cs">
       <DependentUpon>TelaPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TelaPerfilColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaPerfilColaborador.Designer.cs">
+      <DependentUpon>TelaPerfilColaborador.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\TelaPrincipal.cs">
       <SubType>Form</SubType>
