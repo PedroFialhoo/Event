@@ -53,7 +53,6 @@
     <Compile Include="Controllers\EventosController.cs" />
     <Compile Include="Controllers\FecharJanelas.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
-    <Compile Include="Controllers\VerificarCampos.cs" />
     <Compile Include="Exceptions\EventoNaoEncontradoException.cs" />
     <Compile Include="Models\Colaborador.cs" />
     <Compile Include="Models\Eventos.cs" />
@@ -144,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaCriarPerfil.resx">
       <DependentUpon>TelaCriarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaCriarPerfilColaborador.resx">
+      <DependentUpon>TelaCriarPerfilColaborador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaEsquceuSenha.resx">
       <DependentUpon>TelaEsquceuSenha.cs</DependentUpon>
@@ -236,6 +238,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaCriarEvento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarPerfilColaborador.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

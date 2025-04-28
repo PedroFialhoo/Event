@@ -39,11 +39,8 @@ namespace Acelera.Views
                 return;
             }
 
-            if (!VerificarCampos.VerificarCampoEmail(email))
-            {
-                MessageBox.Show("E-mail inválido! Digite um e-mail correto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            EmailController emailController = new EmailController();
+            emailController.ValidarEmail(email);
 
             Login login = LoginColaboradorRepository.Autenticar(email, senha);
 
