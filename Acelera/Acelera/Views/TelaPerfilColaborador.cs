@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera.Models;
 
 namespace Acelera.Views
 {
     public partial class TelaPerfilColaborador : Form
     {
-        public TelaPerfilColaborador()
+        private Colaborador colaborador;
+        public TelaPerfilColaborador(Colaborador colaboradorLogado)
         {
             InitializeComponent();
+            colaborador = colaboradorLogado;
         }
     }
 }

@@ -46,23 +46,17 @@ namespace Acelera.Forms
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
             string repeteSenha = txtRepeteSenha.Text;
+            EmailController emailController = new EmailController();
+            PasswordController passwordController = new PasswordController();
 
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(senha) || string.IsNullOrWhiteSpace(repeteSenha))
             {
                 MessageBox.Show("Por favor, preencha todos os campos antes de continuar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            if (!VerificarCampos.VerificarCampoEmail(email))
-            {
-                MessageBox.Show("E-mail inválido! Digite um e-mail correto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (!VerificarCampos.VerificarCampoSenha(senha))
-            {
-                MessageBox.Show("A senha deve conter no mínimo 6 dígitos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            emailController.ValidarEmail(email);
+            passwordController.VerificarSenha(senha);
+            
             if (senha != repeteSenha)
             {
                 MessageBox.Show("As senhas devem coincidir", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
