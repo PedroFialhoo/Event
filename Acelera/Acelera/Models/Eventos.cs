@@ -15,7 +15,7 @@ namespace Acelera.Models
         public string Tipo { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
-        public string Data { get; set; }// ver o type date.time, as vzs é melhor que string
+        public DateTime Data { get; set; }
         public string Local {  get; set; }
         public string Colaborador { get; set; }
         public Image Imagem { get; set; }

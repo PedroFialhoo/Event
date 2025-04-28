@@ -50,9 +50,11 @@
     <Compile Include="Controllers\DocumentController.cs" />
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\EmailRecuperacao.cs" />
+    <Compile Include="Controllers\EventosController.cs" />
     <Compile Include="Controllers\FecharJanelas.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\VerificarCampos.cs" />
+    <Compile Include="Exceptions\EventoNaoEncontradoException.cs" />
     <Compile Include="Models\Colaborador.cs" />
     <Compile Include="Models\Eventos.cs" />
     <Compile Include="Models\Login.cs" />
