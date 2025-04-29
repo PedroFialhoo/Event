@@ -76,3 +76,8 @@ C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaCadastroColab
 C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaCriarEvento.resources
 C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaCriarPerfilColaborador.resources
 C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaPerfilColaborador.resources
+C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaCadastroColaborador.resources
+C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaCriarEvento.resources
+C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaCriarPerfilColaborador.resources
+C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaLoginColaborador.resources
+C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaPerfilColaborador.resources

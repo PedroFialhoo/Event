@@ -29,6 +29,10 @@ namespace Acelera.Repositories
         {
             return eventos.Where(e => e.Estado.Equals(estado, StringComparison.OrdinalIgnoreCase)).ToList();
         }
+        public static List<Eventos> ObterEventosPorColaborador(string colaborador)
+        {
+            return eventos.Where(e => e.Colaborador.Equals(colaborador, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
 
         public static bool RemoverEvento(int id)
         {
