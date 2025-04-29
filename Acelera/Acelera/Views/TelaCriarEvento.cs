@@ -18,12 +18,50 @@ namespace Acelera.Views
         {
             InitializeComponent();
         }
-
         private void button2_Click(object sender, EventArgs e)
+
         {
-            int? idUsuarioLogado = LoginRepository.GetUsuarioLogadoId();
+        if (string.IsNullOrWhiteSpace(txtNome.Text) ||
+            string.IsNullOrWhiteSpace(txtDescricao.Text) ||
+            string.IsNullOrEmpty(cbTipo.Text) ||
+            string.IsNullOrEmpty(txtCidade.Text) ||
+            string.IsNullOrEmpty(txtEstado.Text) ||
+            string.IsNullOrEmpty(txtCep.Text) ||
+            string.IsNullOrEmpty(txtData.Text) ||
+            string.IsNullOrEmpty(txtHorario.Text) ||
+            string.IsNullOrEmpty(txtLocal.Text))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos antes de continuar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int? idUsuarioLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
+            if (idUsuarioLogado == null)
+            {
+                MessageBox.Show("Usuário não está logado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            DateTime dataEvento;
+            if (!DateTime.TryParse(txtData.Text, out dataEvento))
+            {
+                MessageBox.Show("Data inválida. Use o formato dd/MM/yyyy.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             string colaborador = ColaboradorRepository.ObterNomeColaboradorPorId(idUsuarioLogado.Value);
+
+            string mensagem = $"ID: {idUsuarioLogado}\n" +
+                              $"Nome: {txtNome.Text}\n" +
+                              $"Descrição: {txtDescricao.Text}\n" +
+                              $"Tipo: {cbTipo.Text}\n" +
+                              $"Cidade: {txtCidade.Text}\n" +
+                              $"Estado: {txtEstado.Text}\n" +
+                              $"Data: {txtData.Text}\n" +
+                              $"Local: {txtLocal.Text}\n" +
+                              $"Colaborador: {colaborador}";
+
+            //MessageBox.Show(mensagem, "Informações do Evento");
 
             Eventos evento = new Eventos
             {
@@ -33,21 +71,22 @@ namespace Acelera.Views
                 Tipo = cbTipo.Text,
                 Cidade = txtCidade.Text,
                 Estado = txtEstado.Text,
-                Data = DateTime.Parse(txtData.Text),
+                Data = dataEvento,
                 Local = txtLocal.Text,
                 Colaborador = colaborador,
-                Imagem = pictureEvento.Image,
+                Imagem = pictureEvento.Image
             };
 
             bool sucesso = EventoRepository.CadastrarEvento(evento);
+            
+
+            MessageBox.Show(sucesso ? "Evento criado com sucesso!" : "Evento já cadastrado.");
 
             if (sucesso)
             {
-                MessageBox.Show("Evento criado com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Evento já cadastrado.");
+                Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idUsuarioLogado.Value);
+                TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
+                telaPerfil.Show();
             }
         }
 

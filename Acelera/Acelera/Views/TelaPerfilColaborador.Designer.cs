@@ -33,6 +33,7 @@
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblNomeEmpresa = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.flowPanelEventos = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,6 +94,14 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // flowPanelEventos
+            // 
+            this.flowPanelEventos.AutoScroll = true;
+            this.flowPanelEventos.Location = new System.Drawing.Point(0, 662);
+            this.flowPanelEventos.Name = "flowPanelEventos";
+            this.flowPanelEventos.Size = new System.Drawing.Size(1912, 382);
+            this.flowPanelEventos.TabIndex = 11;
+            // 
             // TelaPerfilColaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,6 +109,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfilColaborador;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.flowPanelEventos);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lblNomeEmpresa);
             this.Controls.Add(this.lblTelefone);
@@ -122,5 +132,6 @@
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Label lblNomeEmpresa;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.FlowLayoutPanel flowPanelEventos;
     }
 }

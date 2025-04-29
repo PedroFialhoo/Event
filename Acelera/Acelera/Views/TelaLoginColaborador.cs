@@ -46,7 +46,7 @@ namespace Acelera.Views
 
             if (login != null)
             {
-                int idUsuarioLogado = login.Id;
+                int? idUsuarioLogado = login.Id;
                 var perfil = ColaboradorRepository.ObterColaboradorPorId(login.Id);
 
                  if (perfil == null)
@@ -57,9 +57,10 @@ namespace Acelera.Views
                  }
                  else
                  {
-                     TelaCriarEvento telaCriarEvento = new TelaCriarEvento();
-                    telaCriarEvento.Show();
-                 }
+                    Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idUsuarioLogado.Value);
+                    TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
+                    telaPerfil.Show();
+                }
             }
             else
             {

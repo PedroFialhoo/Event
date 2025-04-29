@@ -1,34 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Fatec\\Acelera\\Event\\Acelera\\",
+  "WorkspaceRootPath": "C:\\Pedro\\Acelera\\Event\\Acelera\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\views\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telalogincolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telalogincolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\repositories\\colaboradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\repositories\\colaboradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telacriarperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\models\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\models\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\repositories\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\repositories\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,101 +54,148 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TelaPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
+              "Title": "TelaPrincipal.cs",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
               "RelativeDocumentMoniker": "Acelera\\Views\\TelaPrincipal.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaPrincipal.cs [Design]",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
+              "RelativeToolTip": "Acelera\\Views\\TelaPrincipal.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T01:12:47.542Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TelaPerfil.cs [Design]",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfil.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfil.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfil.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaPerfil.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T01:09:13.578Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TelaPerfilColaborador.cs [Design]",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfilColaborador.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaPerfilColaborador.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T16:47:09.661Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TelaPerfil.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfil.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfil.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfil.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaPerfil.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T16:47:30.028Z",
+              "WhenOpened": "2025-04-29T11:25:02.226Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TelaPerfilColaborador.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfilColaborador.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaPerfilColaborador.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCsAAAANAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "TelaCriarPerfilColaborador.cs",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfilColaborador.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarPerfilColaborador.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfilColaborador.cs",
+              "RelativeToolTip": "Acelera\\Views\\TelaCriarPerfilColaborador.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAIA6wC8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T16:47:25.595Z",
+              "WhenOpened": "2025-04-29T11:23:31.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TelaLoginColaborador.cs",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaLoginColaborador.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaLoginColaborador.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaLoginColaborador.cs",
+              "RelativeToolTip": "Acelera\\Views\\TelaLoginColaborador.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T11:23:04.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ColaboradorRepository.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\ColaboradorRepository.cs",
-              "RelativeDocumentMoniker": "Acelera\\Repositories\\ColaboradorRepository.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\ColaboradorRepository.cs",
-              "RelativeToolTip": "Acelera\\Repositories\\ColaboradorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "TelaCriarPerfil.cs",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfil.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarPerfil.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfil.cs",
+              "RelativeToolTip": "Acelera\\Views\\TelaCriarPerfil.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T16:42:48.964Z"
+              "WhenOpened": "2025-04-29T11:10:21.68Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Colaborador.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Models\\Colaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Models\\Colaborador.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Models\\Colaborador.cs",
-              "RelativeToolTip": "Acelera\\Models\\Colaborador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "TelaCriarEvento.cs",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarEvento.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
+              "RelativeToolTip": "Acelera\\Views\\TelaCriarEvento.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwFYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T16:42:23.131Z"
+              "WhenOpened": "2025-04-29T10:52:58.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelaCriarEvento.cs [Design]",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarEvento.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs [Design]",
+              "RelativeToolTip": "Acelera\\Views\\TelaCriarEvento.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:51:22.672Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ImageRepository.cs",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\ImageRepository.cs",
+              "RelativeDocumentMoniker": "Acelera\\Repositories\\ImageRepository.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\ImageRepository.cs",
+              "RelativeToolTip": "Acelera\\Repositories\\ImageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:46:52.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelaPerfilColaborador.cs",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfilColaborador.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
+              "RelativeToolTip": "Acelera\\Views\\TelaPerfilColaborador.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAADwv04AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:36:39.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Eventos.cs",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Models\\Eventos.cs",
+              "RelativeDocumentMoniker": "Acelera\\Models\\Eventos.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Models\\Eventos.cs",
+              "RelativeToolTip": "Acelera\\Models\\Eventos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:34:41.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EventoRepository.cs",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\EventoRepository.cs",
+              "RelativeDocumentMoniker": "Acelera\\Repositories\\EventoRepository.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\EventoRepository.cs",
+              "RelativeToolTip": "Acelera\\Repositories\\EventoRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:34:37.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TelaPerfilColaborador.cs [Design]",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfilColaborador.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs [Design]",
+              "RelativeToolTip": "Acelera\\Views\\TelaPerfilColaborador.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:20:15.844Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

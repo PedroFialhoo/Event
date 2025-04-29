@@ -30,8 +30,6 @@
         {
             this.pictureEvento = new System.Windows.Forms.PictureBox();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtData = new System.Windows.Forms.TextBox();
-            this.txtHorario = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtLocal = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.ComboBox();
@@ -40,6 +38,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtData = new System.Windows.Forms.MaskedTextBox();
+            this.txtHorario = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,6 +48,7 @@
             this.pictureEvento.Location = new System.Drawing.Point(28, 308);
             this.pictureEvento.Name = "pictureEvento";
             this.pictureEvento.Size = new System.Drawing.Size(383, 330);
+            this.pictureEvento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureEvento.TabIndex = 0;
             this.pictureEvento.TabStop = false;
             // 
@@ -60,26 +61,6 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(678, 31);
             this.txtNome.TabIndex = 1;
-            // 
-            // txtData
-            // 
-            this.txtData.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtData.Location = new System.Drawing.Point(531, 496);
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(678, 31);
-            this.txtData.TabIndex = 2;
-            // 
-            // txtHorario
-            // 
-            this.txtHorario.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtHorario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtHorario.Location = new System.Drawing.Point(531, 621);
-            this.txtHorario.Name = "txtHorario";
-            this.txtHorario.Size = new System.Drawing.Size(678, 31);
-            this.txtHorario.TabIndex = 3;
             // 
             // txtCidade
             // 
@@ -215,6 +196,30 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtData
+            // 
+            this.txtData.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtData.HidePromptOnLeave = true;
+            this.txtData.Location = new System.Drawing.Point(531, 483);
+            this.txtData.Mask = "00/00/0000";
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(160, 31);
+            this.txtData.TabIndex = 17;
+            // 
+            // txtHorario
+            // 
+            this.txtHorario.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtHorario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtHorario.HidePromptOnLeave = true;
+            this.txtHorario.Location = new System.Drawing.Point(531, 621);
+            this.txtHorario.Mask = "00:00";
+            this.txtHorario.Name = "txtHorario";
+            this.txtHorario.Size = new System.Drawing.Size(86, 31);
+            this.txtHorario.TabIndex = 18;
+            // 
             // TelaCriarEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,6 +227,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarEvento;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.txtHorario);
+            this.Controls.Add(this.txtData);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.button2);
@@ -230,8 +237,6 @@
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtLocal);
             this.Controls.Add(this.txtCidade);
-            this.Controls.Add(this.txtHorario);
-            this.Controls.Add(this.txtData);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.pictureEvento);
             this.Name = "TelaCriarEvento";
@@ -246,8 +251,6 @@
 
         private System.Windows.Forms.PictureBox pictureEvento;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtData;
-        private System.Windows.Forms.TextBox txtHorario;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtLocal;
         private System.Windows.Forms.ComboBox txtEstado;
@@ -256,5 +259,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MaskedTextBox txtData;
+        private System.Windows.Forms.MaskedTextBox txtHorario;
     }
 }
