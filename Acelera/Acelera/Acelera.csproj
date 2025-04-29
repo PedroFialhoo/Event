@@ -159,6 +159,9 @@
     <EmbeddedResource Include="Views\TelaPerfil.resx">
       <DependentUpon>TelaPerfil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaPerfilColaborador.resx">
+      <DependentUpon>TelaPerfilColaborador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +244,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaCriarPerfilColaborador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaPerfilColaborador.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

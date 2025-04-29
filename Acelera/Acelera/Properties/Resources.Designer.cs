@@ -183,6 +183,16 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaPerfilColaborador {
+            get {
+                object obj = ResourceManager.GetObject("TelaPerfilColaborador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaPrincipal {
             get {
                 object obj = ResourceManager.GetObject("TelaPrincipal", resourceCulture);

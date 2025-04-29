@@ -19,5 +19,29 @@ namespace Acelera.Views
             InitializeComponent();
             colaborador = colaboradorLogado;
         }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TelaCriarEvento telaCriarEvento = new TelaCriarEvento();
+            telaCriarEvento.Show();
+
+        }
+
+        private void TelaPerfilColaborador_Load(object sender, EventArgs e)
+        {
+            lblNome.Text = colaborador.Nome;
+            lblTelefone.Text = colaborador.Telefone;
+            lblNomeEmpresa.Text = colaborador.NomeEmpresa;
+
+            if (colaborador.Imagem != null)
+            {
+                picturePerfil.Image = colaborador.Imagem;
+            }
+        }
     }
 }

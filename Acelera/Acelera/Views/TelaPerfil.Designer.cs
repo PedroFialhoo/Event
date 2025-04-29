@@ -35,6 +35,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBoxPerfil = new System.Windows.Forms.PictureBox();
             this.lblCidade = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,11 +112,24 @@
             this.lblCidade.AutoSize = true;
             this.lblCidade.BackColor = System.Drawing.Color.Transparent;
             this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
-            this.lblCidade.Location = new System.Drawing.Point(440, 435);
+            this.lblCidade.Location = new System.Drawing.Point(445, 468);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(79, 29);
-            this.lblCidade.TabIndex = 9;
-            this.lblCidade.Text = "label4";
+            this.lblCidade.TabIndex = 10;
+            this.lblCidade.Text = "label1";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(1337, 18);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(343, 95);
+            this.button3.TabIndex = 11;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // TelaPerfil
             // 
@@ -123,6 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfil2;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.lblCidade);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lblTelefone);
@@ -152,5 +167,6 @@
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblCidade;
+        private System.Windows.Forms.Button button3;
     }
 }
