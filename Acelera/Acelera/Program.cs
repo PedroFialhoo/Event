@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera.Controllers;
 using Acelera.Forms;
 
 namespace Acelera
@@ -16,6 +17,7 @@ namespace Acelera
         static void Main()
         {
             Application.EnableVisualStyles();
+            CadastroAutomatico.Executar();
             Application.Run(new TelaLogin());
         }
     }
