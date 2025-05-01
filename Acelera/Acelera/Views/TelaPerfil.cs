@@ -59,5 +59,22 @@ namespace Acelera.Forms
         {
 
         }
+
+        private void menuOpções_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void menuItemDeslogar_Click(object sender, EventArgs e)
+        {
+            LoginRepository.Sair();
+            TelaLogin telaLogin = new TelaLogin();
+            telaLogin.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            menuOpcoes.Show(btnMenu, new Point(0, btnMenu.Height));
+        }
     }
 }

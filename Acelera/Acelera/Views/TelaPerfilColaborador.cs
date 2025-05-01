@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera.Forms;
 using Acelera.Models;
 using Acelera.Repositories;
 
@@ -96,6 +97,18 @@ namespace Acelera.Views
                 flowPanelEventos.Controls.Add(eventoPanel);
             }
 
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            menuOpcoes.Show(btnMenu, new Point(0, btnMenu.Height));
+        }
+
+        private void menuItemDeslogar_Click(object sender, EventArgs e)
+        {
+            LoginColaboradorRepository.Sair();
+            TelaLoginColaborador telaLogin = new TelaLoginColaborador();
+            telaLogin.Show();
         }
     }
 }
