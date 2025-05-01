@@ -15,6 +15,7 @@ namespace Acelera.Models
         public string Tipo { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
+        public string Horario { get; set; }
         public DateTime Data { get; set; }
         public string Local {  get; set; }
         public string Colaborador { get; set; }

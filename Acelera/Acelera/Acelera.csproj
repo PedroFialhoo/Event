@@ -101,6 +101,12 @@
     <Compile Include="Views\TelaEsquceuSenha.Designer.cs">
       <DependentUpon>TelaEsquceuSenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaExibirEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaExibirEvento.Designer.cs">
+      <DependentUpon>TelaExibirEvento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaEsquceuSenha.resx">
       <DependentUpon>TelaEsquceuSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaExibirEvento.resx">
+      <DependentUpon>TelaExibirEvento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
@@ -248,6 +257,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaPerfilColaborador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaExibirEvento.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

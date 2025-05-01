@@ -47,6 +47,8 @@ namespace Acelera.Controllers
                 Id = 0,
                 NomeEvento = "Primeiro Evento",
                 Colaborador = "Pedro Colaborador",
+                Descricao = "Descrição do evento"
+
             };
 
             EventoRepository.CadastrarEvento(eventos);

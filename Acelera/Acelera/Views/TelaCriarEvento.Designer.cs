@@ -40,6 +40,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtData = new System.Windows.Forms.MaskedTextBox();
             this.txtHorario = new System.Windows.Forms.MaskedTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -176,8 +177,10 @@
             this.txtDescricao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtDescricao.Location = new System.Drawing.Point(1372, 595);
+            this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(506, 31);
+            this.txtDescricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtDescricao.Size = new System.Drawing.Size(506, 425);
             this.txtDescricao.TabIndex = 15;
             // 
             // button1
@@ -220,6 +223,17 @@
             this.txtHorario.Size = new System.Drawing.Size(86, 31);
             this.txtHorario.TabIndex = 18;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1377, 560);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 32);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Descrição";
+            // 
             // TelaCriarEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,6 +241,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarEvento;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtHorario);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.button1);
@@ -261,5 +276,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MaskedTextBox txtData;
         private System.Windows.Forms.MaskedTextBox txtHorario;
+        private System.Windows.Forms.Label label1;
     }
 }

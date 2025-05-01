@@ -7,52 +7,28 @@
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\controllers\\cadastroautomatico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\views\\telaexibirevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaexibirevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\views\\telaexibirevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaexibirevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\models\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\models\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\views\\telalogincolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telalogincolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\views\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\views\\telacriarperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\views\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\models\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\models\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\repositories\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\repositories\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\fatec\\acelera\\event\\acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Fatec\\Acelera\\Event\\Acelera\\acelera\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,114 +50,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Program.cs",
-              "RelativeDocumentMoniker": "Acelera\\Program.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Program.cs",
-              "RelativeToolTip": "Acelera\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T22:35:22.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CadastroAutomatico.cs",
               "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Controllers\\CadastroAutomatico.cs",
               "RelativeDocumentMoniker": "Acelera\\Controllers\\CadastroAutomatico.cs",
               "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Controllers\\CadastroAutomatico.cs",
               "RelativeToolTip": "Acelera\\Controllers\\CadastroAutomatico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T22:35:06.713Z",
+              "WhenOpened": "2025-05-01T15:36:17.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TelaPrincipal.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPrincipal.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaPrincipal.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:25:02.226Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TelaCriarPerfilColaborador.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfilColaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarPerfilColaborador.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfilColaborador.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarPerfilColaborador.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAIA6wC8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:23:31.073Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TelaLoginColaborador.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaLoginColaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaLoginColaborador.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaLoginColaborador.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaLoginColaborador.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwDoAAAASAAAAAAAAAA==",
+              "Title": "Eventos.cs",
+              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Models\\Eventos.cs",
+              "RelativeDocumentMoniker": "Acelera\\Models\\Eventos.cs",
+              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Models\\Eventos.cs",
+              "RelativeToolTip": "Acelera\\Models\\Eventos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:23:04.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TelaCriarPerfil.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfil.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarPerfil.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfil.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarPerfil.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:10:21.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TelaCriarEvento.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarEvento.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarEvento.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAIwFYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:52:58.354Z",
+              "WhenOpened": "2025-05-01T15:32:52.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TelaCriarEvento.cs [Design]",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarEvento.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarEvento.cs [Design]",
+              "Title": "TelaExibirEvento.cs",
+              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaExibirEvento.cs",
+              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs",
+              "RelativeToolTip": "Acelera\\Views\\TelaExibirEvento.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwCAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:51:22.672Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ImageRepository.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\ImageRepository.cs",
-              "RelativeDocumentMoniker": "Acelera\\Repositories\\ImageRepository.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\ImageRepository.cs",
-              "RelativeToolTip": "Acelera\\Repositories\\ImageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:46:52.924Z"
+              "WhenOpened": "2025-05-01T15:30:39.346Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -191,44 +95,46 @@
               "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfilColaborador.cs",
               "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
               "RelativeToolTip": "Acelera\\Views\\TelaPerfilColaborador.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAADwv04AAABNAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAnwFEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:36:39.945Z"
+              "WhenOpened": "2025-05-01T15:28:56.368Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Eventos.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Models\\Eventos.cs",
-              "RelativeDocumentMoniker": "Acelera\\Models\\Eventos.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Models\\Eventos.cs",
-              "RelativeToolTip": "Acelera\\Models\\Eventos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:34:41.248Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EventoRepository.cs",
-              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\EventoRepository.cs",
-              "RelativeDocumentMoniker": "Acelera\\Repositories\\EventoRepository.cs",
-              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\EventoRepository.cs",
-              "RelativeToolTip": "Acelera\\Repositories\\EventoRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAABsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:34:37.705Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "TelaPerfilColaborador.cs [Design]",
               "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
               "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfilColaborador.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs [Design]",
+              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs [Design]",
+              "RelativeToolTip": "Acelera\\Views\\TelaPerfilColaborador.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:20:15.844Z"
+              "WhenOpened": "2025-05-01T15:28:43.662Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TelaCriarEvento.cs [Design]",
+              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarEvento.cs",
+              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs [Design]",
+              "RelativeToolTip": "Acelera\\Views\\TelaCriarEvento.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T15:25:39.553Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelaExibirEvento.cs [Design]",
+              "DocumentMoniker": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaExibirEvento.cs",
+              "ToolTip": "C:\\Fatec\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs [Design]",
+              "RelativeToolTip": "Acelera\\Views\\TelaExibirEvento.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T15:16:00.034Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
