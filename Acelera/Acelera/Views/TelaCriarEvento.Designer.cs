@@ -156,6 +156,7 @@
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(213, 31);
             this.txtCep.TabIndex = 9;
+            this.txtCep.Leave += new System.EventHandler(this.txtCep_Leave);
             // 
             // button2
             // 
