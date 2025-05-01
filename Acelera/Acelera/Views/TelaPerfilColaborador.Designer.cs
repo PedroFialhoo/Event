@@ -28,13 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.picturePerfil = new System.Windows.Forms.PictureBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblNomeEmpresa = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.flowPanelEventos = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.menuOpcoes = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuItemDeslogar = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemEditar = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
+            this.menuOpcoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // picturePerfil
@@ -102,6 +108,41 @@
             this.flowPanelEventos.Size = new System.Drawing.Size(1912, 382);
             this.flowPanelEventos.TabIndex = 11;
             // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(12, 39);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(79, 50);
+            this.btnMenu.TabIndex = 12;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // menuOpcoes
+            // 
+            this.menuOpcoes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemDeslogar,
+            this.menuItemEditar});
+            this.menuOpcoes.Name = "menuOpcoes";
+            this.menuOpcoes.Size = new System.Drawing.Size(181, 70);
+            // 
+            // menuItemDeslogar
+            // 
+            this.menuItemDeslogar.Name = "menuItemDeslogar";
+            this.menuItemDeslogar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemDeslogar.Text = "Sair da Conta";
+            this.menuItemDeslogar.Click += new System.EventHandler(this.menuItemDeslogar_Click_1);
+            // 
+            // menuItemEditar
+            // 
+            this.menuItemEditar.Name = "menuItemEditar";
+            this.menuItemEditar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemEditar.Text = "Editar Perfil";
+            // 
             // TelaPerfilColaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,6 +150,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfilColaborador;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.flowPanelEventos);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lblNomeEmpresa);
@@ -120,6 +162,7 @@
             this.Text = "Event";
             this.Load += new System.EventHandler(this.TelaPerfilColaborador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
+            this.menuOpcoes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,5 +176,9 @@
         private System.Windows.Forms.Label lblNomeEmpresa;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.FlowLayoutPanel flowPanelEventos;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.ContextMenuStrip menuOpcoes;
+        private System.Windows.Forms.ToolStripMenuItem menuItemDeslogar;
+        private System.Windows.Forms.ToolStripMenuItem menuItemEditar;
     }
 }

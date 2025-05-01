@@ -97,5 +97,19 @@ namespace Acelera.Views
             }
 
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+
+            menuOpcoes.Show(btnMenu, new Point(0, btnMenu.Height));
+        }
+               
+
+        private void menuItemDeslogar_Click_1(object sender, EventArgs e)
+        {
+            LoginColaboradorRepository.Sair();
+            TelaLoginColaborador telaLogin = new TelaLoginColaborador();
+            telaLogin.Show();
+        }
     }
 }
