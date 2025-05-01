@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,8 +57,10 @@
     <Compile Include="Controllers\EventosController.cs" />
     <Compile Include="Controllers\FecharJanelas.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
+    <Compile Include="Controllers\ViaCepService.cs" />
     <Compile Include="Exceptions\EventoNaoEncontradoException.cs" />
     <Compile Include="Models\Colaborador.cs" />
+    <Compile Include="Models\Endereço.cs" />
     <Compile Include="Models\Eventos.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Usuario.cs" />
@@ -180,6 +185,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
