@@ -73,6 +73,7 @@ namespace Acelera.Views
                 Tipo = cbTipo.Text,
                 Cidade = txtCidade.Text,
                 Estado = txtEstado.Text,
+                Horario = txtHorario.Text,
                 Data = dataEvento,
                 Local = txtLocal.Text,
                 Colaborador = colaborador,
