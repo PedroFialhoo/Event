@@ -81,3 +81,4 @@ C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaCriarEvento.r
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaCriarPerfilColaborador.resources
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaLoginColaborador.resources
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaPerfilColaborador.resources
+C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaExibirEvento.resources

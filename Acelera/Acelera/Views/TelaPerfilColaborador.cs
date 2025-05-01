@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -70,6 +71,18 @@ namespace Acelera.Views
                 {
                     pictureBox.Image = Properties.Resources.cara; 
                 }
+
+                pictureBox.Tag = evento;
+                pictureBox.Cursor = Cursors.Hand; // mostra a "mão" ao passar o mouse
+
+                // Adiciona o evento de clique
+                pictureBox.Click += (s, args) =>
+                {
+                    var pic = s as PictureBox;
+                    var eventoSelecionado = pic.Tag as Eventos;
+                    TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
+                    tela.Show();
+                };
 
 
                 Label nomeLabel = new Label();
