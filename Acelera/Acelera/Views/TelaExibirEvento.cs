@@ -23,7 +23,8 @@ namespace Acelera.Views
         private void TelaExibirEvento_Load(object sender, EventArgs e)
         {
             lblNome.Text = evento.NomeEvento;
-            lblLocal.Text = evento.Local;
+            lblRua.Text = evento.Rua;
+            lblNumero.Text = evento.Numero;
             lblHorario.Text = evento.Horario;
             lblEstado.Text = evento.Estado;
             lblCidade.Text = evento.Cidade;

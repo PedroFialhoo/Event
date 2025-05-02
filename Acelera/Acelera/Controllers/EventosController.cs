@@ -15,7 +15,8 @@ namespace Acelera.Controllers
                    !string.IsNullOrEmpty(evento.Tipo) &&
                    !string.IsNullOrEmpty(evento.Cidade) &&
                    evento.Data > DateTime.Now && // NOVA VALIDAÇÃO: Data deve ser no futuro
-                   !string.IsNullOrEmpty(evento.Local) &&
+                   !string.IsNullOrEmpty(evento.Rua) &&
+                   !string.IsNullOrEmpty(evento.Numero) &&
                    !string.IsNullOrEmpty(evento.Colaborador);
         }
         public bool CadastrarEvento(Eventos novoEvento)

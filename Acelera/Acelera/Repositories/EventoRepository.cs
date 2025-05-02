@@ -68,8 +68,10 @@ namespace Acelera.Repositories
                 if (eventoAtualizado.Data != default(DateTime))
                     eventoExistente.Data = eventoAtualizado.Data;
 
-                if (!string.IsNullOrEmpty(eventoAtualizado.Local))
-                    eventoExistente.Local = eventoAtualizado.Local;
+                if (!string.IsNullOrEmpty(eventoAtualizado.Rua))
+                    eventoExistente.Rua = eventoAtualizado.Rua;
+                if (!string.IsNullOrEmpty(eventoAtualizado.Numero))
+                    eventoExistente.Numero = eventoAtualizado.Numero;
 
                 if (!string.IsNullOrEmpty(eventoAtualizado.Colaborador))
                     eventoExistente.Colaborador = eventoAtualizado.Colaborador;
