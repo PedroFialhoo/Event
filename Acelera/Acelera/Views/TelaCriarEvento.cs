@@ -31,7 +31,7 @@ namespace Acelera.Views
             string.IsNullOrEmpty(txtCep.Text) ||
             string.IsNullOrEmpty(txtData.Text) ||
             string.IsNullOrEmpty(txtHorario.Text) ||
-            string.IsNullOrEmpty(txtLocal.Text))
+            string.IsNullOrEmpty(txtRua.Text))
             {
                 MessageBox.Show("Por favor, preencha todos os campos antes de continuar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -60,7 +60,7 @@ namespace Acelera.Views
                               $"Cidade: {txtCidade.Text}\n" +
                               $"Estado: {txtEstado.Text}\n" +
                               $"Data: {txtData.Text}\n" +
-                              $"Local: {txtLocal.Text}\n" +
+                              $"Local: {txtRua.Text}\n" +
                               $"Colaborador: {colaborador}";
 
             //MessageBox.Show(mensagem, "Informações do Evento");
@@ -75,7 +75,8 @@ namespace Acelera.Views
                 Estado = txtEstado.Text,
                 Horario = txtHorario.Text,
                 Data = dataEvento,
-                Local = txtLocal.Text,
+                Rua = txtRua.Text,
+                Numero = txtNumero.Text,
                 Colaborador = colaborador,
                 Imagem = pictureEvento.Image
             };
@@ -130,6 +131,7 @@ namespace Acelera.Views
                         {
                             txtCidade.Text = endereco.localidade;
                             txtEstado.Text = endereco.uf;
+                            txtRua.Text = endereco.logradouro;
                         }
                         else
                         {
@@ -142,6 +144,16 @@ namespace Acelera.Views
                     MessageBox.Show("Erro ao consultar o CEP: " + ex.Message);
                 }
             }
+        }
+
+        private void txtLocal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescricao_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

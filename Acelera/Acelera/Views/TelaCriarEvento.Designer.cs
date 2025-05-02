@@ -31,7 +31,7 @@
             this.pictureEvento = new System.Windows.Forms.PictureBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
-            this.txtLocal = new System.Windows.Forms.TextBox();
+            this.txtRua = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.ComboBox();
             this.cbTipo = new System.Windows.Forms.ComboBox();
             this.txtCep = new System.Windows.Forms.MaskedTextBox();
@@ -40,7 +40,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtData = new System.Windows.Forms.MaskedTextBox();
             this.txtHorario = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,9 +58,9 @@
             this.txtNome.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtNome.Location = new System.Drawing.Point(531, 342);
+            this.txtNome.Location = new System.Drawing.Point(519, 216);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(678, 31);
+            this.txtNome.Size = new System.Drawing.Size(535, 31);
             this.txtNome.TabIndex = 1;
             // 
             // txtCidade
@@ -68,20 +68,21 @@
             this.txtCidade.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtCidade.Location = new System.Drawing.Point(531, 863);
+            this.txtCidade.Location = new System.Drawing.Point(519, 484);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(678, 31);
+            this.txtCidade.Size = new System.Drawing.Size(506, 31);
             this.txtCidade.TabIndex = 4;
             // 
-            // txtLocal
+            // txtRua
             // 
-            this.txtLocal.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtLocal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtLocal.Location = new System.Drawing.Point(1372, 342);
-            this.txtLocal.Name = "txtLocal";
-            this.txtLocal.Size = new System.Drawing.Size(506, 31);
-            this.txtLocal.TabIndex = 5;
+            this.txtRua.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtRua.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtRua.Location = new System.Drawing.Point(519, 623);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(506, 31);
+            this.txtRua.TabIndex = 5;
+            this.txtRua.TextChanged += new System.EventHandler(this.txtLocal_TextChanged);
             // 
             // txtEstado
             // 
@@ -119,9 +120,9 @@
             "São Paulo - SP",
             "Sergipe - SE",
             "Tocantins - TO"});
-            this.txtEstado.Location = new System.Drawing.Point(531, 981);
+            this.txtEstado.Location = new System.Drawing.Point(1114, 484);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(452, 39);
+            this.txtEstado.Size = new System.Drawing.Size(428, 39);
             this.txtEstado.TabIndex = 6;
             // 
             // cbTipo
@@ -140,7 +141,7 @@
             "Esportes",
             "Música ",
             "Outros"});
-            this.cbTipo.Location = new System.Drawing.Point(1372, 493);
+            this.cbTipo.Location = new System.Drawing.Point(1123, 213);
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(452, 39);
             this.cbTipo.TabIndex = 7;
@@ -151,7 +152,7 @@
             this.txtCep.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtCep.HidePromptOnLeave = true;
-            this.txtCep.Location = new System.Drawing.Point(531, 739);
+            this.txtCep.Location = new System.Drawing.Point(1501, 342);
             this.txtCep.Mask = "00000-000";
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(213, 31);
@@ -165,9 +166,9 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(125, 785);
+            this.button2.Location = new System.Drawing.Point(38, 708);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(181, 71);
+            this.button2.Size = new System.Drawing.Size(204, 51);
             this.button2.TabIndex = 14;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -177,12 +178,13 @@
             this.txtDescricao.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtDescricao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtDescricao.Location = new System.Drawing.Point(1372, 595);
+            this.txtDescricao.Location = new System.Drawing.Point(519, 755);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDescricao.Size = new System.Drawing.Size(506, 425);
+            this.txtDescricao.Size = new System.Drawing.Size(1211, 274);
             this.txtDescricao.TabIndex = 15;
+            this.txtDescricao.TextChanged += new System.EventHandler(this.txtDescricao_TextChanged);
             // 
             // button1
             // 
@@ -206,7 +208,7 @@
             this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtData.HidePromptOnLeave = true;
-            this.txtData.Location = new System.Drawing.Point(531, 483);
+            this.txtData.Location = new System.Drawing.Point(1123, 342);
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(160, 31);
@@ -218,31 +220,30 @@
             this.txtHorario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtHorario.HidePromptOnLeave = true;
-            this.txtHorario.Location = new System.Drawing.Point(531, 621);
+            this.txtHorario.Location = new System.Drawing.Point(519, 342);
             this.txtHorario.Mask = "00:00";
             this.txtHorario.Name = "txtHorario";
             this.txtHorario.Size = new System.Drawing.Size(86, 31);
             this.txtHorario.TabIndex = 18;
             // 
-            // label1
+            // txtNumero
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1377, 560);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 32);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Descrição";
+            this.txtNumero.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNumero.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtNumero.Location = new System.Drawing.Point(1114, 623);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(142, 31);
+            this.txtNumero.TabIndex = 19;
             // 
             // TelaCriarEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarEvento;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarEvento2;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.txtHorario);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.button1);
@@ -251,7 +252,7 @@
             this.Controls.Add(this.txtCep);
             this.Controls.Add(this.cbTipo);
             this.Controls.Add(this.txtEstado);
-            this.Controls.Add(this.txtLocal);
+            this.Controls.Add(this.txtRua);
             this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.pictureEvento);
@@ -268,7 +269,7 @@
         private System.Windows.Forms.PictureBox pictureEvento;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtCidade;
-        private System.Windows.Forms.TextBox txtLocal;
+        private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.ComboBox txtEstado;
         private System.Windows.Forms.ComboBox cbTipo;
         private System.Windows.Forms.MaskedTextBox txtCep;
@@ -277,6 +278,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MaskedTextBox txtData;
         private System.Windows.Forms.MaskedTextBox txtHorario;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtNumero;
     }
 }

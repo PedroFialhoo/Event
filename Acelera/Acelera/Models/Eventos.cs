@@ -17,7 +17,8 @@ namespace Acelera.Models
         public string Estado { get; set; }
         public string Horario { get; set; }
         public DateTime Data { get; set; }
-        public string Local {  get; set; }
+        public string Rua {  get; set; }
+        public string Numero { get; set; }
         public string Colaborador { get; set; }
         public Image Imagem { get; set; }
 

@@ -33,7 +33,6 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.lblEstado = new System.Windows.Forms.Label();
             this.lblTelefone = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.pictureBoxPerfil = new System.Windows.Forms.PictureBox();
             this.lblCidade = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -93,16 +92,6 @@
             this.lblTelefone.TabIndex = 7;
             this.lblTelefone.Text = "label1";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(221, 178);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(255, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "sair da conta";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // pictureBoxPerfil
             // 
             this.pictureBoxPerfil.Location = new System.Drawing.Point(50, 217);
@@ -131,9 +120,9 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(1337, 18);
+            this.button3.Location = new System.Drawing.Point(1337, 24);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(343, 95);
+            this.button3.Size = new System.Drawing.Size(343, 74);
             this.button3.TabIndex = 11;
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -162,14 +151,14 @@
             // menuItemDeslogar
             // 
             this.menuItemDeslogar.Name = "menuItemDeslogar";
-            this.menuItemDeslogar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemDeslogar.Size = new System.Drawing.Size(144, 22);
             this.menuItemDeslogar.Text = "Sair da Conta";
             this.menuItemDeslogar.Click += new System.EventHandler(this.menuItemDeslogar_Click);
             // 
             // menuItemEditar
             // 
             this.menuItemEditar.Name = "menuItemEditar";
-            this.menuItemEditar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemEditar.Size = new System.Drawing.Size(144, 22);
             this.menuItemEditar.Text = "Editar Perfil";
             // 
             // TelaPerfil
@@ -181,7 +170,6 @@
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.lblCidade);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.lblTelefone);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.lblNome);
@@ -208,7 +196,6 @@
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.Label lblTelefone;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblCidade;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnMenu;

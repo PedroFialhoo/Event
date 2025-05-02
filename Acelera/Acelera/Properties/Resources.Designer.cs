@@ -113,6 +113,26 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaCriarEvento1 {
+            get {
+                object obj = ResourceManager.GetObject("TelaCriarEvento1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaCriarEvento2 {
+            get {
+                object obj = ResourceManager.GetObject("TelaCriarEvento2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaCriarPerfil {
             get {
                 object obj = ResourceManager.GetObject("TelaCriarPerfil", resourceCulture);
@@ -146,6 +166,16 @@ namespace Acelera.Properties {
         internal static System.Drawing.Bitmap TelaExibirEvento {
             get {
                 object obj = ResourceManager.GetObject("TelaExibirEvento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaExibirEvento1 {
+            get {
+                object obj = ResourceManager.GetObject("TelaExibirEvento1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
