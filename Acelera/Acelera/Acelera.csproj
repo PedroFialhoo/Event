@@ -100,6 +100,24 @@
     <Compile Include="Views\TelaCriarPerfilColaborador.Designer.cs">
       <DependentUpon>TelaCriarPerfilColaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaEditarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaEditarEvento.Designer.cs">
+      <DependentUpon>TelaEditarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TelaEditarPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaEditarPerfil.Designer.cs">
+      <DependentUpon>TelaEditarPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TelaEditarPerfilColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaEditarPerfilColaborador.Designer.cs">
+      <DependentUpon>TelaEditarPerfilColaborador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaEsquceuSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +176,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaCriarPerfilColaborador.resx">
       <DependentUpon>TelaCriarPerfilColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaEditarEvento.resx">
+      <DependentUpon>TelaEditarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaEditarPerfil.resx">
+      <DependentUpon>TelaEditarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaEditarPerfilColaborador.resx">
+      <DependentUpon>TelaEditarPerfilColaborador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaEsquceuSenha.resx">
       <DependentUpon>TelaEsquceuSenha.cs</DependentUpon>
@@ -275,6 +302,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaCriarEvento2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarPerfil3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarPerfil4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarPerfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarPerfilColaborador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarEvento.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

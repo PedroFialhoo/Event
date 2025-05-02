@@ -142,6 +142,7 @@
             this.menuItemEditar.Name = "menuItemEditar";
             this.menuItemEditar.Size = new System.Drawing.Size(180, 22);
             this.menuItemEditar.Text = "Editar Perfil";
+            this.menuItemEditar.Click += new System.EventHandler(this.menuItemEditar_Click);
             // 
             // TelaPerfilColaborador
             // 

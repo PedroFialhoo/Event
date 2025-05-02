@@ -146,20 +146,21 @@
             this.menuItemDeslogar,
             this.menuItemEditar});
             this.menuOpcoes.Name = "menuOpcoes";
-            this.menuOpcoes.Size = new System.Drawing.Size(145, 48);
+            this.menuOpcoes.Size = new System.Drawing.Size(181, 70);
             // 
             // menuItemDeslogar
             // 
             this.menuItemDeslogar.Name = "menuItemDeslogar";
-            this.menuItemDeslogar.Size = new System.Drawing.Size(144, 22);
+            this.menuItemDeslogar.Size = new System.Drawing.Size(180, 22);
             this.menuItemDeslogar.Text = "Sair da Conta";
             this.menuItemDeslogar.Click += new System.EventHandler(this.menuItemDeslogar_Click);
             // 
             // menuItemEditar
             // 
             this.menuItemEditar.Name = "menuItemEditar";
-            this.menuItemEditar.Size = new System.Drawing.Size(144, 22);
+            this.menuItemEditar.Size = new System.Drawing.Size(180, 22);
             this.menuItemEditar.Text = "Editar Perfil";
+            this.menuItemEditar.Click += new System.EventHandler(this.menuItemEditar_Click);
             // 
             // TelaPerfil
             // 

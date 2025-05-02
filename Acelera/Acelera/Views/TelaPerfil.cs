@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera.Models;
 using Acelera.Repositories;
+using Acelera.Views;
 
 namespace Acelera.Forms
 {
@@ -71,6 +72,14 @@ namespace Acelera.Forms
         private void btnMenu_Click_1(object sender, EventArgs e)
         {
             menuOpcoes.Show(btnMenu, new Point(0, btnMenu.Height));
+        }
+
+        private void menuItemEditar_Click(object sender, EventArgs e)
+        {
+            int? idUsuarioLogado = LoginRepository.GetUsuarioLogadoId();
+            Usuario usuarioLogado = UsuarioRepository.ObterUsuarioPorId(idUsuarioLogado.Value);
+            TelaEditarPerfil telaEditarPerfil = new TelaEditarPerfil(usuarioLogado);
+            telaEditarPerfil.Show();
         }
     }
 }

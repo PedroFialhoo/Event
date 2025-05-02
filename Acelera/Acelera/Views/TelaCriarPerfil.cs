@@ -1,12 +1,14 @@
 ﻿using Acelera.ferramentas;
 using Acelera.Models;
 using Acelera.Repositories;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -61,7 +63,7 @@ namespace Acelera.Forms
             {
                 Id = idUsuarioLogado.Value, // Usa o ID do usuário logado
                 Nome = txtNome.Text,
-                Idade = int.Parse(txtIdade.Text),
+                Idade = txtIdade.Text,
                 Telefone = txtTelefone.Text,
                 Cpf = txtCPF.Text,
                 Cidade = txtCidade.Text,
@@ -81,6 +83,46 @@ namespace Acelera.Forms
             else
             {
                 MessageBox.Show("Já existe um perfil para esse usuário.");
+            }
+        }
+
+        private async void txtCep_Leave(object sender, EventArgs e)
+        {
+            string cep = txtCep.Text.Replace("-", "").Trim();
+
+            if (cep.Length != 8)
+            {
+                MessageBox.Show("CEP inválido. Deve conter 8 dígitos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    string url = $"https://viacep.com.br/ws/{cep}/json/";
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string json = await response.Content.ReadAsStringAsync();
+                        var endereco = JsonConvert.DeserializeObject<Endereco>(json);
+
+                        if (endereco != null && endereco.uf != null)
+                        {
+                            txtCidade.Text = endereco.localidade;
+                            txtEstado.Text = endereco.uf;
+                        }
+                        else
+                        {
+                            MessageBox.Show("CEP não encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao consultar o CEP: " + ex.Message);
+                }
             }
         }
     }

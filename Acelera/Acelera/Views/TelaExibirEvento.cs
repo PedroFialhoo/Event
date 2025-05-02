@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera.Forms;
 using Acelera.Models;
+using Acelera.Repositories;
 
 namespace Acelera.Views
 {
@@ -34,5 +36,65 @@ namespace Acelera.Views
             pictureEvento.Image = evento.Imagem;
 
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            menuOpcoes.Show(btnMenu, new Point(0, btnMenu.Height));
+        }
+
+        private void menuItemEditar_Click(object sender, EventArgs e)
+        {
+            int? idColaboradorLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
+            if (idColaboradorLogado == null)
+            {
+                MessageBox.Show("Apenas Colaboradores podem editar eventos");
+                return;
+            }
+
+            TelaEditarEvento telaEditarEvento = new TelaEditarEvento(evento);
+            telaEditarEvento.Show();
+        }
+
+        private void fecharEventoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int? idColaboradorLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
+
+            if (idColaboradorLogado != null)
+            {
+                Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idColaboradorLogado.Value);
+                if (colaboradorLogado != null)
+                {
+                    TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
+                    telaPerfil.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Perfil de colaborador não encontrado.");
+                }
+            }
+            else
+            {
+                int? idUsuarioLogado = LoginRepository.GetUsuarioLogadoId();
+
+                if (idUsuarioLogado != null)
+                {
+                    Usuario usuarioLogado = UsuarioRepository.ObterUsuarioPorId(idUsuarioLogado.Value);
+                    if (usuarioLogado != null)
+                    {
+                        TelaPerfil telaPerfil = new TelaPerfil(usuarioLogado);
+                        telaPerfil.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Perfil de usuário não encontrado.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum usuário está logado.");
+                }
+            }
+        }
+
     }
 }

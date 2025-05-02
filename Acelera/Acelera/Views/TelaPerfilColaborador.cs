@@ -111,5 +111,13 @@ namespace Acelera.Views
             TelaLoginColaborador telaLogin = new TelaLoginColaborador();
             telaLogin.Show();
         }
+
+        private void menuItemEditar_Click(object sender, EventArgs e)
+        {
+            int? idUsuarioLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
+            Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idUsuarioLogado.Value);
+            TelaEditarPerfilColaborador telaEditarPerfilColaborador = new TelaEditarPerfilColaborador(colaboradorLogado);
+            telaEditarPerfilColaborador.Show();
+        }
     }
 }

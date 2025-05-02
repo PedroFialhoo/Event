@@ -41,6 +41,7 @@
             this.txtData = new System.Windows.Forms.MaskedTextBox();
             this.txtHorario = new System.Windows.Forms.MaskedTextBox();
             this.txtNumero = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,7 +142,7 @@
             "Esportes",
             "Música ",
             "Outros"});
-            this.cbTipo.Location = new System.Drawing.Point(1123, 213);
+            this.cbTipo.Location = new System.Drawing.Point(1114, 213);
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(452, 39);
             this.cbTipo.TabIndex = 7;
@@ -208,7 +209,7 @@
             this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtData.HidePromptOnLeave = true;
-            this.txtData.Location = new System.Drawing.Point(1123, 342);
+            this.txtData.Location = new System.Drawing.Point(1114, 342);
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(160, 31);
@@ -236,6 +237,20 @@
             this.txtNumero.Size = new System.Drawing.Size(142, 31);
             this.txtNumero.TabIndex = 19;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(286, 706);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 55);
+            this.button3.TabIndex = 25;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // TelaCriarEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,6 +258,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarEvento2;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.txtHorario);
             this.Controls.Add(this.txtData);
@@ -279,5 +295,6 @@
         private System.Windows.Forms.MaskedTextBox txtData;
         private System.Windows.Forms.MaskedTextBox txtHorario;
         private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.Button button3;
     }
 }

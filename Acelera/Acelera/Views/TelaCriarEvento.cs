@@ -155,5 +155,28 @@ namespace Acelera.Views
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int? idUsuarioLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
+
+            if (idUsuarioLogado == null)
+            {
+                MessageBox.Show("Nenhum usuário está logado.");
+                return;
+            }
+
+            Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idUsuarioLogado.Value);
+
+            if (colaboradorLogado != null)
+            {
+                TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
+                telaPerfil.Show();
+            }
+            else
+            {
+                MessageBox.Show("Perfil não encontrado.");
+            }
+        }
     }
 }
