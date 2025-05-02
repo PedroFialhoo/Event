@@ -85,3 +85,6 @@ C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaExibirEvento.
 C:\Fatec\Acelera\Event\Acelera\Acelera\bin\Debug\Newtonsoft.Json.dll
 C:\Fatec\Acelera\Event\Acelera\Acelera\bin\Debug\Newtonsoft.Json.xml
 C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.csproj.Up2Date
+C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaEditarPerfil.resources
+C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaEditarPerfilColaborador.resources
+C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaEditarEvento.resources

@@ -132,19 +132,17 @@ namespace Acelera.Forms
 
                 if (perfil == null)
                 {
-                    // Não existe perfil, abre a tela de criação
                     TelaCriarPerfil criarPerfil = new TelaCriarPerfil();
                     criarPerfil.Show();
                 }
                 else
                 {
-                    TelaPerfil telaPerfil = new TelaPerfil(perfil);
-                    telaPerfil.Show();
+                    TelaPrincipal telaPrincipal = new TelaPrincipal();
+                    telaPrincipal.Show();
                 }
             }
             else
             {
-                // Se o login falhar
                 MessageBox.Show("Email ou senha inválidos.");
             }
 

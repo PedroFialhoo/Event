@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using Acelera.Models;
 
 namespace Acelera.Repositories
@@ -29,6 +31,48 @@ namespace Acelera.Repositories
         public static List<Usuario> ListarUsuarios()
         {
             return usuarios;
+        }
+        public static bool RemoverUsuario(int id)
+        {
+            var usuario = usuarios.FirstOrDefault(u => u.Id == id);
+            if (usuario != null)
+            {
+                usuarios.Remove(usuario);
+                return true;
+            }
+            return false;
+        }
+        public static bool AtualizarUsuario(int id, Usuario usuarioAtualizado)
+        {
+            var usuarioExistente = usuarios.FirstOrDefault(u => u.Id == id);
+
+            if (usuarioExistente != null)
+            {
+                if (!string.IsNullOrEmpty(usuarioAtualizado.Nome))
+                    usuarioExistente.Nome= usuarioAtualizado.Nome;
+
+                if (!string.IsNullOrEmpty(usuarioAtualizado.Idade))
+                    usuarioExistente.Idade = usuarioAtualizado.Idade;
+
+                if (!string.IsNullOrEmpty(usuarioAtualizado.Telefone))
+                    usuarioExistente.Telefone = usuarioAtualizado.Telefone;
+
+                if (!string.IsNullOrEmpty(usuarioAtualizado.Cpf))
+                    usuarioExistente.Cpf = usuarioAtualizado.Cpf;
+
+                if (!string.IsNullOrEmpty(usuarioAtualizado.Cidade))
+                    usuarioExistente.Cidade = usuarioAtualizado.Cidade;
+
+                if (!string.IsNullOrEmpty(usuarioAtualizado.Estado))
+                    usuarioExistente.Estado = usuarioAtualizado.Estado;
+
+                if (usuarioAtualizado.Imagem != null)
+                    usuarioExistente.Imagem = usuarioAtualizado.Imagem;
+
+                return true;
+            }
+
+            return false;
         }
     }
 }

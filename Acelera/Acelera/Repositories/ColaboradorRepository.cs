@@ -34,6 +34,43 @@ namespace Acelera.Repositories
             var colaborador = colaboradores.Find(c => c.Id == id);
             return colaborador != null ? colaborador.Nome : null;
         }
+        public static bool RemoverColaborador(int id)
+        {
+            var colaborador = colaboradores.FirstOrDefault(u => u.Id == id);
+            if (colaborador != null)
+            {
+                colaboradores.Remove(colaborador);
+                return true;
+            }
+            return false;
+        }
+        public static bool AtualizarColaborador(int id, Colaborador colaboradorAtualizado)
+        {
+            var colaboradorExistente = colaboradores.FirstOrDefault(u => u.Id == id);
 
+            if (colaboradorExistente != null)
+            {
+                if (!string.IsNullOrEmpty(colaboradorAtualizado.Nome))
+                    colaboradorExistente.Nome = colaboradorAtualizado.Nome;
+
+                if (!string.IsNullOrEmpty(colaboradorAtualizado.Telefone))
+                    colaboradorExistente.Telefone = colaboradorAtualizado.Telefone;
+
+                if (!string.IsNullOrEmpty(colaboradorAtualizado.Cnpj))
+                    colaboradorExistente.Cnpj = colaboradorAtualizado.Cnpj;
+
+                if (!string.IsNullOrEmpty(colaboradorAtualizado.NomeEmpresa))
+                    colaboradorExistente.NomeEmpresa = colaboradorAtualizado.NomeEmpresa;
+
+                if (colaboradorAtualizado.Imagem != null)
+                    colaboradorExistente.Imagem = colaboradorAtualizado.Imagem;
+
+                return true;
+            }
+
+            return false;
+        }
     }
+
 }
+

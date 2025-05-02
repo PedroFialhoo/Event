@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureEvento = new System.Windows.Forms.PictureBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblRua = new System.Windows.Forms.Label();
@@ -38,7 +39,12 @@
             this.lblEstado = new System.Windows.Forms.Label();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.lblNumero = new System.Windows.Forms.Label();
+            this.menuOpcoes = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuItemEditar = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.fecharEventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
+            this.menuOpcoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureEvento
@@ -152,6 +158,43 @@
             this.lblNumero.TabIndex = 9;
             this.lblNumero.Text = "label6";
             // 
+            // menuOpcoes
+            // 
+            this.menuOpcoes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemEditar,
+            this.fecharEventoToolStripMenuItem});
+            this.menuOpcoes.Name = "menuOpcoes";
+            this.menuOpcoes.Size = new System.Drawing.Size(149, 48);
+            // 
+            // menuItemEditar
+            // 
+            this.menuItemEditar.Name = "menuItemEditar";
+            this.menuItemEditar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemEditar.Text = "Editar Evento";
+            this.menuItemEditar.Click += new System.EventHandler(this.menuItemEditar_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.ContextMenuStrip = this.menuOpcoes;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(7, 22);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(103, 74);
+            this.btnMenu.TabIndex = 14;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // fecharEventoToolStripMenuItem
+            // 
+            this.fecharEventoToolStripMenuItem.Name = "fecharEventoToolStripMenuItem";
+            this.fecharEventoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fecharEventoToolStripMenuItem.Text = "Fechar Evento";
+            this.fecharEventoToolStripMenuItem.Click += new System.EventHandler(this.fecharEventoToolStripMenuItem_Click);
+            // 
             // TelaExibirEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +202,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaExibirEvento1;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.lblNumero);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.lblEstado);
@@ -169,12 +213,12 @@
             this.Controls.Add(this.lblRua);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.pictureEvento);
-            this.Enabled = false;
             this.Name = "TelaExibirEvento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event";
             this.Load += new System.EventHandler(this.TelaExibirEvento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).EndInit();
+            this.menuOpcoes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +236,9 @@
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label lblNumero;
+        private System.Windows.Forms.ContextMenuStrip menuOpcoes;
+        private System.Windows.Forms.ToolStripMenuItem menuItemEditar;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.ToolStripMenuItem fecharEventoToolStripMenuItem;
     }
 }

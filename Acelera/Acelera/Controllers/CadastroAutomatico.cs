@@ -27,7 +27,7 @@ namespace Acelera.Controllers
             {
                 Id = 0,
                 Nome = "Pedro",
-                Idade = 25,
+                Idade = "18",
                 Telefone = "11999999999",
             };
 

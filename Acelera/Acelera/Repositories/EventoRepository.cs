@@ -7,7 +7,7 @@ namespace Acelera.Repositories
 {
     public static class EventoRepository
     {
-        private static List<Eventos> eventos = new List<Eventos>();
+        private static List<Eventos> eventos = new List<Eventos>();        
 
         public static bool CadastrarEvento(Eventos novoEvento)
         {
@@ -33,7 +33,14 @@ namespace Acelera.Repositories
         {
             return eventos.Where(e => e.Colaborador.Equals(colaborador, StringComparison.OrdinalIgnoreCase)).ToList();
         }
+        public static int? ObterIdDoEventoPorColaboradorENome(string colaborador, string nome)
+        {
+            var evento = eventos.FirstOrDefault(e =>
+                e.Colaborador.Equals(colaborador, StringComparison.OrdinalIgnoreCase) &&
+                e.NomeEvento.Equals(nome, StringComparison.OrdinalIgnoreCase));
 
+            return evento?.Id;
+        }
         public static bool RemoverEvento(int id)
         {
             var evento = eventos.FirstOrDefault(e => e.Id == id);
@@ -70,6 +77,7 @@ namespace Acelera.Repositories
 
                 if (!string.IsNullOrEmpty(eventoAtualizado.Rua))
                     eventoExistente.Rua = eventoAtualizado.Rua;
+
                 if (!string.IsNullOrEmpty(eventoAtualizado.Numero))
                     eventoExistente.Numero = eventoAtualizado.Numero;
 

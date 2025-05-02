@@ -35,11 +35,11 @@
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.txtIdade = new System.Windows.Forms.TextBox();
-            this.picturePerfil = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.txtCep = new System.Windows.Forms.MaskedTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.picturePerfil = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +48,7 @@
             this.txtNome.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtNome.Location = new System.Drawing.Point(439, 367);
+            this.txtNome.Location = new System.Drawing.Point(439, 338);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(678, 31);
             this.txtNome.TabIndex = 0;
@@ -58,7 +58,7 @@
             this.txtCidade.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtCidade.Location = new System.Drawing.Point(439, 787);
+            this.txtCidade.Location = new System.Drawing.Point(439, 765);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(678, 31);
             this.txtCidade.TabIndex = 4;
@@ -100,9 +100,9 @@
             "São Paulo - SP",
             "Sergipe - SE",
             "Tocantins - TO"});
-            this.txtEstado.Location = new System.Drawing.Point(439, 933);
+            this.txtEstado.Location = new System.Drawing.Point(1271, 765);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(452, 39);
+            this.txtEstado.Size = new System.Drawing.Size(441, 39);
             this.txtEstado.TabIndex = 5;
             // 
             // txtTelefone
@@ -111,7 +111,7 @@
             this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtTelefone.HidePromptOnLeave = true;
-            this.txtTelefone.Location = new System.Drawing.Point(439, 520);
+            this.txtTelefone.Location = new System.Drawing.Point(439, 494);
             this.txtTelefone.Mask = "(00) 00000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(213, 31);
@@ -123,7 +123,7 @@
             this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtCPF.HidePromptOnLeave = true;
-            this.txtCPF.Location = new System.Drawing.Point(439, 661);
+            this.txtCPF.Location = new System.Drawing.Point(1271, 494);
             this.txtCPF.Mask = "000,000,000-00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(213, 31);
@@ -134,36 +134,10 @@
             this.txtIdade.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtIdade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtIdade.Location = new System.Drawing.Point(1286, 367);
+            this.txtIdade.Location = new System.Drawing.Point(1271, 338);
             this.txtIdade.Name = "txtIdade";
             this.txtIdade.Size = new System.Drawing.Size(100, 31);
             this.txtIdade.TabIndex = 9;
-            // 
-            // picturePerfil
-            // 
-            this.picturePerfil.Image = global::Acelera.Properties.Resources.cara;
-            this.picturePerfil.Location = new System.Drawing.Point(50, 308);
-            this.picturePerfil.Name = "picturePerfil";
-            this.picturePerfil.Size = new System.Drawing.Size(298, 325);
-            this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picturePerfil.TabIndex = 10;
-            this.picturePerfil.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Acelera.Properties.Resources.adicionar_foto;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(315, 639);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 47);
-            this.button1.TabIndex = 11;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnEntrar
             // 
@@ -195,21 +169,44 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // checkedListBox1
+            // txtCep
             // 
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Educação",
-            "Esporte",
-            "Saúde",
-            "Musica",
-            "Workshops"});
-            this.checkedListBox1.Location = new System.Drawing.Point(1286, 546);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(378, 312);
-            this.checkedListBox1.TabIndex = 14;
+            this.txtCep.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCep.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtCep.HidePromptOnLeave = true;
+            this.txtCep.Location = new System.Drawing.Point(439, 612);
+            this.txtCep.Mask = "00000-000";
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(213, 31);
+            this.txtCep.TabIndex = 14;
+            this.txtCep.Leave += new System.EventHandler(this.txtCep_Leave);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Acelera.Properties.Resources.adicionar_foto;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(315, 639);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(33, 47);
+            this.button1.TabIndex = 11;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // picturePerfil
+            // 
+            this.picturePerfil.Image = global::Acelera.Properties.Resources.cara;
+            this.picturePerfil.Location = new System.Drawing.Point(50, 308);
+            this.picturePerfil.Name = "picturePerfil";
+            this.picturePerfil.Size = new System.Drawing.Size(298, 325);
+            this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturePerfil.TabIndex = 10;
+            this.picturePerfil.TabStop = false;
             // 
             // TelaCriarPerfil
             // 
@@ -217,7 +214,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1061);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.txtCep);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.button1);
@@ -254,6 +251,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.MaskedTextBox txtCep;
     }
 }
