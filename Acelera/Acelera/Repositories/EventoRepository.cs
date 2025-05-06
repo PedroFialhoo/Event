@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using Acelera.Models;
 
@@ -7,13 +8,29 @@ namespace Acelera.Repositories
 {
     public static class EventoRepository
     {
-        private static List<Eventos> eventos = new List<Eventos>();        
+        private static List<Eventos> eventos = new List<Eventos>();
 
-        public static bool CadastrarEvento(Eventos novoEvento)
+        private static int lastIdGenerated = 0;
+
+        public static int generateId()
+        {
+            return lastIdGenerated++;
+        }
+
+        public static bool CadastrarEvento(string nomeEvento, string descricao, string tipo, string cidade, string estado, string horario, DateTime data, string rua, string numero, string colaborador, Image imagem)
+        {
+            int id = generateId();
+            Eventos novoEvento = new Eventos( id, nomeEvento, descricao, tipo, cidade, estado, horario, data, rua, numero, colaborador, imagem);
+            
+            eventos.Add(novoEvento);
+            return true;
+        }
+        public static bool CadastrarEvento2(Eventos novoEvento)
         {
             eventos.Add(novoEvento);
             return true;
         }
+
 
         public static List<Eventos> ListarEventos()
         {
