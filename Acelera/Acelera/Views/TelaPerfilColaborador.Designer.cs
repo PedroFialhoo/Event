@@ -39,6 +39,7 @@
             this.menuOpcoes = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuItemDeslogar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemEditar = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.menuOpcoes.SuspendLayout();
             this.SuspendLayout();
@@ -126,9 +127,10 @@
             // 
             this.menuOpcoes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItemDeslogar,
-            this.menuItemEditar});
+            this.menuItemEditar,
+            this.excluirContaToolStripMenuItem});
             this.menuOpcoes.Name = "menuOpcoes";
-            this.menuOpcoes.Size = new System.Drawing.Size(181, 70);
+            this.menuOpcoes.Size = new System.Drawing.Size(181, 92);
             // 
             // menuItemDeslogar
             // 
@@ -143,6 +145,13 @@
             this.menuItemEditar.Size = new System.Drawing.Size(180, 22);
             this.menuItemEditar.Text = "Editar Perfil";
             this.menuItemEditar.Click += new System.EventHandler(this.menuItemEditar_Click);
+            // 
+            // excluirContaToolStripMenuItem
+            // 
+            this.excluirContaToolStripMenuItem.Name = "excluirContaToolStripMenuItem";
+            this.excluirContaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.excluirContaToolStripMenuItem.Text = "Excluir Conta";
+            this.excluirContaToolStripMenuItem.Click += new System.EventHandler(this.excluirContaToolStripMenuItem_Click);
             // 
             // TelaPerfilColaborador
             // 
@@ -181,5 +190,6 @@
         private System.Windows.Forms.ContextMenuStrip menuOpcoes;
         private System.Windows.Forms.ToolStripMenuItem menuItemDeslogar;
         private System.Windows.Forms.ToolStripMenuItem menuItemEditar;
+        private System.Windows.Forms.ToolStripMenuItem excluirContaToolStripMenuItem;
     }
 }

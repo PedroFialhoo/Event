@@ -119,5 +119,10 @@ namespace Acelera.Views
             TelaEditarPerfilColaborador telaEditarPerfilColaborador = new TelaEditarPerfilColaborador(colaboradorLogado);
             telaEditarPerfilColaborador.Show();
         }
+
+        private void excluirContaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          DialogResult resultado =  MessageBox.Show("Deseja excluir a conta?\n Todos os dados serão exluídos permanentemente, incluindo os eventos relacionados à conta", "Excluir conta permanentemente!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+        }
     }
 }
