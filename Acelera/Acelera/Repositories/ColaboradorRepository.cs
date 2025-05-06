@@ -34,16 +34,7 @@ namespace Acelera.Repositories
             var colaborador = colaboradores.Find(c => c.Id == id);
             return colaborador != null ? colaborador.Nome : null;
         }
-        public static bool RemoverColaborador(int id)
-        {
-            var colaborador = colaboradores.FirstOrDefault(u => u.Id == id);
-            if (colaborador != null)
-            {
-                colaboradores.Remove(colaborador);
-                return true;
-            }
-            return false;
-        }
+        
         public static bool AtualizarColaborador(int id, Colaborador colaboradorAtualizado)
         {
             var colaboradorExistente = colaboradores.FirstOrDefault(u => u.Id == id);

@@ -49,19 +49,14 @@ namespace Acelera.Repositories
             return null;
         }
 
-        // Método para verificar se um usuário está logado
         public static bool UsuarioEstaLogado()
         {
-            return usuarioLogadoId.HasValue; // Retorna true se estiver logado, false caso contrário
+            return usuarioLogadoId.HasValue; 
         }
-
-        // Método para obter o ID do usuário logado
         public static int? GetUsuarioLogadoId()
         {
             return usuarioLogadoId;
         }
-
-        // Método para deslogar o usuário (limpar o ID)
         public static void Sair()
         {
             usuarioLogadoId = null;
@@ -84,16 +79,17 @@ namespace Acelera.Repositories
 
             return false;
         }
-        public static bool ExcluirConta(string email, string senha)
+        public static bool ExcluirConta(int id)
         {
-            var login = logins.FirstOrDefault(l => l.Email == email && l.Senha == senha);
-            if (login == null)
+            var login = logins.FirstOrDefault(l => l.Id == id);
+            if (login != null)
             {
                 logins.Remove(login);
                 return true;
             }
             return false;
         }
+
 
     }
 }
