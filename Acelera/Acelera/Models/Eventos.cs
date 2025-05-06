@@ -22,18 +22,21 @@ namespace Acelera.Models
         public string Colaborador { get; set; }
         public Image Imagem { get; set; }
 
-      /*  public Eventos(int id, string nome, string descricao, string tipo, string cidade, string estado, string data, string local, string colaborador)
+        public Eventos(int id, string nome, string descricao, string tipo, string cidade, string estado, string horario, DateTime data, string rua, string numero, string colaborador, Image imagem)
         {
             Id = id;
             NomeEvento = nome;
-            Descricao = descricao;  
+            Descricao = descricao;
             Tipo = tipo;
             Cidade = cidade;
             Estado = estado;
+            Horario = horario;
             Data = data;
-            Local = local;
+            Rua = rua;
+            Numero = numero;
             Colaborador = colaborador;
-
-        }*/
+            Imagem = imagem;
+        }
+        public Eventos() { }
     }
 }

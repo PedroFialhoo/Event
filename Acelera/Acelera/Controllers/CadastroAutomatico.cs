@@ -51,7 +51,7 @@ namespace Acelera.Controllers
 
             };
 
-            EventoRepository.CadastrarEvento(eventos);
+            EventoRepository.CadastrarEvento2(eventos);
         }
     }
 }

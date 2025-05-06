@@ -65,23 +65,18 @@ namespace Acelera.Views
 
             //MessageBox.Show(mensagem, "Informações do Evento");
 
-            Eventos evento = new Eventos
-            {
-                Id = idUsuarioLogado.Value,
-                NomeEvento = txtNome.Text,
-                Descricao = txtDescricao.Text,
-                Tipo = cbTipo.Text,
-                Cidade = txtCidade.Text,
-                Estado = txtEstado.Text,
-                Horario = txtHorario.Text,
-                Data = dataEvento,
-                Rua = txtRua.Text,
-                Numero = txtNumero.Text,
-                Colaborador = colaborador,
-                Imagem = pictureEvento.Image
-            };
+            string nomeEvento = txtNome.Text;
+            string descricao = txtDescricao.Text;
+            string tipo = cbTipo.Text;
+            string cidade = txtCidade.Text;
+            string estado = txtEstado.Text;
+            string horario = txtHorario.Text;
+            DateTime data = dataEvento; 
+            string rua = txtRua.Text;
+            string numero = txtNumero.Text;
+            Image imagem = pictureEvento.Image;
 
-            bool sucesso = EventoRepository.CadastrarEvento(evento);
+            bool sucesso = EventoRepository.CadastrarEvento(nomeEvento,descricao,tipo,cidade,estado,horario, data, rua, numero,colaborador,imagem);
             
 
             MessageBox.Show(sucesso ? "Evento criado com sucesso!" : "Evento já cadastrado.");
