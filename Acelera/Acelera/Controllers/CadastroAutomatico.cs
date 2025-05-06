@@ -44,14 +44,14 @@ namespace Acelera.Controllers
 
             Eventos eventos = new Eventos
             {
-                Id = 0,
+                Id = EventoRepository.generateId(),
                 NomeEvento = "Primeiro Evento",
                 Colaborador = "Pedro Colaborador",
                 Descricao = "Descrição do evento"
 
             };
 
-            EventoRepository.CadastrarEvento2(eventos);
+            EventoRepository.CadastrarEvento(eventos);
         }
     }
 }
