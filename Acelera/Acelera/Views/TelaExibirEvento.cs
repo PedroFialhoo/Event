@@ -96,5 +96,45 @@ namespace Acelera.Views
             }
         }
 
+        private void excluirEventoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int? idColaboradorLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
+            if (idColaboradorLogado == null)
+            {
+                MessageBox.Show("Apenas Colaboradores podem editar eventos");
+                return;
+            }
+
+            DialogResult resultado = MessageBox.Show("Deseja exluir permanentemente o evento?", "Excluir evento!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resultado == DialogResult.Yes)
+            {
+                int idEvento = evento.Id;
+                bool sucesso = EventoRepository.RemoverEvento(idEvento);
+                if (sucesso)
+                {
+                    MessageBox.Show("Evento deletado com sucesso");
+
+                    if (idColaboradorLogado != null)
+                    {
+                        Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idColaboradorLogado.Value);
+                        if (colaboradorLogado != null)
+                        {
+                            TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
+                            telaPerfil.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Perfil de colaborador não encontrado.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao excluir evento");
+                    }
+
+                }
+
+            }
+        }
     }
 }

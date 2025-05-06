@@ -41,8 +41,9 @@
             this.lblNumero = new System.Windows.Forms.Label();
             this.menuOpcoes = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuItemEditar = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.fecharEventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.excluirEventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.menuOpcoes.SuspendLayout();
             this.SuspendLayout();
@@ -162,9 +163,10 @@
             // 
             this.menuOpcoes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItemEditar,
-            this.fecharEventoToolStripMenuItem});
+            this.fecharEventoToolStripMenuItem,
+            this.excluirEventoToolStripMenuItem});
             this.menuOpcoes.Name = "menuOpcoes";
-            this.menuOpcoes.Size = new System.Drawing.Size(149, 48);
+            this.menuOpcoes.Size = new System.Drawing.Size(181, 92);
             // 
             // menuItemEditar
             // 
@@ -172,6 +174,13 @@
             this.menuItemEditar.Size = new System.Drawing.Size(180, 22);
             this.menuItemEditar.Text = "Editar Evento";
             this.menuItemEditar.Click += new System.EventHandler(this.menuItemEditar_Click);
+            // 
+            // fecharEventoToolStripMenuItem
+            // 
+            this.fecharEventoToolStripMenuItem.Name = "fecharEventoToolStripMenuItem";
+            this.fecharEventoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fecharEventoToolStripMenuItem.Text = "Fechar Evento";
+            this.fecharEventoToolStripMenuItem.Click += new System.EventHandler(this.fecharEventoToolStripMenuItem_Click);
             // 
             // btnMenu
             // 
@@ -188,12 +197,12 @@
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // fecharEventoToolStripMenuItem
+            // excluirEventoToolStripMenuItem
             // 
-            this.fecharEventoToolStripMenuItem.Name = "fecharEventoToolStripMenuItem";
-            this.fecharEventoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fecharEventoToolStripMenuItem.Text = "Fechar Evento";
-            this.fecharEventoToolStripMenuItem.Click += new System.EventHandler(this.fecharEventoToolStripMenuItem_Click);
+            this.excluirEventoToolStripMenuItem.Name = "excluirEventoToolStripMenuItem";
+            this.excluirEventoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.excluirEventoToolStripMenuItem.Text = "Excluir Evento";
+            this.excluirEventoToolStripMenuItem.Click += new System.EventHandler(this.excluirEventoToolStripMenuItem_Click);
             // 
             // TelaExibirEvento
             // 
@@ -240,5 +249,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemEditar;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.ToolStripMenuItem fecharEventoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem excluirEventoToolStripMenuItem;
     }
 }
