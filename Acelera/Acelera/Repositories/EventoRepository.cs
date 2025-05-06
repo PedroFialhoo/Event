@@ -17,15 +17,7 @@ namespace Acelera.Repositories
             return lastIdGenerated++;
         }
 
-        public static bool CadastrarEvento(string nomeEvento, string descricao, string tipo, string cidade, string estado, string horario, DateTime data, string rua, string numero, string colaborador, Image imagem)
-        {
-            int id = generateId();
-            Eventos novoEvento = new Eventos( id, nomeEvento, descricao, tipo, cidade, estado, horario, data, rua, numero, colaborador, imagem);
-            
-            eventos.Add(novoEvento);
-            return true;
-        }
-        public static bool CadastrarEvento2(Eventos novoEvento)
+        public static bool CadastrarEvento(Eventos novoEvento)
         {
             eventos.Add(novoEvento);
             return true;
