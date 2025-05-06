@@ -18,6 +18,7 @@ namespace Acelera.Views
     {
         private Colaborador colaborador;
         private Eventos eventos;
+        private int? idLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
         
         public TelaPerfilColaborador(Colaborador colaboradorLogado)
         {
@@ -73,7 +74,7 @@ namespace Acelera.Views
                 }
 
                 pictureBox.Tag = evento;
-                pictureBox.Cursor = Cursors.Hand; // mostra a "mão" ao passar o mouse
+                pictureBox.Cursor = Cursors.Hand; 
 
                 // Adiciona o evento de clique
                 pictureBox.Click += (s, args) =>
@@ -108,7 +109,7 @@ namespace Acelera.Views
         private void menuItemDeslogar_Click_1(object sender, EventArgs e)
         {
             LoginColaboradorRepository.Sair();
-            TelaLoginColaborador telaLogin = new TelaLoginColaborador();
+            TelaLoginColaborador telaLogin = new TelaLoginColaborador(); 
             telaLogin.Show();
         }
 
@@ -122,7 +123,24 @@ namespace Acelera.Views
 
         private void excluirContaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          DialogResult resultado =  MessageBox.Show("Deseja excluir a conta?\n Todos os dados serão exluídos permanentemente, incluindo os eventos relacionados à conta", "Excluir conta permanentemente!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            
+            DialogResult resultado =  MessageBox.Show("Deseja excluir a conta?\nTodos os dados serão exluídos permanentemente, incluindo os eventos relacionados à conta", "Excluir conta permanentemente!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resultado == DialogResult.Yes)
+            {
+                bool sucesso = LoginColaboradorRepository.ExcluirConta(idLogado.Value);
+                if (sucesso)
+                {
+                    MessageBox.Show("Conta excluída com sucesso!");
+                    LoginColaboradorRepository.Sair();
+                    TelaLoginColaborador telaLoginColaborador = new TelaLoginColaborador();
+                    telaLoginColaborador.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao excluir conta!" );
+                }
+            }
+            
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Acelera.Forms
     public partial class TelaPerfil: Form
     {
         private Usuario usuario;
-
+        private int? idLogado = LoginRepository.GetUsuarioLogadoId();
         public TelaPerfil(Usuario usuarioLogado)
         {
             InitializeComponent();
@@ -80,6 +80,26 @@ namespace Acelera.Forms
             Usuario usuarioLogado = UsuarioRepository.ObterUsuarioPorId(idUsuarioLogado.Value);
             TelaEditarPerfil telaEditarPerfil = new TelaEditarPerfil(usuarioLogado);
             telaEditarPerfil.Show();
+        }
+
+        private void excluirContaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Deseja excluir a conta?\nTodos os dados serão exluídos permanentemente, incluindo os eventos relacionados à conta", "Excluir conta permanentemente!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resultado == DialogResult.Yes)
+            {
+                bool sucesso = LoginRepository.ExcluirConta(idLogado.Value);
+                if (sucesso)
+                {
+                    MessageBox.Show("Conta excluída com sucesso!");
+                    LoginRepository.Sair();
+                    TelaLogin telaLogin = new TelaLogin();
+                    telaLogin.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao excluir conta!");
+                }
+            }
         }
     }
 }

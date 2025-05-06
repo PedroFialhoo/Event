@@ -101,10 +101,7 @@ namespace Acelera.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (LoginRepository.ExcluirConta(txtEmail.Text, txtSenha.Text))
-            {
-                MessageBox.Show("excluido");
-            }
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
