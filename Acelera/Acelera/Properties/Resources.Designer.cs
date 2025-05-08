@@ -103,6 +103,16 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaCadastroColaborador1 {
+            get {
+                object obj = ResourceManager.GetObject("TelaCadastroColaborador1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaCriarEvento {
             get {
                 object obj = ResourceManager.GetObject("TelaCriarEvento", resourceCulture);
@@ -136,6 +146,16 @@ namespace Acelera.Properties {
         internal static System.Drawing.Bitmap TelaCriarPerfil {
             get {
                 object obj = ResourceManager.GetObject("TelaCriarPerfil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaCriarPerfil1 {
+            get {
+                object obj = ResourceManager.GetObject("TelaCriarPerfil1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +256,16 @@ namespace Acelera.Properties {
         internal static System.Drawing.Bitmap TelaLoginColaborador1 {
             get {
                 object obj = ResourceManager.GetObject("TelaLoginColaborador1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaPerfil {
+            get {
+                object obj = ResourceManager.GetObject("TelaPerfil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

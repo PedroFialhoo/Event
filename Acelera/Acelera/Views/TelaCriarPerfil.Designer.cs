@@ -28,18 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCriarPerfil));
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.ComboBox();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
-            this.txtIdade = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.txtCep = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.picturePerfil = new System.Windows.Forms.PictureBox();
+            this.txtData = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,16 +128,6 @@
             this.txtCPF.Size = new System.Drawing.Size(213, 31);
             this.txtCPF.TabIndex = 8;
             // 
-            // txtIdade
-            // 
-            this.txtIdade.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtIdade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtIdade.Location = new System.Drawing.Point(1271, 338);
-            this.txtIdade.Name = "txtIdade";
-            this.txtIdade.Size = new System.Drawing.Size(100, 31);
-            this.txtIdade.TabIndex = 9;
-            // 
             // btnEntrar
             // 
             this.btnEntrar.BackColor = System.Drawing.Color.Transparent;
@@ -208,18 +197,30 @@
             this.picturePerfil.TabIndex = 10;
             this.picturePerfil.TabStop = false;
             // 
+            // txtData
+            // 
+            this.txtData.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtData.HidePromptOnLeave = true;
+            this.txtData.Location = new System.Drawing.Point(1271, 338);
+            this.txtData.Mask = "00/00/0000";
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(160, 31);
+            this.txtData.TabIndex = 18;
+            // 
             // TelaCriarPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarPerfil1;
             this.ClientSize = new System.Drawing.Size(1904, 1061);
+            this.Controls.Add(this.txtData);
             this.Controls.Add(this.txtCep);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.picturePerfil);
-            this.Controls.Add(this.txtIdade);
             this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtEstado);
@@ -230,7 +231,7 @@
             this.Name = "TelaCriarPerfil";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Event";
+            this.Text = " q";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TelaCriarPerfil_FormClosed);
             this.Load += new System.EventHandler(this.TelaCriarPerfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
@@ -246,11 +247,11 @@
         private System.Windows.Forms.ComboBox txtEstado;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.MaskedTextBox txtCPF;
-        private System.Windows.Forms.TextBox txtIdade;
         private System.Windows.Forms.PictureBox picturePerfil;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MaskedTextBox txtCep;
+        private System.Windows.Forms.MaskedTextBox txtData;
     }
 }

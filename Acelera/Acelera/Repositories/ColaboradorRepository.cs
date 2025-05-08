@@ -47,8 +47,8 @@ namespace Acelera.Repositories
                 if (!string.IsNullOrEmpty(colaboradorAtualizado.Telefone))
                     colaboradorExistente.Telefone = colaboradorAtualizado.Telefone;
 
-                if (!string.IsNullOrEmpty(colaboradorAtualizado.Cnpj))
-                    colaboradorExistente.Cnpj = colaboradorAtualizado.Cnpj;
+                if (!string.IsNullOrEmpty(colaboradorAtualizado.Document))
+                    colaboradorExistente.Document = colaboradorAtualizado.Document;
 
                 if (!string.IsNullOrEmpty(colaboradorAtualizado.NomeEmpresa))
                     colaboradorExistente.NomeEmpresa = colaboradorAtualizado.NomeEmpresa;

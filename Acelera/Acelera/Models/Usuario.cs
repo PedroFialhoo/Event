@@ -8,7 +8,7 @@ namespace Acelera.Models
     {
         public int Id { get; set; } // ID do usuário, que será vinculado ao Login
         public string Nome { get; set; }
-        public string Idade { get; set; }
+        public DateTime DataNascimento { get; set; }
         public string Telefone { get; set; }
         public string Cpf { get; set; }
         public string Cidade { get; set; }

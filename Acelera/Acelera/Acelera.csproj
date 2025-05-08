@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Controllers\CadastroAutomatico.cs" />
     <Compile Include="Controllers\CodigoRecuperacao.cs" />
+    <Compile Include="Controllers\DateController.cs" />
     <Compile Include="Controllers\DocumentController.cs" />
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\EmailRecuperacao.cs" />
@@ -316,6 +317,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaEditarEvento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCadastroColaborador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaPerfil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarPerfil5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
