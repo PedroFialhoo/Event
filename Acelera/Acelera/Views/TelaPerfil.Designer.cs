@@ -75,7 +75,7 @@
             this.lblEstado.AutoSize = true;
             this.lblEstado.BackColor = System.Drawing.Color.Transparent;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
-            this.lblEstado.Location = new System.Drawing.Point(1123, 464);
+            this.lblEstado.Location = new System.Drawing.Point(1123, 483);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(79, 29);
             this.lblEstado.TabIndex = 5;
@@ -87,7 +87,7 @@
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
             this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
-            this.lblTelefone.Location = new System.Drawing.Point(1123, 262);
+            this.lblTelefone.Location = new System.Drawing.Point(1123, 272);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(79, 29);
             this.lblTelefone.TabIndex = 7;
@@ -108,7 +108,7 @@
             this.lblCidade.AutoSize = true;
             this.lblCidade.BackColor = System.Drawing.Color.Transparent;
             this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
-            this.lblCidade.Location = new System.Drawing.Point(445, 468);
+            this.lblCidade.Location = new System.Drawing.Point(440, 483);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(79, 29);
             this.lblCidade.TabIndex = 10;
@@ -148,26 +148,26 @@
             this.menuItemEditar,
             this.excluirContaToolStripMenuItem});
             this.menuOpcoes.Name = "menuOpcoes";
-            this.menuOpcoes.Size = new System.Drawing.Size(181, 92);
+            this.menuOpcoes.Size = new System.Drawing.Size(145, 70);
             // 
             // menuItemDeslogar
             // 
             this.menuItemDeslogar.Name = "menuItemDeslogar";
-            this.menuItemDeslogar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemDeslogar.Size = new System.Drawing.Size(144, 22);
             this.menuItemDeslogar.Text = "Sair da Conta";
             this.menuItemDeslogar.Click += new System.EventHandler(this.menuItemDeslogar_Click);
             // 
             // menuItemEditar
             // 
             this.menuItemEditar.Name = "menuItemEditar";
-            this.menuItemEditar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemEditar.Size = new System.Drawing.Size(144, 22);
             this.menuItemEditar.Text = "Editar Perfil";
             this.menuItemEditar.Click += new System.EventHandler(this.menuItemEditar_Click);
             // 
             // excluirContaToolStripMenuItem
             // 
             this.excluirContaToolStripMenuItem.Name = "excluirContaToolStripMenuItem";
-            this.excluirContaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.excluirContaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.excluirContaToolStripMenuItem.Text = "Excluir Conta";
             this.excluirContaToolStripMenuItem.Click += new System.EventHandler(this.excluirContaToolStripMenuItem_Click);
             // 
@@ -175,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfil2;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfil;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.button3);

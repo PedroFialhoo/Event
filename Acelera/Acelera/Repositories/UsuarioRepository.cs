@@ -51,8 +51,8 @@ namespace Acelera.Repositories
                 if (!string.IsNullOrEmpty(usuarioAtualizado.Nome))
                     usuarioExistente.Nome= usuarioAtualizado.Nome;
 
-                if (!string.IsNullOrEmpty(usuarioAtualizado.Idade))
-                    usuarioExistente.Idade = usuarioAtualizado.Idade;
+                if (usuarioAtualizado.DataNascimento != default(DateTime))
+                    usuarioExistente.DataNascimento = usuarioAtualizado.DataNascimento;
 
                 if (!string.IsNullOrEmpty(usuarioAtualizado.Telefone))
                     usuarioExistente.Telefone = usuarioAtualizado.Telefone;

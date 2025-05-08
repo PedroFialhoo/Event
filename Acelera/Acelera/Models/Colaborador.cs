@@ -12,7 +12,7 @@ namespace Acelera.Models
         public int Id { get; set; }
         public string Nome { get; set; }
         public string NomeEmpresa { get; set; }
-        public string Cnpj { get; set; }
+        public string Document { get; set; }
         public string Telefone { get; set; }
         public Image Imagem { get; set; }
 

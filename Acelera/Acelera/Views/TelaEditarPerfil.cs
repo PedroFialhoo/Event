@@ -86,11 +86,17 @@ namespace Acelera.Views
                 MessageBox.Show("Erro: Nenhum usuário está logado.");
                 return;
             }
+            DateTime dataNascimento;
+            if (!DateTime.TryParse(txtData.Text, out dataNascimento))
+            {
+                MessageBox.Show("Data inválida. Use o formato dd/MM/yyyy.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             Usuario usuario = new Usuario
             {
                 Nome = txtNome.Text,
-                Idade = txtIdade.Text,
+                DataNascimento = dataNascimento,
                 Telefone = txtTelefone.Text,
                 Cpf = txtCPF.Text,
                 Cidade = txtCidade.Text,

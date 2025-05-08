@@ -32,13 +32,13 @@
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtCep = new System.Windows.Forms.MaskedTextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
-            this.txtIdade = new System.Windows.Forms.TextBox();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.txtEstado = new System.Windows.Forms.ComboBox();
             this.picturePerfil = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.txtData = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,16 +87,6 @@
             this.txtCidade.Size = new System.Drawing.Size(678, 31);
             this.txtCidade.TabIndex = 16;
             this.txtCidade.Text = "\n\r\n";
-            // 
-            // txtIdade
-            // 
-            this.txtIdade.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtIdade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtIdade.Location = new System.Drawing.Point(1269, 339);
-            this.txtIdade.Name = "txtIdade";
-            this.txtIdade.Size = new System.Drawing.Size(100, 31);
-            this.txtIdade.TabIndex = 17;
             // 
             // txtCPF
             // 
@@ -205,6 +195,18 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // txtData
+            // 
+            this.txtData.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.txtData.HidePromptOnLeave = true;
+            this.txtData.Location = new System.Drawing.Point(1269, 339);
+            this.txtData.Mask = "00/00/0000";
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(160, 31);
+            this.txtData.TabIndex = 24;
+            // 
             // TelaEditarPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,13 +214,13 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaEditarPerfil;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.txtData);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.picturePerfil);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.txtIdade);
             this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.txtCep);
             this.Controls.Add(this.txtTelefone);
@@ -240,12 +242,12 @@
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.MaskedTextBox txtCep;
         private System.Windows.Forms.TextBox txtCidade;
-        private System.Windows.Forms.TextBox txtIdade;
         private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.ComboBox txtEstado;
         private System.Windows.Forms.PictureBox picturePerfil;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.MaskedTextBox txtData;
     }
 }

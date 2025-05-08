@@ -83,5 +83,30 @@ namespace Acelera.Views
                 }
             }
         }
+
+        private void TelaCadastroColaborador_Load(object sender, EventArgs e)
+        {
+            rbCnpj.Checked = true;
+            txtCnpj.Mask = "00,000,000/0000-00"; 
+        }
+
+        private void rbCnpj_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCnpj.Checked)
+            {
+                txtCnpj.Mask = "00,000,000/0000-00"; 
+                txtCnpj.Clear();
+            }
+        }
+
+        private void rbCpf_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCpf.Checked)
+            {
+                txtCnpj.Mask = "000,000,000-00"; 
+                txtCnpj.Clear();
+            }
+        }
+
     }
 }
