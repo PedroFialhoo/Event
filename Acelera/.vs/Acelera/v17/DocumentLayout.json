@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Pedro\\Acelera\\Event\\Acelera\\",
+  "WorkspaceRootPath": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Event\\Acelera\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\users\\diogo\\onedrive\\documentos\\acelera\\event\\event\\event\\acelera\\acelera\\exceptions\\eventonaoencontradoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\exceptions\\eventonaoencontradoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TelaPerfilColaborador.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfilColaborador.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaPerfilColaborador.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAowH0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:37:32.936Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TelaPerfilColaborador.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfilColaborador.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaPerfilColaborador.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "EventoNaoEncontradoException.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Event\\Acelera\\Acelera\\Exceptions\\EventoNaoEncontradoException.cs",
+              "RelativeDocumentMoniker": "Acelera\\Exceptions\\EventoNaoEncontradoException.cs",
+              "ToolTip": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Event\\Acelera\\Acelera\\Exceptions\\EventoNaoEncontradoException.cs",
+              "RelativeToolTip": "Acelera\\Exceptions\\EventoNaoEncontradoException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:37:03.601Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-06T14:43:47.611Z",
+              "EditorCaption": ""
             }
           ]
         }
