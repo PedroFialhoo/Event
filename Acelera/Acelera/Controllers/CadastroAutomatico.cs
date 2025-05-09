@@ -49,8 +49,35 @@ namespace Acelera.Controllers
                 Descricao = "Descrição do evento"
 
             };
+            Eventos eventos1 = new Eventos
+            {
+                Id = EventoRepository.generateId(),
+                NomeEvento = "Segundo Evento",
+                Colaborador = "Pedro Colaborador",
+                Descricao = "Descrição do evento"
+
+            };
+            Eventos eventos2 = new Eventos
+            {
+                Id = EventoRepository.generateId(),
+                NomeEvento = "Champions",
+                Colaborador = "Pedro Colaborador",
+                Descricao = "Descrição do evento"
+
+            };
+            Eventos eventos3 = new Eventos
+            {
+                Id = EventoRepository.generateId(),
+                NomeEvento = "Musical",
+                Colaborador = "Pedro Colaborador",
+                Descricao = "Descrição do evento"
+
+            };
 
             EventoRepository.CadastrarEvento(eventos);
+            EventoRepository.CadastrarEvento(eventos1);
+            EventoRepository.CadastrarEvento(eventos2);
+            EventoRepository.CadastrarEvento(eventos3);
         }
     }
 }
