@@ -95,6 +95,7 @@ C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaEditarPerfil.
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaEditarPerfilColaborador.resources
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaExibirEvento.resources
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.csproj.Up2Date
+<<<<<<< HEAD
 C:\Users\matri\Desktop\Acelera\Acelera\Acelera\obj\Debug\Acelera.csproj.AssemblyReference.cache
 C:\Users\matri\Desktop\Acelera\Acelera\Acelera\obj\Debug\Acelera.Forms.TelaCadastro.resources
 C:\Users\matri\Desktop\Acelera\Acelera\Acelera\obj\Debug\Acelera.Views.TelaCadastroColaborador.resources
@@ -123,3 +124,6 @@ C:\Users\matri\Desktop\Acelera\Acelera\Acelera\bin\Debug\Newtonsoft.Json.dll
 C:\Users\matri\Desktop\Acelera\Acelera\Acelera\bin\Debug\QRCoder.dll
 C:\Users\matri\Desktop\Acelera\Acelera\Acelera\bin\Debug\Newtonsoft.Json.xml
 C:\Users\matri\Desktop\Acelera\Acelera\Acelera\obj\Debug\Acelera.csproj.Up2Date
+=======
+C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaBuscarEventos.resources
+>>>>>>> 4a5ba34 (Integrando a busca de eventos)

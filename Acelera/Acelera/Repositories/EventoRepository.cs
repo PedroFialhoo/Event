@@ -33,6 +33,13 @@ namespace Acelera.Repositories
         {
             return eventos.Where(e => e.Tipo.Equals(tipo, StringComparison.OrdinalIgnoreCase)).ToList();
         }
+        public static List<Eventos> ObterEventosPorNome(string nomeEvento)
+        {
+            return eventos
+                .Where(e => e.NomeEvento != null &&
+                            e.NomeEvento.IndexOf(nomeEvento, StringComparison.OrdinalIgnoreCase) >= 0)
+                .ToList();
+        }
 
         public static List<Eventos> ObterEventosPorEstado(string estado)
         {

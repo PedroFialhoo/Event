@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera.Models;
 using Acelera.Repositories;
+using Acelera.Views;
 
 namespace Acelera.Forms
 {
@@ -43,6 +44,12 @@ namespace Acelera.Forms
             {
                 MessageBox.Show("Perfil não encontrado.");
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos();
+            telaBuscarEventos.Show();
         }
     }
 }
