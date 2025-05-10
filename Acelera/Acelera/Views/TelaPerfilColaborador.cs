@@ -70,7 +70,7 @@ namespace Acelera.Views
                 }
                 else
                 {
-                    pictureBox.Image = Properties.Resources.cara; 
+                    pictureBox.Image = Properties.Resources.festival_de_musica; 
                 }
 
                 pictureBox.Tag = evento;
