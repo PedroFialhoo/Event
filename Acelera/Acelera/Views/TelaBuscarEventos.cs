@@ -133,7 +133,7 @@ namespace Acelera.Views
                     nomeLabel.Text = evento.NomeEvento;
                     nomeLabel.TextAlign = ContentAlignment.MiddleCenter;
                     nomeLabel.Dock = DockStyle.Bottom;
-                    nomeLabel.Font = new Font("Segoe UI", 14, FontStyle.Regular);
+                    nomeLabel.Font = new Font("Segoe UI", 22, FontStyle.Regular);
 
                     eventoPanel.Controls.Add(pictureBox);
                     eventoPanel.Controls.Add(nomeLabel);
@@ -199,6 +199,19 @@ namespace Acelera.Views
                 }
 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int? usuarioLogado = LoginRepository.GetUsuarioLogadoId();
+            var usuario = UsuarioRepository.ObterUsuarioPorId(usuarioLogado.Value);
+            if (usuario == null) {
+                MessageBox.Show("Nenhum usuario logado");
+                return;
+            }
+            TelaPerfil tela = new TelaPerfil(usuario);
+            tela.Show();
+
         }
     }
 }
