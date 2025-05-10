@@ -74,25 +74,8 @@ namespace Acelera.Views
             }
             else
             {
-                int? idUsuarioLogado = LoginRepository.GetUsuarioLogadoId();
-
-                if (idUsuarioLogado != null)
-                {
-                    Usuario usuarioLogado = UsuarioRepository.ObterUsuarioPorId(idUsuarioLogado.Value);
-                    if (usuarioLogado != null)
-                    {
-                        TelaPerfil telaPerfil = new TelaPerfil(usuarioLogado);
-                        telaPerfil.Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Perfil de usuário não encontrado.");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Nenhum usuário está logado.");
-                }
+                TelaPrincipal telaPrincipal = new TelaPrincipal();
+                telaPrincipal.Show();
             }
         }
 
