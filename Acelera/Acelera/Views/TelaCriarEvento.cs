@@ -26,6 +26,7 @@ namespace Acelera.Views
         if (string.IsNullOrWhiteSpace(txtNome.Text) ||
             string.IsNullOrWhiteSpace(txtDescricao.Text) ||
             string.IsNullOrEmpty(cbTipo.Text) ||
+            cbTipo.SelectedIndex == 0 ||
             string.IsNullOrEmpty(txtCidade.Text) ||
             string.IsNullOrEmpty(txtEstado.Text) ||
             string.IsNullOrEmpty(txtCep.Text) ||

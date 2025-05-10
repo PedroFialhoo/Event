@@ -51,5 +51,54 @@ namespace Acelera.Forms
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos();
             telaBuscarEventos.Show();
         }
+
+        private void btnEducacao_Click(object sender, EventArgs e)
+        {
+            string categoria = "Educação";
+            TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
+            telaBuscarEventos.Show();
+        }
+
+        private void btnSaude_Click(object sender, EventArgs e)
+        {
+            string categoria = "Saúde";
+            TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
+            telaBuscarEventos.Show();
+        }
+
+        private void btnEmpreendedorismo_Click(object sender, EventArgs e)
+        {
+            string categoria = "Empreendedorismo";
+            TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
+            telaBuscarEventos.Show();
+        }
+
+        private void btnComputacao_Click(object sender, EventArgs e)
+        {
+            string categoria = "Computação";
+            TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
+            telaBuscarEventos.Show();
+        }
+
+        private void btnEsportes_Click(object sender, EventArgs e)
+        {
+            string categoria = "Esportes";
+            TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
+            telaBuscarEventos.Show();
+        }
+
+        private void btnMusica_Click(object sender, EventArgs e)
+        {
+            string categoria = "Música";
+            TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
+            telaBuscarEventos.Show();
+        }
+
+        private void btnOutros_Click(object sender, EventArgs e)
+        {
+            string categoria = "Outros";
+            TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
+            telaBuscarEventos.Show();
+        }
     }
 }
