@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Acelera.Models;
 using Acelera.Repositories;
 using Acelera.Views;
+using QRCoder;
 
 namespace Acelera.Forms
 {
@@ -38,9 +39,20 @@ namespace Acelera.Forms
             lblCidade.Text = usuario.Cidade;
             lblEstado.Text = usuario.Estado;
 
+
             if (usuario.Imagem != null)
             {
                 pictureBoxPerfil.Image = usuario.Imagem;
+            }
+
+            if (!string.IsNullOrEmpty(usuario.CodigoQr))
+            {
+                QRCodeGenerator qrGenerator = new QRCodeGenerator();
+                QRCodeData qrCodeData = qrGenerator.CreateQrCode(usuario.CodigoQr, QRCodeGenerator.ECCLevel.Q);
+                QRCode qrCode = new QRCode(qrCodeData);
+                CodeQR_box.Image = qrCode.GetGraphic(20);
+                MessageBox.Show(usuario.CodigoQr ?? "Código QR vazio");
+
             }
         }
 
@@ -100,6 +112,16 @@ namespace Acelera.Forms
                     MessageBox.Show("Erro ao excluir conta!");
                 }
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CodeQR_box_Click(object sender, EventArgs e)
+        {
+            this.CodeQR_box = new System.Windows.Forms.PictureBox();
         }
     }
 }

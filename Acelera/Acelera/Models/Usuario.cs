@@ -13,6 +13,7 @@ namespace Acelera.Models
         public string Cpf { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
+        public string CodigoQr { get; set; } //QR CIDE
         public Image Imagem { get; set; }
 
     }

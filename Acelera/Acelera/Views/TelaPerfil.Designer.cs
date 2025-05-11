@@ -41,8 +41,10 @@
             this.menuItemDeslogar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CodeQR_box = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).BeginInit();
             this.menuOpcoes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CodeQR_box)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -171,12 +173,22 @@
             this.excluirContaToolStripMenuItem.Text = "Excluir Conta";
             this.excluirContaToolStripMenuItem.Click += new System.EventHandler(this.excluirContaToolStripMenuItem_Click);
             // 
+            // CodeQR_box
+            // 
+            this.CodeQR_box.Location = new System.Drawing.Point(735, 243);
+            this.CodeQR_box.Name = "CodeQR_box";
+            this.CodeQR_box.Size = new System.Drawing.Size(150, 150);
+            this.CodeQR_box.TabIndex = 14;
+            this.CodeQR_box.TabStop = false;
+            this.CodeQR_box.Click += new System.EventHandler(this.CodeQR_box_Click);
+            // 
             // TelaPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfil;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.CodeQR_box);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.lblCidade);
@@ -194,6 +206,7 @@
             this.Load += new System.EventHandler(this.TelaPerfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).EndInit();
             this.menuOpcoes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CodeQR_box)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,5 +226,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemDeslogar;
         private System.Windows.Forms.ToolStripMenuItem menuItemEditar;
         private System.Windows.Forms.ToolStripMenuItem excluirContaToolStripMenuItem;
+        private System.Windows.Forms.PictureBox CodeQR_box;
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Acelera.Models;
+using QRCoder;
 
 namespace Acelera.Repositories
 {
@@ -93,5 +94,7 @@ namespace Acelera.Repositories
             }
             return false;
         }
+
+
     }
 }
