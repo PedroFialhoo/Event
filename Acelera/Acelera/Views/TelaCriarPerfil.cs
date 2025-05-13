@@ -12,11 +12,14 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QRCoder;
 
 namespace Acelera.Forms
 {
     public partial class TelaCriarPerfil: Form
     {
+        private string codigoQr;
+
         public TelaCriarPerfil()
         {
             InitializeComponent();
@@ -63,6 +66,7 @@ namespace Acelera.Forms
                 MessageBox.Show("Data inválida. Use o formato dd/MM/yyyy.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            string codigoQr = Guid.NewGuid().ToString(); // gera um código único
 
             Usuario usuario = new Usuario
             {
@@ -73,7 +77,8 @@ namespace Acelera.Forms
                 Cpf = txtCPF.Text,
                 Cidade = txtCidade.Text,
                 Estado = txtEstado.Text,
-                Imagem = picturePerfil.Image
+                Imagem = picturePerfil.Image,
+                CodigoQr = codigoQr
 
             };
 

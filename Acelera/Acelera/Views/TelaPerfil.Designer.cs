@@ -175,9 +175,9 @@
             // 
             // CodeQR_box
             // 
-            this.CodeQR_box.Location = new System.Drawing.Point(735, 243);
+            this.CodeQR_box.Location = new System.Drawing.Point(1406, 174);
             this.CodeQR_box.Name = "CodeQR_box";
-            this.CodeQR_box.Size = new System.Drawing.Size(150, 150);
+            this.CodeQR_box.Size = new System.Drawing.Size(486, 422);
             this.CodeQR_box.TabIndex = 14;
             this.CodeQR_box.TabStop = false;
             this.CodeQR_box.Click += new System.EventHandler(this.CodeQR_box_Click);

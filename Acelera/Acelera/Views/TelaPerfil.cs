@@ -45,15 +45,16 @@ namespace Acelera.Forms
                 pictureBoxPerfil.Image = usuario.Imagem;
             }
 
+
             if (!string.IsNullOrEmpty(usuario.CodigoQr))
             {
                 QRCodeGenerator qrGenerator = new QRCodeGenerator();
                 QRCodeData qrCodeData = qrGenerator.CreateQrCode(usuario.CodigoQr, QRCodeGenerator.ECCLevel.Q);
                 QRCode qrCode = new QRCode(qrCodeData);
                 CodeQR_box.Image = qrCode.GetGraphic(20);
-                MessageBox.Show(usuario.CodigoQr ?? "Código QR vazio");
-
+               // MessageBox.Show(usuario.CodigoQr ?? "Código QR vazio"); Testar unico qr
             }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
