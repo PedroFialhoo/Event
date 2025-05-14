@@ -52,7 +52,7 @@ namespace Acelera.Forms
                 QRCodeData qrCodeData = qrGenerator.CreateQrCode(usuario.CodigoQr, QRCodeGenerator.ECCLevel.Q);
                 QRCode qrCode = new QRCode(qrCodeData);
                 CodeQR_box.Image = qrCode.GetGraphic(20);
-               // MessageBox.Show(usuario.CodigoQr ?? "Código QR vazio"); Testar unico qr
+               // MessageBox.Show(usuario.CodigoQr ?? "Código QR vazio");// Testar unico qr
             }
 
         }
