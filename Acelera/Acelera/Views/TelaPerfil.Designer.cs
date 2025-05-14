@@ -41,6 +41,7 @@
             this.menuItemDeslogar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.flowPanelEventos = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).BeginInit();
             this.menuOpcoes.SuspendLayout();
             this.SuspendLayout();
@@ -171,12 +172,22 @@
             this.excluirContaToolStripMenuItem.Text = "Excluir Conta";
             this.excluirContaToolStripMenuItem.Click += new System.EventHandler(this.excluirContaToolStripMenuItem_Click);
             // 
+            // flowPanelEventos
+            // 
+            this.flowPanelEventos.AutoScroll = true;
+            this.flowPanelEventos.Location = new System.Drawing.Point(0, 661);
+            this.flowPanelEventos.Name = "flowPanelEventos";
+            this.flowPanelEventos.Size = new System.Drawing.Size(1912, 382);
+            this.flowPanelEventos.TabIndex = 14;
+            this.flowPanelEventos.Paint += new System.Windows.Forms.PaintEventHandler(this.flowPanelEventos_Paint);
+            // 
             // TelaPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfil;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.flowPanelEventos);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.lblCidade);
@@ -213,5 +224,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemDeslogar;
         private System.Windows.Forms.ToolStripMenuItem menuItemEditar;
         private System.Windows.Forms.ToolStripMenuItem excluirContaToolStripMenuItem;
+        private System.Windows.Forms.FlowLayoutPanel flowPanelEventos;
     }
 }

@@ -42,6 +42,51 @@ namespace Acelera.Forms
             {
                 pictureBoxPerfil.Image = usuario.Imagem;
             }
+
+            var eventosDoUsuario = EventoRepository.BuscarEventosDoUsuario(usuario.Id);
+
+            foreach (var evento in eventosDoUsuario)
+            {
+                Panel eventoPanel = new Panel();
+                eventoPanel.Width = 150;
+                eventoPanel.Height = 180;
+                eventoPanel.Margin = new Padding(10);
+
+                PictureBox pictureBox = new PictureBox();
+                pictureBox.Width = 150;
+                pictureBox.Height = 120;
+                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+
+                if (evento.Imagem != null)
+                {
+                    pictureBox.Image = evento.Imagem;
+                }
+                else
+                {
+                    pictureBox.Image = Properties.Resources.festival_de_musica;
+                }
+
+                pictureBox.Tag = evento;
+                pictureBox.Cursor = Cursors.Hand;
+
+                pictureBox.Click += (s, args) =>
+                {
+                    var pic = s as PictureBox;
+                    var eventoSelecionado = pic.Tag as Eventos;
+                    TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
+                    tela.Show();
+                };
+
+                Label nomeLabel = new Label();
+                nomeLabel.Text = evento.NomeEvento;
+                nomeLabel.TextAlign = ContentAlignment.MiddleCenter;
+                nomeLabel.Dock = DockStyle.Bottom;
+                nomeLabel.Font = new Font("Segoe UI", 14, FontStyle.Regular);
+
+                eventoPanel.Controls.Add(pictureBox);
+                eventoPanel.Controls.Add(nomeLabel);
+                flowPanelEventos.Controls.Add(eventoPanel); 
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -100,6 +145,11 @@ namespace Acelera.Forms
                     MessageBox.Show("Erro ao excluir conta!");
                 }
             }
+        }
+
+        private void flowPanelEventos_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

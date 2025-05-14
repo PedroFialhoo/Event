@@ -108,6 +108,7 @@
             this.flowPanelEventos.Name = "flowPanelEventos";
             this.flowPanelEventos.Size = new System.Drawing.Size(1912, 382);
             this.flowPanelEventos.TabIndex = 11;
+            this.flowPanelEventos.Paint += new System.Windows.Forms.PaintEventHandler(this.flowPanelEventos_Paint);
             // 
             // btnMenu
             // 

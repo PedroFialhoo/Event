@@ -119,5 +119,33 @@ namespace Acelera.Views
 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int? usuarioLogado = LoginRepository.GetUsuarioLogadoId();
+
+            if (usuarioLogado == null)
+            {
+                DialogResult resultado = MessageBox.Show("Colaboradores não podem participar de eventos. Deseja fazer login como usuário?","Acesso Negado", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    TelaLogin telaLogin = new TelaLogin();
+                    telaLogin.Show();
+                }
+                return;
+            }
+
+            if(EventoRepository.ParticiparDoEvento(evento.Id, usuarioLogado.Value))
+            {
+                MessageBox.Show("Você está participando deste evento!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Você já está participando deste evento.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        
+
+        }
     }
 }

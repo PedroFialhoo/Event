@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using Acelera.Models;
@@ -104,6 +105,39 @@ namespace Acelera.Repositories
             }
 
             return false;
+        }
+
+        public static bool ParticiparDoEvento(int eventoId, int usuarioId)
+        {
+            Eventos evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            if (evento == null)
+                return false;
+
+            if (!evento.ParticipantesIds.Contains(usuarioId))
+            {
+                evento.ParticipantesIds.Add(usuarioId);
+                return true; 
+            }
+
+            return false; 
+        }
+
+        public static List<Usuario> ListarParticipantes(int eventoId)
+        {
+            Eventos evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            if (evento == null)
+                return new List<Usuario>();
+
+            return UsuarioRepository.ListarUsuarios()
+                .Where(u => evento.ParticipantesIds.Contains(u.Id))
+                .ToList();
+        }
+
+        public static List<Eventos> BuscarEventosDoUsuario(int usuarioId)
+        {
+            return EventoRepository.eventos
+                .Where(e => e.ParticipantesIds.Contains(usuarioId))
+                .ToList();
         }
 
     }

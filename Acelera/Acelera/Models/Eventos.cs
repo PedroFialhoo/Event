@@ -22,6 +22,8 @@ namespace Acelera.Models
         public string Colaborador { get; set; }
         public Image Imagem { get; set; }
 
+        public List<int> ParticipantesIds { get; set; } = new List<int>();
+
         public Eventos(int id, string nome, string descricao, string tipo, string cidade, string estado, string horario, DateTime data, string rua, string numero, string colaborador, Image imagem)
         {
             Id = id;
@@ -38,5 +40,7 @@ namespace Acelera.Models
             Imagem = imagem;
         }
         public Eventos() { }
+
+        
     }
 }

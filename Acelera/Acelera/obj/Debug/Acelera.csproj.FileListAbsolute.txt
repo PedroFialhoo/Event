@@ -96,3 +96,4 @@ C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaEditarPerfilC
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaExibirEvento.resources
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.csproj.Up2Date
 C:\Pedro\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaBuscarEventos.resources
+C:\Fatec\Acelera\Event\Acelera\Acelera\obj\Debug\Acelera.Views.TelaBuscarEventos.resources
