@@ -142,5 +142,10 @@ namespace Acelera.Views
             }
             
         }
+
+        private void flowPanelEventos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

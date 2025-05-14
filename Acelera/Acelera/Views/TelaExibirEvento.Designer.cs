@@ -42,8 +42,9 @@
             this.menuOpcoes = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuItemEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharEventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.excluirEventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.menuOpcoes.SuspendLayout();
             this.SuspendLayout();
@@ -166,21 +167,28 @@
             this.fecharEventoToolStripMenuItem,
             this.excluirEventoToolStripMenuItem});
             this.menuOpcoes.Name = "menuOpcoes";
-            this.menuOpcoes.Size = new System.Drawing.Size(181, 92);
+            this.menuOpcoes.Size = new System.Drawing.Size(149, 70);
             // 
             // menuItemEditar
             // 
             this.menuItemEditar.Name = "menuItemEditar";
-            this.menuItemEditar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemEditar.Size = new System.Drawing.Size(148, 22);
             this.menuItemEditar.Text = "Editar Evento";
             this.menuItemEditar.Click += new System.EventHandler(this.menuItemEditar_Click);
             // 
             // fecharEventoToolStripMenuItem
             // 
             this.fecharEventoToolStripMenuItem.Name = "fecharEventoToolStripMenuItem";
-            this.fecharEventoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fecharEventoToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.fecharEventoToolStripMenuItem.Text = "Fechar Evento";
             this.fecharEventoToolStripMenuItem.Click += new System.EventHandler(this.fecharEventoToolStripMenuItem_Click);
+            // 
+            // excluirEventoToolStripMenuItem
+            // 
+            this.excluirEventoToolStripMenuItem.Name = "excluirEventoToolStripMenuItem";
+            this.excluirEventoToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.excluirEventoToolStripMenuItem.Text = "Excluir Evento";
+            this.excluirEventoToolStripMenuItem.Click += new System.EventHandler(this.excluirEventoToolStripMenuItem_Click);
             // 
             // btnMenu
             // 
@@ -197,12 +205,20 @@
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // excluirEventoToolStripMenuItem
+            // button1
             // 
-            this.excluirEventoToolStripMenuItem.Name = "excluirEventoToolStripMenuItem";
-            this.excluirEventoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.excluirEventoToolStripMenuItem.Text = "Excluir Evento";
-            this.excluirEventoToolStripMenuItem.Click += new System.EventHandler(this.excluirEventoToolStripMenuItem_Click);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.ContextMenuStrip = this.menuOpcoes;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(130, 682);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 61);
+            this.button1.TabIndex = 15;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TelaExibirEvento
             // 
@@ -211,6 +227,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaExibirEvento1;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.lblNumero);
             this.Controls.Add(this.txtDescricao);
@@ -250,5 +267,6 @@
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.ToolStripMenuItem fecharEventoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem excluirEventoToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
