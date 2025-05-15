@@ -47,6 +47,7 @@ namespace Acelera.Views
                 MessageBox.Show("Perfil criado com sucesso!");
                 TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaborador);
                 telaPerfil.Show();
+                this.Close();
             }
             else
             {

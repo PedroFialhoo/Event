@@ -59,6 +59,7 @@ namespace Acelera.Views
                     var eventoSelecionado = pic.Tag as Eventos;
                     TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
                     tela.Show();
+                    this.Close();
                 };
 
                 Label nomeLabel = new Label();
@@ -82,6 +83,7 @@ namespace Acelera.Views
         {
             TelaPrincipal telaPrincipal = new TelaPrincipal();
             telaPrincipal.Show();
+            this.Close();
         }
 
         private void flowPanelEventos_Paint(object sender, PaintEventArgs e)
@@ -127,6 +129,7 @@ namespace Acelera.Views
                         var eventoSelecionado = pic.Tag as Eventos;
                         TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
                         tela.Show();
+                        this.Close();
                     };
 
                     Label nomeLabel = new Label();
@@ -180,6 +183,7 @@ namespace Acelera.Views
                         var eventoSelecionado = pic.Tag as Eventos;
                         TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
                         tela.Show();
+                        this.Close();
                     };
 
                     Label nomeLabel = new Label();
@@ -211,6 +215,7 @@ namespace Acelera.Views
             }
             TelaPerfil tela = new TelaPerfil(usuario);
             tela.Show();
+            this.Close();
 
         }
     }

@@ -27,6 +27,7 @@ namespace Acelera.Forms
         {
             TelaPrincipal telaPrincipal = new TelaPrincipal();
             telaPrincipal.Show();
+            this.Close();
         }
 
         private void TelaPerfil_Load(object sender, EventArgs e)
@@ -75,6 +76,7 @@ namespace Acelera.Forms
                     var eventoSelecionado = pic.Tag as Eventos;
                     TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
                     tela.Show();
+                    this.Close();
                 };
 
                 Label nomeLabel = new Label();
@@ -94,6 +96,7 @@ namespace Acelera.Forms
             LoginRepository.Sair();
             TelaLogin telaLogin = new TelaLogin();
             telaLogin.Show();
+            this.Close();
         }
 
         private void lblEstado_Click(object sender, EventArgs e)
@@ -112,6 +115,7 @@ namespace Acelera.Forms
             LoginRepository.Sair();
             TelaLogin telaLogin = new TelaLogin();
             telaLogin.Show();
+            this.Close();
         }
 
         private void btnMenu_Click_1(object sender, EventArgs e)
@@ -125,6 +129,7 @@ namespace Acelera.Forms
             Usuario usuarioLogado = UsuarioRepository.ObterUsuarioPorId(idUsuarioLogado.Value);
             TelaEditarPerfil telaEditarPerfil = new TelaEditarPerfil(usuarioLogado);
             telaEditarPerfil.Show();
+            this.Close();
         }
 
         private void excluirContaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -139,6 +144,7 @@ namespace Acelera.Forms
                     LoginRepository.Sair();
                     TelaLogin telaLogin = new TelaLogin();
                     telaLogin.Show();
+                    this.Close();
                 }
                 else
                 {

@@ -90,6 +90,7 @@ namespace Acelera.Views
                 Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idUsuarioLogado.Value);
                 TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
                 telaPerfil.Show();
+                this.Close();
             }
         }
 
@@ -171,6 +172,7 @@ namespace Acelera.Views
             {
                 TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
                 telaPerfil.Show();
+                this.Close();
             }
             else
             {

@@ -34,10 +34,7 @@ namespace Acelera.Forms
         }
 
         private void button1_Click_1(object sender, EventArgs e)
-        {            
-            TelaCadastro telaCadastro = new TelaCadastro();
-            telaCadastro.Show();
-            this.Visible = false;
+        {         
         }
 
         private void TelaLogin_Load(object sender, EventArgs e)
@@ -48,10 +45,6 @@ namespace Acelera.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TelaCriarPerfil telaCriarPerfil = new TelaCriarPerfil(); 
-            telaCriarPerfil.Show();
-            this.Hide(); 
-            telaCriarPerfil.FormClosed += (s, args) => this.Close();
         }
 
         private void botaoEntrar_Click(object sender, EventArgs e)
@@ -76,7 +69,7 @@ namespace Acelera.Forms
         {
             TelaCadastro telaCadastro = new TelaCadastro();
             telaCadastro.Show();
-            telaCadastro.FormClosed += (s, args) => this.Close();
+            this.Close();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -92,7 +85,8 @@ namespace Acelera.Forms
 
             TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha(codigo);
             telaEsquceuSenha.Show();
-            
+            this.Close();
+
         }
 
         private void button1_Click_2(object sender, EventArgs e)
@@ -131,11 +125,13 @@ namespace Acelera.Forms
                 {
                     TelaCriarPerfil criarPerfil = new TelaCriarPerfil();
                     criarPerfil.Show();
+                    this.Close();
                 }
                 else
                 {
                     TelaPrincipal telaPrincipal = new TelaPrincipal();
                     telaPrincipal.Show();
+                    this.Close();
                 }
             }
             else
@@ -161,6 +157,7 @@ namespace Acelera.Forms
         {
             TelaLoginColaborador telaLoginColaborador = new TelaLoginColaborador();
             telaLoginColaborador.Show();
+            this.Close();
         }
     }
 }

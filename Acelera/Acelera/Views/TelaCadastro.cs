@@ -19,17 +19,10 @@ namespace Acelera.Forms
     public partial class TelaCadastro : Form
     {
 
-        private Form TelaLogin;
         public TelaCadastro()
         {
             InitializeComponent();
 
-        }
-        public TelaCadastro(Form TelaLogin)
-        {
-            InitializeComponent();
-
-            this.TelaLogin = TelaLogin;
         }
         private void campoEmail_TextChanged(object sender, EventArgs e)
         {
@@ -70,6 +63,7 @@ namespace Acelera.Forms
                 MessageBox.Show("Usuário cadastrado com sucesso!");
                 TelaLogin telaLogin = new TelaLogin();
                 telaLogin.Show();
+                this.Close();
             }
             else
             {
@@ -93,6 +87,7 @@ namespace Acelera.Forms
 
                     TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha(codigo);
                     telaEsquceuSenha.Show();
+                    this.Close();
                 }
             }            
 
@@ -100,7 +95,6 @@ namespace Acelera.Forms
 
         private void TelaCadastro_FormClosed(object sender, FormClosedEventArgs e)
         {
-            FecharJanelas.CloseSystem();
         }
 
        
@@ -115,6 +109,11 @@ namespace Acelera.Forms
 
         }
 
-        
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            TelaLogin tela = new TelaLogin();
+            tela.Show();
+            this.Close();
+        }
     }
 }

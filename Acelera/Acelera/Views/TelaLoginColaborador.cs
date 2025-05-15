@@ -25,7 +25,7 @@ namespace Acelera.Views
         {
             TelaCadastroColaborador telaCadastro = new TelaCadastroColaborador();
             telaCadastro.Show();
-            telaCadastro.FormClosed += (s, args) => this.Close();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -54,12 +54,14 @@ namespace Acelera.Views
                       //Não existe perfil, abre a tela de criação
                      TelaCriarPerfilColaborador criarPerfil = new TelaCriarPerfilColaborador();
                      criarPerfil.Show(); // criar tela perfil de colaborador
-                 }
+                     this.Close();
+                }
                  else
                  {
                     Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idUsuarioLogado.Value);
                     TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
                     telaPerfil.Show();
+                    this.Close();
                 }
             }
             else
@@ -94,12 +96,14 @@ namespace Acelera.Views
 
             TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha(codigo);
             telaEsquceuSenha.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             TelaLogin telaLogin = new TelaLogin();
             telaLogin.Show();
+            this.Close();
         }
     }
  }

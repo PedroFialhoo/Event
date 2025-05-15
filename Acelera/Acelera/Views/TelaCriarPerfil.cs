@@ -29,7 +29,6 @@ namespace Acelera.Forms
 
         private void TelaCriarPerfil_FormClosed(object sender, FormClosedEventArgs e)
         {
-            FecharJanelas.CloseSystem();
         }
 
         private void TelaCriarPerfil_Load(object sender, EventArgs e)
@@ -84,6 +83,7 @@ namespace Acelera.Forms
                 MessageBox.Show("Perfil criado com sucesso!");
                 TelaPerfil telaPerfil = new TelaPerfil(usuario);
                 telaPerfil.Show();
+                this.Close();
             }
             else
             {

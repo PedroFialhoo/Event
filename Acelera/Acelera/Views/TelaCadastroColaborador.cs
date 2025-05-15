@@ -57,6 +57,7 @@ namespace Acelera.Views
                 MessageBox.Show("Usuário cadastrado com sucesso!");
                 TelaLoginColaborador telaLogin = new TelaLoginColaborador();
                 telaLogin.Show();
+                this.Close();
             }
             else
             {
@@ -80,6 +81,7 @@ namespace Acelera.Views
 
                     TelaEsquceuSenha telaEsquceuSenha = new TelaEsquceuSenha(codigo);
                     telaEsquceuSenha.Show();
+                    this.Close();
                 }
             }
         }
@@ -108,5 +110,11 @@ namespace Acelera.Views
             }
         }
 
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            TelaLoginColaborador telaLogin = new TelaLoginColaborador();
+            telaLogin.Show();
+            this.Close();
+        }
     }
 }

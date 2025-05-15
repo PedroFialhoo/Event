@@ -35,6 +35,7 @@
             this.txtCnpj = new System.Windows.Forms.MaskedTextBox();
             this.rbCnpj = new System.Windows.Forms.RadioButton();
             this.rbCpf = new System.Windows.Forms.RadioButton();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -121,6 +122,21 @@
             this.rbCpf.UseVisualStyleBackColor = false;
             this.rbCpf.CheckedChanged += new System.EventHandler(this.rbCpf_CheckedChanged);
             // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.LinkColor = System.Drawing.Color.SteelBlue;
+            this.linkLabel2.Location = new System.Drawing.Point(1224, 196);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(243, 29);
+            this.linkLabel2.TabIndex = 10;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Já possui uma conta?";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
             // TelaCadastroColaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,6 +144,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaCadastroColaborador1;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.rbCpf);
             this.Controls.Add(this.rbCnpj);
             this.Controls.Add(this.txtCnpj);
@@ -153,5 +170,6 @@
         private System.Windows.Forms.MaskedTextBox txtCnpj;
         private System.Windows.Forms.RadioButton rbCnpj;
         private System.Windows.Forms.RadioButton rbCpf;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }
