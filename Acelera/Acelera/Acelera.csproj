@@ -139,6 +139,12 @@
     <Compile Include="Views\TelaExibirEvento.Designer.cs">
       <DependentUpon>TelaExibirEvento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaExibirEvento.resx">
       <DependentUpon>TelaExibirEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>

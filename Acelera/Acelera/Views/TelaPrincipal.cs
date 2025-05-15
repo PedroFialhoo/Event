@@ -39,6 +39,7 @@ namespace Acelera.Forms
                 // Cria e abre a TelaPerfil com o usuário logado
                 TelaPerfil telaPerfil = new TelaPerfil(usuarioLogado);
                 telaPerfil.Show();
+                this.Close();
             }
             else
             {
@@ -50,6 +51,7 @@ namespace Acelera.Forms
         {
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos();
             telaBuscarEventos.Show();
+            this.Close();
         }
 
         private void btnEducacao_Click(object sender, EventArgs e)
@@ -57,6 +59,7 @@ namespace Acelera.Forms
             string categoria = "Educação";
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
             telaBuscarEventos.Show();
+            this.Close();
         }
 
         private void btnSaude_Click(object sender, EventArgs e)
@@ -64,6 +67,7 @@ namespace Acelera.Forms
             string categoria = "Saúde";
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
             telaBuscarEventos.Show();
+            this.Close();
         }
 
         private void btnEmpreendedorismo_Click(object sender, EventArgs e)
@@ -71,6 +75,7 @@ namespace Acelera.Forms
             string categoria = "Empreendedorismo";
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
             telaBuscarEventos.Show();
+            this.Close();
         }
 
         private void btnComputacao_Click(object sender, EventArgs e)
@@ -78,6 +83,7 @@ namespace Acelera.Forms
             string categoria = "Computação";
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
             telaBuscarEventos.Show();
+            this.Close();
         }
 
         private void btnEsportes_Click(object sender, EventArgs e)
@@ -85,6 +91,7 @@ namespace Acelera.Forms
             string categoria = "Esportes";
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
             telaBuscarEventos.Show();
+            this.Close();
         }
 
         private void btnMusica_Click(object sender, EventArgs e)
@@ -92,6 +99,7 @@ namespace Acelera.Forms
             string categoria = "Música";
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
             telaBuscarEventos.Show();
+            this.Close();
         }
 
         private void btnOutros_Click(object sender, EventArgs e)
@@ -99,6 +107,7 @@ namespace Acelera.Forms
             string categoria = "Outros";
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos(categoria);
             telaBuscarEventos.Show();
+            this.Close();
         }
     }
 }

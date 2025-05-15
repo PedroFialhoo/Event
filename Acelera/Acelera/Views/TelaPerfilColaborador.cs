@@ -35,6 +35,7 @@ namespace Acelera.Views
         {
             TelaCriarEvento telaCriarEvento = new TelaCriarEvento();
             telaCriarEvento.Show();
+            this.Close();
 
         }
 
@@ -83,6 +84,7 @@ namespace Acelera.Views
                     var eventoSelecionado = pic.Tag as Eventos;
                     TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
                     tela.Show();
+                    this.Close();
                 };
 
 
@@ -111,6 +113,7 @@ namespace Acelera.Views
             LoginColaboradorRepository.Sair();
             TelaLoginColaborador telaLogin = new TelaLoginColaborador(); 
             telaLogin.Show();
+            this.Close();
         }
 
         private void menuItemEditar_Click(object sender, EventArgs e)
@@ -119,6 +122,7 @@ namespace Acelera.Views
             Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idUsuarioLogado.Value);
             TelaEditarPerfilColaborador telaEditarPerfilColaborador = new TelaEditarPerfilColaborador(colaboradorLogado);
             telaEditarPerfilColaborador.Show();
+            this.Close();
         }
 
         private void excluirContaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -134,6 +138,7 @@ namespace Acelera.Views
                     LoginColaboradorRepository.Sair();
                     TelaLoginColaborador telaLoginColaborador = new TelaLoginColaborador();
                     telaLoginColaborador.Show();
+                    this.Close();
                 }
                 else
                 {

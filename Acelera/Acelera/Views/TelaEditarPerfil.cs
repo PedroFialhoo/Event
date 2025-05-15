@@ -112,6 +112,7 @@ namespace Acelera.Views
                 MessageBox.Show("Perfil Atualizado com sucesso!");
                 TelaPerfil telaPerfil = new TelaPerfil(usuario);
                 telaPerfil.Show();
+                this.Close();
             }
             else
             {
@@ -150,6 +151,7 @@ namespace Acelera.Views
             {
                 TelaPerfil telaPerfil = new TelaPerfil(usuarioLogado);
                 telaPerfil.Show();
+                this.Close();
             }
             else
             {

@@ -53,6 +53,7 @@ namespace Acelera.Views
 
             TelaEditarEvento telaEditarEvento = new TelaEditarEvento(evento);
             telaEditarEvento.Show();
+            this.Close();
         }
 
         private void fecharEventoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,6 +67,7 @@ namespace Acelera.Views
                 {
                     TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
                     telaPerfil.Show();
+                    this.Close();
                 }
                 else
                 {
@@ -76,6 +78,7 @@ namespace Acelera.Views
             {
                 TelaPrincipal telaPrincipal = new TelaPrincipal();
                 telaPrincipal.Show();
+                this.Close();
             }
         }
 
@@ -104,6 +107,7 @@ namespace Acelera.Views
                         {
                             TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
                             telaPerfil.Show();
+                            this.Close();
                         }
                         else
                         {
@@ -130,8 +134,10 @@ namespace Acelera.Views
 
                 if (resultado == DialogResult.Yes)
                 {
+                    LoginColaboradorRepository.Sair();
                     TelaLogin telaLogin = new TelaLogin();
                     telaLogin.Show();
+                    this.Close();
                 }
                 return;
             }
@@ -159,6 +165,7 @@ namespace Acelera.Views
                 {
                     TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
                     telaPerfil.Show();
+                    this.Close();
                 }
                 else
                 {
@@ -169,6 +176,7 @@ namespace Acelera.Views
             {
                 TelaPrincipal telaPrincipal = new TelaPrincipal();
                 telaPrincipal.Show();
+                this.Close();
             }
         }
 
@@ -181,9 +189,10 @@ namespace Acelera.Views
 
                 if (resultado == DialogResult.Yes)
                 {
+                    LoginColaboradorRepository.Sair();
                     TelaLogin telaLogin = new TelaLogin();
                     telaLogin.Show();
-                    LoginColaboradorRepository.Sair();
+                    this.Close();                    
                 }
                 return;
             }

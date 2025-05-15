@@ -19,7 +19,7 @@ namespace Acelera
         {
             Application.EnableVisualStyles();
             CadastroAutomatico.Executar();
-            Application.Run(new TelaLogin());
+            Application.Run(new TelaInicial());
         }
     }
 }

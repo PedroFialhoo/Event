@@ -41,6 +41,7 @@ namespace Acelera.Forms
                         MessageBox.Show("Senha redefinida com sucesso!");
                         TelaLogin telaLogin = new TelaLogin();
                         telaLogin.Show();
+                        this.Close();
                     }
                     else
                     {
