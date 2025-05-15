@@ -121,6 +121,20 @@ namespace Acelera.Repositories
 
             return false; 
         }
+        public static bool DesinscreverDoEvento(int eventoId, int usuarioId)
+        {
+            Eventos evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            if (evento == null)
+                return false;
+
+            if (evento.ParticipantesIds.Contains(usuarioId))
+            {
+                evento.ParticipantesIds.Remove(usuarioId);
+                return true;
+            }
+
+            return false;
+        }
 
         public static List<Usuario> ListarParticipantes(int eventoId)
         {

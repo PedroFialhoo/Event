@@ -45,6 +45,8 @@
             this.excluirEventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnMenu = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.menuOpcoes.SuspendLayout();
             this.SuspendLayout();
@@ -213,20 +215,52 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(130, 682);
+            this.button1.Location = new System.Drawing.Point(28, 662);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(184, 61);
             this.button1.TabIndex = 15;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.ContextMenuStrip = this.menuOpcoes;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(248, 662);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(162, 61);
+            this.button2.TabIndex = 16;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.ContextMenuStrip = this.menuOpcoes;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(1864, 146);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(66, 32);
+            this.button3.TabIndex = 17;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // TelaExibirEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaExibirEvento1;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaExibirEventos;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.lblNumero);
@@ -268,5 +302,7 @@
         private System.Windows.Forms.ToolStripMenuItem fecharEventoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem excluirEventoToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

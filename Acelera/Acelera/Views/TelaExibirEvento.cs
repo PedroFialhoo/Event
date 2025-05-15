@@ -147,5 +147,55 @@ namespace Acelera.Views
         
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int? idColaboradorLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
+
+            if (idColaboradorLogado != null)
+            {
+                Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idColaboradorLogado.Value);
+                if (colaboradorLogado != null)
+                {
+                    TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
+                    telaPerfil.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Perfil de colaborador não encontrado.");
+                }
+            }
+            else
+            {
+                TelaPrincipal telaPrincipal = new TelaPrincipal();
+                telaPrincipal.Show();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int? usuarioLogado = LoginRepository.GetUsuarioLogadoId();
+            if(usuarioLogado == null)
+            {
+                DialogResult resultado = MessageBox.Show("Colaboradores não podem participar de eventos. Deseja fazer login como usuário?", "Acesso Negado", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    TelaLogin telaLogin = new TelaLogin();
+                    telaLogin.Show();
+                    LoginColaboradorRepository.Sair();
+                }
+                return;
+            }
+            if (EventoRepository.DesinscreverDoEvento(evento.Id, usuarioLogado.Value))
+            {
+                MessageBox.Show("Participação do evento removida!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Você já não está participando deste evento.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
     }
 }
