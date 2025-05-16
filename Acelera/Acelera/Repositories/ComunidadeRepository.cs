@@ -8,66 +8,25 @@ namespace Acelera.Repositories
     public class ComunidadeRepository
     {
         private List<Comunidade> comunidades = new List<Comunidade>();
-        private int proximoId = 1;
 
-        public void Criar(Comunidade comunidade, string responsavel, string categoria)
+        public Comunidade ObterOuCriarPorCategoria(string categoria)
         {
-            comunidade.Id = proximoId++;
-            comunidade.Responsavel = responsavel;
-            comunidade.Participantes = new List<string> { responsavel };
-            comunidade.Publicacoes = new List<Publicacao>();
-            comunidade.Categoria = categoria; 
-            comunidades.Add(comunidade);
-        }
+            var comunidade = comunidades.FirstOrDefault(c =>
+                c.Categoria.Equals(categoria, StringComparison.OrdinalIgnoreCase));
 
-        public Comunidade ObterPorCategoria(string categoria, string nome)
-        {
-            return comunidades.FirstOrDefault(c =>
-                c.Categoria.Equals(categoria, StringComparison.OrdinalIgnoreCase) &&
-                c.Nome.Equals(nome, StringComparison.OrdinalIgnoreCase));
-        }
-
-        public List<Comunidade> ListarTodas()
-        {
-            return comunidades;
-        }
-
-        public List<Comunidade> ListarPorCategoria(string categoria)
-        {
-            return comunidades.Where(c => c.Categoria.Equals(categoria, StringComparison.OrdinalIgnoreCase)).ToList();
-        }
-
-        public bool Editar(string categoria, string nome, string responsavel, Comunidade atualizada)
-        {
-            var comunidade = ObterPorCategoria(categoria, nome);
-            if (comunidade != null && comunidade.Responsavel == responsavel)
+            if (comunidade == null)
             {
-                comunidade.Nome = atualizada.Nome;
-                comunidade.Categoria = atualizada.Categoria;
-                comunidade.Descricao = atualizada.Descricao;
-                comunidade.Foto = atualizada.Foto;
-                return true;
+                comunidade = new Comunidade { Categoria = categoria };
+                comunidades.Add(comunidade);
             }
-            return false; 
+
+            return comunidade;
         }
 
-
-        public bool Excluir(string categoria, string nome, string responsavel)
+        public bool AdicionarParticipante(string categoria, string usuario)
         {
-            var comunidade = ObterPorCategoria(categoria, nome);
-            if (comunidade != null && comunidade.Responsavel == responsavel)
-            {
-                comunidades.Remove(comunidade);
-                return true;
-            }
-            return false; 
-        }
-
-
-        public bool AdicionarParticipante(string categoria, string nome, string usuario)
-        {
-            var comunidade = ObterPorCategoria(categoria, nome);
-            if (comunidade != null && !comunidade.Participantes.Contains(usuario))
+            var comunidade = ObterOuCriarPorCategoria(categoria);
+            if (!comunidade.Participantes.Contains(usuario))
             {
                 comunidade.Participantes.Add(usuario);
                 return true;
@@ -75,74 +34,44 @@ namespace Acelera.Repositories
             return false;
         }
 
-        public bool SairDaComunidade(string categoria, string nome, string usuario)
+        public bool AdicionarPublicacao(string categoria, Publicacao publicacao)
         {
-            var comunidade = ObterPorCategoria(categoria, nome);
-            if (comunidade != null && comunidade.Participantes.Contains(usuario))
-            {
-                comunidade.Participantes.Remove(usuario);
-                return true;
-            }
-            return false; 
+            var comunidade = ObterOuCriarPorCategoria(categoria);
+            comunidade.Publicacoes.Add(publicacao);
+            return true;
         }
 
-
-        public bool RemoverParticipante(string categoria, string nome, string responsavel, string usuarioParaRemover)
+        public bool ComentarPublicacao(string categoria, int indexPublicacao, Comentario comentario)
         {
-            var comunidade = ObterPorCategoria(categoria, nome);
-            if (comunidade != null && comunidade.Responsavel == responsavel)
+            var comunidade = ObterOuCriarPorCategoria(categoria);
+            if (comunidade.Publicacoes.Count > indexPublicacao)
             {
-                if (usuarioParaRemover != responsavel && comunidade.Participantes.Contains(usuarioParaRemover))
-                {
-                    comunidade.Participantes.Remove(usuarioParaRemover);
-                    return true;
-                }
-            }
-            return false; 
-        }
-
-
-        public List<string> ListarParticipantes(string categoria, string nome)
-        {
-            var comunidade = ObterPorCategoria(categoria, nome);
-            if (comunidade != null)
-            {
-                var listaOrdenada = new List<string> { comunidade.Responsavel }; 
-                listaOrdenada.AddRange(comunidade.Participantes.Where(p => p != comunidade.Responsavel)); 
-                return listaOrdenada;
-            }
-            return new List<string>();
-        }
-
-
-        public bool AdicionarPublicacao(string categoria, string nome, Publicacao publicacao)
-        {
-            var comunidade = ObterPorCategoria(categoria, nome);
-            if (comunidade != null)
-            {
-                comunidade.Publicacoes.Add(publicacao);
+                comunidade.Publicacoes[indexPublicacao].Comentarios.Add(comentario);
                 return true;
             }
             return false;
         }
-        public bool ExcluirPublicacao(string categoria, string nome, int Id)
+
+        public bool CurtirPublicacao(string categoria, int indexPublicacao, string usuario)
         {
-            var comunidade = ObterPorCategoria(categoria, nome);
-            if (comunidade != null)
+            var comunidade = ObterOuCriarPorCategoria(categoria);
+            if (comunidade.Publicacoes.Count > indexPublicacao)
             {
-                var publicacao = comunidade.Publicacoes.FirstOrDefault(p => p.Id == Id);
-                if (publicacao != null)
+                var pub = comunidade.Publicacoes[indexPublicacao];
+                if (!pub.Curtidas.Contains(usuario))
                 {
-                    comunidade.Publicacoes.Remove(publicacao);
+                    pub.Curtidas.Add(usuario);
                     return true;
                 }
             }
-            return false; 
+            return false;
         }
 
-        public List<Publicacao> ListarPublicacoes(string categoria, string nome)
+        public List<Publicacao> ListarPublicacoes(string categoria)
         {
-            var comunidade = ObterPorCategoria(categoria, nome);
+            var comunidade = comunidades.FirstOrDefault(c =>
+                c.Categoria.Equals(categoria, StringComparison.OrdinalIgnoreCase));
+
             return comunidade?.Publicacoes ?? new List<Publicacao>();
         }
     }
