@@ -85,6 +85,12 @@
     <Compile Include="Views\TelaCadastroColaborador.Designer.cs">
       <DependentUpon>TelaCadastroColaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaComunidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaComunidades.Designer.cs">
+      <DependentUpon>TelaComunidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaCriarEvento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaCadastroColaborador.resx">
       <DependentUpon>TelaCadastroColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaComunidades.resx">
+      <DependentUpon>TelaComunidades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaCriarEvento.resx">
       <DependentUpon>TelaCriarEvento.cs</DependentUpon>
@@ -365,6 +374,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaExibirEventos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaComunidades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaPrincipal2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
