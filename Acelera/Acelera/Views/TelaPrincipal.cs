@@ -109,5 +109,12 @@ namespace Acelera.Forms
             telaBuscarEventos.Show();
             this.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            TelaComunidades telaComunidades = new TelaComunidades();
+            telaComunidades.Show();
+            this.Close();
+        }
     }
 }

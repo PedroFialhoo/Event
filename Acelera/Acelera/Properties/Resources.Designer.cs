@@ -143,6 +143,16 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaComunidades {
+            get {
+                object obj = ResourceManager.GetObject("TelaComunidades", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaCriarEvento {
             get {
                 object obj = ResourceManager.GetObject("TelaCriarEvento", resourceCulture);
@@ -346,6 +356,16 @@ namespace Acelera.Properties {
         internal static System.Drawing.Bitmap TelaPrincipal1 {
             get {
                 object obj = ResourceManager.GetObject("TelaPrincipal1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaPrincipal2 {
+            get {
+                object obj = ResourceManager.GetObject("TelaPrincipal2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

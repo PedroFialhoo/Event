@@ -39,6 +39,7 @@
             this.btnEsportes = new System.Windows.Forms.Button();
             this.btnMusica = new System.Windows.Forms.Button();
             this.btnOutros = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -180,12 +181,27 @@
             this.btnOutros.UseVisualStyleBackColor = false;
             this.btnOutros.Click += new System.EventHandler(this.btnOutros_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(566, 41);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(206, 45);
+            this.button4.TabIndex = 11;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaPrincipal1;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaPrincipal2;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.btnOutros);
             this.Controls.Add(this.btnMusica);
             this.Controls.Add(this.btnEsportes);
@@ -219,5 +235,6 @@
         private System.Windows.Forms.Button btnEsportes;
         private System.Windows.Forms.Button btnMusica;
         private System.Windows.Forms.Button btnOutros;
+        private System.Windows.Forms.Button button4;
     }
 }
