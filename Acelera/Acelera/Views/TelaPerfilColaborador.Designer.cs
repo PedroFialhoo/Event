@@ -130,26 +130,26 @@
             this.menuItemEditar,
             this.excluirContaToolStripMenuItem});
             this.menuOpcoes.Name = "menuOpcoes";
-            this.menuOpcoes.Size = new System.Drawing.Size(181, 92);
+            this.menuOpcoes.Size = new System.Drawing.Size(145, 70);
             // 
             // menuItemDeslogar
             // 
             this.menuItemDeslogar.Name = "menuItemDeslogar";
-            this.menuItemDeslogar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemDeslogar.Size = new System.Drawing.Size(144, 22);
             this.menuItemDeslogar.Text = "Sair da Conta";
             this.menuItemDeslogar.Click += new System.EventHandler(this.menuItemDeslogar_Click_1);
             // 
             // menuItemEditar
             // 
             this.menuItemEditar.Name = "menuItemEditar";
-            this.menuItemEditar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemEditar.Size = new System.Drawing.Size(144, 22);
             this.menuItemEditar.Text = "Editar Perfil";
             this.menuItemEditar.Click += new System.EventHandler(this.menuItemEditar_Click);
             // 
             // excluirContaToolStripMenuItem
             // 
             this.excluirContaToolStripMenuItem.Name = "excluirContaToolStripMenuItem";
-            this.excluirContaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.excluirContaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.excluirContaToolStripMenuItem.Text = "Excluir Conta";
             this.excluirContaToolStripMenuItem.Click += new System.EventHandler(this.excluirContaToolStripMenuItem_Click);
             // 

@@ -66,6 +66,7 @@
             this.flowPanelEventos.Name = "flowPanelEventos";
             this.flowPanelEventos.Size = new System.Drawing.Size(1907, 924);
             this.flowPanelEventos.TabIndex = 5;
+            this.flowPanelEventos.Paint += new System.Windows.Forms.PaintEventHandler(this.flowPanelEventos_Paint);
             // 
             // button1
             // 
@@ -95,6 +96,7 @@
             this.Name = "TelaBuscarEventos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event";
+            this.Load += new System.EventHandler(this.TelaBuscarEventos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

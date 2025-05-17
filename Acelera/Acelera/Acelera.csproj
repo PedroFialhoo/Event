@@ -348,5 +348,14 @@
   <ItemGroup>
     <None Include="Resources\TelaBuscarEventos1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\festival-de-musica1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaPrincipal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\festival-de-musica2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

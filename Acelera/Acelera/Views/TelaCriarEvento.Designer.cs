@@ -47,6 +47,7 @@
             // 
             // pictureEvento
             // 
+            this.pictureEvento.Image = global::Acelera.Properties.Resources.festival_de_musica1;
             this.pictureEvento.Location = new System.Drawing.Point(28, 308);
             this.pictureEvento.Name = "pictureEvento";
             this.pictureEvento.Size = new System.Drawing.Size(383, 330);
@@ -131,10 +132,12 @@
             this.cbTipo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbTipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbTipo.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.cbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.cbTipo.FormattingEnabled = true;
             this.cbTipo.Items.AddRange(new object[] {
+            "Escolha uma categoria...",
             "Educação",
             "Saúde e bem-estar",
             "Empreendedorismo e inovação",
@@ -142,6 +145,7 @@
             "Esportes",
             "Música ",
             "Outros"});
+            this.cbTipo.SelectedIndex = 0;
             this.cbTipo.Location = new System.Drawing.Point(1114, 213);
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(452, 39);

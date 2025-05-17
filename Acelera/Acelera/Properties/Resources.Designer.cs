@@ -83,6 +83,26 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap festival_de_musica {
+            get {
+                object obj = ResourceManager.GetObject("festival-de-musica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap festival_de_musica1 {
+            get {
+                object obj = ResourceManager.GetObject("festival-de-musica1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaBuscarEventos {
             get {
                 object obj = ResourceManager.GetObject("TelaBuscarEventos", resourceCulture);
@@ -306,6 +326,16 @@ namespace Acelera.Properties {
         internal static System.Drawing.Bitmap TelaPrincipal {
             get {
                 object obj = ResourceManager.GetObject("TelaPrincipal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaPrincipal1 {
+            get {
+                object obj = ResourceManager.GetObject("TelaPrincipal1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

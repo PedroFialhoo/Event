@@ -46,7 +46,8 @@ namespace Acelera.Controllers
                 Id = EventoRepository.generateId(),
                 NomeEvento = "Primeiro Evento",
                 Colaborador = "Pedro Colaborador",
-                Descricao = "Descrição do evento"
+                Descricao = "Descrição do evento",
+                Tipo = "Educação"
 
             };
             Eventos eventos1 = new Eventos
@@ -62,7 +63,8 @@ namespace Acelera.Controllers
                 Id = EventoRepository.generateId(),
                 NomeEvento = "Champions",
                 Colaborador = "Pedro Colaborador",
-                Descricao = "Descrição do evento"
+                Descricao = "Descrição do evento",
+                Tipo = "Educação"
 
             };
             Eventos eventos3 = new Eventos
