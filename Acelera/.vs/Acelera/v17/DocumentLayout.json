@@ -3,7 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\",
   "Documents": [
     {
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\users\\matri\\desktop\\acelera\\acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,61 +16,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-=======
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telabuscareventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telabuscareventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telabuscareventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telabuscareventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telaexibirevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaexibirevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telaexibirevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaexibirevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\controllers\\cadastroautomatico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\controllers\\cadastroautomatico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telacriarevento.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarevento.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
->>>>>>> 73c5b16 (Atualizando telas)
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -94,7 +38,6 @@
           "Children": [
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "TelaPerfilColaborador.cs",
               "DocumentMoniker": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
@@ -104,38 +47,11 @@
               "ViewState": "AgIAABcAAAAAAAAAAAAnwCMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T19:35:20.366Z",
-=======
-              "DocumentIndex": 2,
-              "Title": "TelaExibirEvento.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaExibirEvento.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaExibirEvento.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAgwE0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T19:40:39.403Z",
->>>>>>> 73c5b16 (Atualizando telas)
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 1,
-=======
-              "DocumentIndex": 3,
-              "Title": "TelaExibirEvento.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaExibirEvento.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaExibirEvento.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T19:40:31.495Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
->>>>>>> 73c5b16 (Atualizando telas)
               "Title": "TelaPerfil.cs",
               "DocumentMoniker": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Views\\TelaPerfil.cs",
               "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfil.cs",
@@ -143,7 +59,6 @@
               "RelativeToolTip": "Acelera\\Views\\TelaPerfil.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIAwwBIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
               "WhenOpened": "2025-05-17T19:32:44.041Z"
             },
             {
@@ -156,109 +71,21 @@
               "RelativeToolTip": "Acelera\\Views\\TelaPerfil.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T19:31:37.626Z"
-=======
-              "WhenOpened": "2025-05-09T13:56:28.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TelaPerfilColaborador.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfilColaborador.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaPerfilColaborador.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAA5wEUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:46:03.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TelaBuscarEventos.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaBuscarEventos.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaBuscarEventos.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaBuscarEventos.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaBuscarEventos.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAADwv9QAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:43:54.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TelaBuscarEventos.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaBuscarEventos.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaBuscarEventos.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaBuscarEventos.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaBuscarEventos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:42:11.807Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TelaPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPrincipal.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaPrincipal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:38:57.516Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TelaCriarEvento.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarEvento.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarEvento.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:12:48.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CadastroAutomatico.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Controllers\\CadastroAutomatico.cs",
-              "RelativeDocumentMoniker": "Acelera\\Controllers\\CadastroAutomatico.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Controllers\\CadastroAutomatico.cs",
-              "RelativeToolTip": "Acelera\\Controllers\\CadastroAutomatico.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAAEkAAACqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:14:28.213Z",
-              "EditorCaption": ""
->>>>>>> 73c5b16 (Atualizando telas)
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-<<<<<<< HEAD
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Models\\Login.cs",
               "RelativeDocumentMoniker": "Acelera\\Models\\Login.cs",
               "ToolTip": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Models\\Login.cs",
               "RelativeToolTip": "Acelera\\Models\\Login.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAowA4AAAAwAAAAAAAAAA==",
-=======
-              "Title": "TelaPrincipal.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPrincipal.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaPrincipal.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAA6wEsAAABEAAAAAAAAAA==",
->>>>>>> 73c5b16 (Atualizando telas)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T19:28:23.547Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "LoginRepository.cs",
               "DocumentMoniker": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Repositories\\LoginRepository.cs",
@@ -272,161 +99,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-=======
-              "DocumentIndex": 6,
-              "Title": "EventoRepository.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\EventoRepository.cs",
-              "RelativeDocumentMoniker": "Acelera\\Repositories\\EventoRepository.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\EventoRepository.cs",
-              "RelativeToolTip": "Acelera\\Repositories\\EventoRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:14:53.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TelaCriarEvento.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarEvento.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarEvento.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T12:52:51.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TelaCriarEvento.Designer.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.Designer.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarEvento.Designer.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.Designer.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarEvento.Designer.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAowJMAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T12:56:11.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TelaPerfil.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfil.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfil.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfil.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaPerfil.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:07:37.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Program.cs",
-              "RelativeDocumentMoniker": "Acelera\\Program.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Program.cs",
-              "RelativeToolTip": "Acelera\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:31:47.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CodigoRecuperacao.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Controllers\\CodigoRecuperacao.cs",
-              "RelativeDocumentMoniker": "Acelera\\Controllers\\CodigoRecuperacao.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Controllers\\CodigoRecuperacao.cs",
-              "RelativeToolTip": "Acelera\\Controllers\\CodigoRecuperacao.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:18:36.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DateController.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Controllers\\DateController.cs",
-              "RelativeDocumentMoniker": "Acelera\\Controllers\\DateController.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Controllers\\DateController.cs",
-              "RelativeToolTip": "Acelera\\Controllers\\DateController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:19:32.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TelaEditarPerfil.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaEditarPerfil.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaEditarPerfil.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaEditarPerfil.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaEditarPerfil.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:16:40.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TelaEditarPerfil.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaEditarPerfil.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaEditarPerfil.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaEditarPerfil.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaEditarPerfil.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAMwFkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:15:52.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Acelera\\Repositories\\UsuarioRepository.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\UsuarioRepository.cs",
-              "RelativeToolTip": "Acelera\\Repositories\\UsuarioRepository.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAewDsAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:14:37.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TelaCriarPerfil.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfil.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarPerfil.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfil.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarPerfil.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAIAwwDsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:11:48.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TelaCriarPerfilColaborador.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfilColaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarPerfilColaborador.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfilColaborador.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarPerfilColaborador.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:09:59.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "TelaCriarPerfil.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfil.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarPerfil.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarPerfil.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarPerfil.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:09:57.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
->>>>>>> 73c5b16 (Atualizando telas)
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Acelera\\Models\\Usuario.cs",
@@ -434,58 +106,7 @@
               "RelativeToolTip": "Acelera\\Models\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
               "WhenOpened": "2025-05-17T19:27:02.066Z"
-=======
-              "WhenOpened": "2025-05-08T11:12:01.511Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "TelaCadastroColaborador.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCadastroColaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCadastroColaborador.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCadastroColaborador.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaCadastroColaborador.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAD4v1kAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T10:55:27.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "TelaCadastroColaborador.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCadastroColaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCadastroColaborador.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCadastroColaborador.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaCadastroColaborador.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T10:48:35.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ColaboradorRepository.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\ColaboradorRepository.cs",
-              "RelativeDocumentMoniker": "Acelera\\Repositories\\ColaboradorRepository.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\ColaboradorRepository.cs",
-              "RelativeToolTip": "Acelera\\Repositories\\ColaboradorRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwDIAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T10:47:46.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Colaborador.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Models\\Colaborador.cs",
-              "RelativeDocumentMoniker": "Acelera\\Models\\Colaborador.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Models\\Colaborador.cs",
-              "RelativeToolTip": "Acelera\\Models\\Colaborador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T10:47:36.666Z"
->>>>>>> 73c5b16 (Atualizando telas)
             }
           ]
         }

@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\",
   "Documents": [
     {
@@ -17,23 +18,23 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\acelera\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\acelera\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
 =======
       "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telabuscareventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telabuscareventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\users\\diogo\\onedrive\\documentos\\acelera\\event\\event\\acelera\\acelera\\repositories\\comunidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\repositories\\comunidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 3df1909 (Adiciona funcionalidades de comunidades: criação, edição, remoção, publicações e controle de participantes)
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telabuscareventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telabuscareventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\users\\diogo\\onedrive\\documentos\\acelera\\event\\event\\acelera\\acelera\\models\\comunidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\models\\comunidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\pedro\\acelera\\event\\acelera\\acelera\\views\\telaexibirevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaexibirevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -79,48 +80,20 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+>>>>>>> 73c5b16 (Atualizando telas)
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\acelera\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\controllers\\codigorecuperacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\controllers\\codigorecuperacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\controllers\\datecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\controllers\\datecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telaeditarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaeditarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telacriarperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarperfilcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telacriarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\views\\telaeditarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\views\\telaeditarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Pedro\\Acelera\\Event\\Acelera\\acelera\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> 61bfa76 (Adicionando o filtro por categoria na busca de eventos)
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\acelera\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|c:\\users\\diogo\\onedrive\\documentos\\acelera\\event\\event\\acelera\\acelera\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37735033-16D0-48D3-961C-94C3BD67EB87}|Acelera\\Acelera.csproj|solutionrelative:acelera\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 3df1909 (Adiciona funcionalidades de comunidades: criação, edição, remoção, publicações e controle de participantes)
     }
   ],
   "DocumentGroupContainers": [
@@ -132,9 +105,17 @@
           "DockedWidth": 200,
 <<<<<<< HEAD
           "SelectedChildIndex": 0,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> 3df1909 (Adiciona funcionalidades de comunidades: criação, edição, remoção, publicações e controle de participantes)
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "TelaPerfilColaborador.cs",
               "DocumentMoniker": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Views\\TelaPerfilColaborador.cs",
@@ -145,28 +126,24 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T19:35:20.366Z",
 =======
-          "SelectedChildIndex": 4,
-          "Children": [
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TelaExibirEvento.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaExibirEvento.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaExibirEvento.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAgwE0AAAAlAAAAAAAAAA==",
+              "Title": "EventoController.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Controllers\\EventoController.cs",
+              "RelativeDocumentMoniker": "Acelera\\Controllers\\EventoController.cs",
+              "ToolTip": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Controllers\\EventoController.cs",
+              "RelativeToolTip": "Acelera\\Controllers\\EventoController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAADsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
 <<<<<<< HEAD
-              "WhenOpened": "2025-05-10T12:56:11.984Z",
->>>>>>> 61bfa76 (Adicionando o filtro por categoria na busca de eventos)
-=======
               "WhenOpened": "2025-05-10T19:40:39.403Z",
 >>>>>>> 73c5b16 (Atualizando telas)
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 1,
+=======
               "DocumentIndex": 3,
               "Title": "TelaExibirEvento.cs [Design]",
               "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaExibirEvento.cs",
@@ -180,14 +157,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
+>>>>>>> 73c5b16 (Atualizando telas)
               "Title": "TelaPerfil.cs",
               "DocumentMoniker": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Views\\TelaPerfil.cs",
               "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfil.cs",
               "ToolTip": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Views\\TelaPerfil.cs",
               "RelativeToolTip": "Acelera\\Views\\TelaPerfil.cs",
-<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAIAwwBIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-05-17T19:32:44.041Z"
             },
             {
@@ -198,9 +176,9 @@
               "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfil.cs",
               "ToolTip": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Views\\TelaPerfil.cs [Design]",
               "RelativeToolTip": "Acelera\\Views\\TelaPerfil.cs [Design]",
-=======
-              "ViewState": "AgIAAE8AAAAAAAAAAAAYwBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T19:31:37.626Z"
+=======
               "WhenOpened": "2025-05-09T13:56:28.398Z"
             },
             {
@@ -214,49 +192,63 @@
               "ViewState": "AgIAACEAAAAAAAAAAAA5wEUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T13:46:03.918Z",
+=======
+              "WhenOpened": "2025-05-13T13:09:28.177Z",
+>>>>>>> 3df1909 (Adiciona funcionalidades de comunidades: criação, edição, remoção, publicações e controle de participantes)
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TelaBuscarEventos.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaBuscarEventos.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaBuscarEventos.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaBuscarEventos.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaBuscarEventos.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAADwv9QAAAAYAAAAAAAAAA==",
+              "Title": "ComunidadeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Repositories\\ComunidadeRepository.cs",
+              "RelativeDocumentMoniker": "Acelera\\Repositories\\ComunidadeRepository.cs",
+              "ToolTip": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Repositories\\ComunidadeRepository.cs",
+              "RelativeToolTip": "Acelera\\Repositories\\ComunidadeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:43:54.704Z",
+              "WhenOpened": "2025-05-13T13:08:17.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TelaBuscarEventos.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaBuscarEventos.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaBuscarEventos.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaBuscarEventos.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaBuscarEventos.cs [Design]",
->>>>>>> 61bfa76 (Adicionando o filtro por categoria na busca de eventos)
+              "Title": "Comunidade.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Models\\Comunidade.cs",
+              "RelativeDocumentMoniker": "Acelera\\Models\\Comunidade.cs",
+              "ToolTip": "C:\\Users\\Diogo\\OneDrive\\Documentos\\Acelera\\Event\\Event\\Acelera\\Acelera\\Models\\Comunidade.cs",
+              "RelativeToolTip": "Acelera\\Models\\Comunidade.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T19:31:37.626Z"
+              "WhenOpened": "2025-05-13T13:06:57.943Z",
+              "EditorCaption": ""
+<<<<<<< HEAD
+>>>>>>> 73c5b16 (Atualizando telas)
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
               "DocumentIndex": 4,
+<<<<<<< HEAD
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Models\\Login.cs",
               "RelativeDocumentMoniker": "Acelera\\Models\\Login.cs",
               "ToolTip": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Models\\Login.cs",
               "RelativeToolTip": "Acelera\\Models\\Login.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAowA4AAAAwAAAAAAAAAA==",
+=======
+              "Title": "TelaPrincipal.cs",
+              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
+              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPrincipal.cs",
+              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
+              "RelativeToolTip": "Acelera\\Views\\TelaPrincipal.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAA6wEsAAABEAAAAAAAAAA==",
+>>>>>>> 73c5b16 (Atualizando telas)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T19:28:23.547Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "LoginRepository.cs",
               "DocumentMoniker": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Repositories\\LoginRepository.cs",
@@ -264,60 +256,13 @@
               "ToolTip": "C:\\Users\\matri\\Desktop\\Acelera\\Acelera\\Acelera\\Repositories\\LoginRepository.cs",
               "RelativeToolTip": "Acelera\\Repositories\\LoginRepository.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAIA9wBIAAAAaAAAAAAAAAA==",
-=======
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T19:27:39.863Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
 =======
-              "DocumentIndex": 8,
->>>>>>> 73c5b16 (Atualizando telas)
-              "Title": "TelaPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPrincipal.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs [Design]",
-              "RelativeToolTip": "Acelera\\Views\\TelaPrincipal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:38:57.516Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TelaCriarEvento.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaCriarEvento.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaCriarEvento.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaCriarEvento.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:12:48.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CadastroAutomatico.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Controllers\\CadastroAutomatico.cs",
-              "RelativeDocumentMoniker": "Acelera\\Controllers\\CadastroAutomatico.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Controllers\\CadastroAutomatico.cs",
-              "RelativeToolTip": "Acelera\\Controllers\\CadastroAutomatico.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAAEkAAACqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:14:28.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TelaPrincipal.cs",
-              "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
-              "RelativeDocumentMoniker": "Acelera\\Views\\TelaPrincipal.cs",
-              "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPrincipal.cs",
-              "RelativeToolTip": "Acelera\\Views\\TelaPrincipal.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAA6wEsAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:39:25.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "EventoRepository.cs",
               "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Repositories\\EventoRepository.cs",
@@ -360,24 +305,12 @@
               "RelativeDocumentMoniker": "Acelera\\Views\\TelaPerfil.cs",
               "ToolTip": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Views\\TelaPerfil.cs [Design]",
               "RelativeToolTip": "Acelera\\Views\\TelaPerfil.cs [Design]",
->>>>>>> 61bfa76 (Adicionando o filtro por categoria na busca de eventos)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2025-05-17T19:27:39.863Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 5,
-=======
-              "DocumentIndex": 12,
-=======
               "WhenOpened": "2025-05-08T11:07:37.651Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
->>>>>>> 73c5b16 (Atualizando telas)
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Pedro\\Acelera\\Event\\Acelera\\Acelera\\Program.cs",
               "RelativeDocumentMoniker": "Acelera\\Program.cs",
@@ -482,10 +415,6 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 21,
->>>>>>> 61bfa76 (Adicionando o filtro por categoria na busca de eventos)
-=======
               "DocumentIndex": 23,
 >>>>>>> 73c5b16 (Atualizando telas)
               "Title": "Usuario.cs",
@@ -546,7 +475,9 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T10:47:36.666Z"
->>>>>>> 61bfa76 (Adicionando o filtro por categoria na busca de eventos)
+>>>>>>> 73c5b16 (Atualizando telas)
+=======
+>>>>>>> 3df1909 (Adiciona funcionalidades de comunidades: criação, edição, remoção, publicações e controle de participantes)
             }
           ]
         }
