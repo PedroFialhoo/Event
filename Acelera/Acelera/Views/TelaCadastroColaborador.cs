@@ -25,7 +25,7 @@ namespace Acelera.Views
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
             string repeteSenha = txtRepeteSenha.Text;
-            string cnpj = txtCnpj.Text;
+            string document = txtCnpj.Text;
 
             EmailController emailController = new EmailController();
             PasswordController passwordController = new PasswordController();
@@ -44,12 +44,23 @@ namespace Acelera.Views
                 MessageBox.Show("As senhas devem coincidir", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (!DocumentController.VerificaCNPJ(txtCnpj.Text))
+            if (rbCnpj.Checked)
             {
-                MessageBox.Show("Insira um CNPJ válido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                if (!DocumentController.VerificaCNPJ(txtCnpj.Text))
+                {
+                    MessageBox.Show("Insira um CNPJ válido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
-            bool cadastrado = LoginColaboradorRepository.Cadastrar(email, senha, cnpj);
+            else if (rbCpf.Checked)
+            {
+                if (!DocumentController.ValidarCPF(txtCnpj.Text))
+                {
+                    MessageBox.Show("Insira um CPF válido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+            bool cadastrado = LoginColaboradorRepository.Cadastrar(email, senha, document);
             EmailRecuperacao emailRecuperacao = new EmailRecuperacao();
 
             if (cadastrado)
