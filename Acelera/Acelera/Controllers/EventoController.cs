@@ -9,60 +9,11 @@ namespace Acelera.Controllers
     {
         private readonly ComunidadeRepository comunidadeRepo = new ComunidadeRepository();
 
-        public bool CriarComunidade(Comunidade comunidade, string responsavel, string categoria)
+        public bool EntrarNaComunidade(string categoria, string usuario)
         {
             try
             {
-                comunidadeRepo.Criar(comunidade, responsavel, categoria);
-                return true;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao criar comunidade: {ex.Message}");
-                return false;
-            }
-        }
-        public bool EditarComunidade(string categoria, string nome, string responsavel, Comunidade atualizada)
-        {
-            try
-            {
-                return comunidadeRepo.Editar(categoria, nome, responsavel, atualizada);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao editar comunidade: {ex.Message}");
-                return false;
-            }
-        }
-        public bool ExcluirComunidade(string categoria, string nome, string responsavel)
-        {
-            try
-            {
-                return comunidadeRepo.Excluir(categoria, nome, responsavel);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao excluir comunidade: {ex.Message}");
-                return false;
-            }
-        }
-        public bool RemoverParticipante(string categoria, string nome, string responsavel, string usuarioParaRemover)
-        {
-            try
-            {
-                return comunidadeRepo.RemoverParticipante(categoria, nome, responsavel, usuarioParaRemover);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao remover participante: {ex.Message}");
-                return false;
-            }
-        }
-        public bool EntrarNaComunidade(string categoria, string nome, string usuario)
-        {
-            try
-            {
-                return comunidadeRepo.AdicionarParticipante(categoria, nome, usuario);
+                return comunidadeRepo.AdicionarParticipante(categoria, usuario);
             }
             catch (Exception ex)
             {
@@ -70,11 +21,12 @@ namespace Acelera.Controllers
                 return false;
             }
         }
-        public bool SairDaComunidade(string categoria, string nome, string usuario)
+
+        public bool SairDaComunidade(string categoria, string usuario)
         {
             try
             {
-                return comunidadeRepo.SairDaComunidade(categoria, nome, usuario);
+                return comunidadeRepo.SairDaComunidade(categoria, usuario);
             }
             catch (Exception ex)
             {
@@ -82,11 +34,12 @@ namespace Acelera.Controllers
                 return false;
             }
         }
-        public List<string> ListarParticipantes(string categoria, string nome)
+
+        public List<string> ListarParticipantes(string categoria)
         {
             try
             {
-                return comunidadeRepo.ListarParticipantes(categoria, nome);
+                return comunidadeRepo.ListarParticipantes(categoria);
             }
             catch (Exception ex)
             {
@@ -95,11 +48,12 @@ namespace Acelera.Controllers
             }
         }
 
-        public bool CriarPublicacao(string categoria, string nome, Publicacao publicacao)
+        public bool CriarPublicacao(string categoria, Publicacao publicacao)
         {
             try
             {
-                return comunidadeRepo.AdicionarPublicacao(categoria, nome, publicacao);
+                comunidadeRepo.AdicionarPublicacao(categoria, publicacao);
+                return true;
             }
             catch (Exception ex)
             {
@@ -107,11 +61,12 @@ namespace Acelera.Controllers
                 return false;
             }
         }
-        public List<Publicacao> ListarPublicacoes(string categoria, string nome)
+
+        public List<Publicacao> ListarPublicacoes(string categoria)
         {
             try
             {
-                return comunidadeRepo.ListarPublicacoes(categoria, nome);
+                return comunidadeRepo.ListarPublicacoes(categoria);
             }
             catch (Exception ex)
             {
@@ -119,17 +74,33 @@ namespace Acelera.Controllers
                 return new List<Publicacao>();
             }
         }
-        public bool ExcluirPublicacao(string categoria, string nome, int idPublicacao)
+
+        public bool CurtirPublicacao(string categoria, int indice, string usuario)
         {
             try
             {
-                return comunidadeRepo.ExcluirPublicacao(categoria, nome, idPublicacao);
+                return comunidadeRepo.CurtirPublicacao(categoria, indice, usuario);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao excluir publicação: {ex.Message}");
+                Console.WriteLine($"Erro ao curtir publicação: {ex.Message}");
+                return false;
+            }
+        }
+
+        public bool ComentarPublicacao(string categoria, int indice, Comentario comentario)
+        {
+            try
+            {
+                comunidadeRepo.ComentarPublicacao(categoria, indice, comentario);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao comentar publicação: {ex.Message}");
                 return false;
             }
         }
     }
 }
+

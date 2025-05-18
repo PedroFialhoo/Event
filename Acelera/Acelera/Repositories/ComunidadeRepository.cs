@@ -33,7 +33,23 @@ namespace Acelera.Repositories
             }
             return false;
         }
+        public bool SairDaComunidade(string categoria, string usuario)
+        {
+            var comunidade = ObterOuCriarPorCategoria(categoria);
+            if (comunidade.Participantes.Contains(usuario))
+            {
+                comunidade.Participantes.Remove(usuario);
+                return true;
+            }
+            return false;
+        }
+        public List<string> ListarParticipantes(string categoria)
+        {
+            var comunidade = comunidades.FirstOrDefault(c =>
+                c.Categoria.Equals(categoria, StringComparison.OrdinalIgnoreCase));
 
+            return comunidade?.Participantes ?? new List<string>();
+        }
         public bool AdicionarPublicacao(string categoria, Publicacao publicacao)
         {
             var comunidade = ObterOuCriarPorCategoria(categoria);

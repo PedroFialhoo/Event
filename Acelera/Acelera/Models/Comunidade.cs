@@ -9,7 +9,7 @@ namespace Acelera.Models
 {
     public class Comunidade
     {
-        public string Categoria { get; set; } // Ex: "Esportes", "Tecnologia", etc.
+        public string Categoria { get; set; }
         public List<string> Participantes { get; set; } = new List<string>();
         public List<Publicacao> Publicacoes { get; set; } = new List<Publicacao>();
     }
