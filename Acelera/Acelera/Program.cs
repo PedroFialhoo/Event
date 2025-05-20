@@ -5,8 +5,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera.Controllers;
 using Acelera.Forms;
+using Acelera.Models;
+using Acelera.Repositories;
 using Acelera.Views;
-
+using System.Drawing;
+using System.IO;
 namespace Acelera
 {
     internal static class Program
