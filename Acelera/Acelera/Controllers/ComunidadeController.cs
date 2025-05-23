@@ -101,18 +101,6 @@ namespace Acelera.Controllers
                 return false;
             }
         }
-        public bool ResponderComentario(string categoria, int indicePublicacao, int indiceComentarioPai, Comentario resposta)
-        {
-            try
-            {
-                return comunidadeRepo.ResponderComentario(categoria, indicePublicacao, indiceComentarioPai, resposta);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao responder comentário: {ex.Message}");
-                return false;
-            }
-        }
     }
 }
 
