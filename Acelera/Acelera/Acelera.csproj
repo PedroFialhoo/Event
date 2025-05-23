@@ -417,5 +417,8 @@
   <ItemGroup>
     <None Include="Resources\TelaPrincipal2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaLogin2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

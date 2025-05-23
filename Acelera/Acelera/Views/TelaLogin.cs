@@ -159,6 +159,13 @@ namespace Acelera.Forms
             telaLoginColaborador.Show();
             this.Close();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.Show();
+            this.Close();
+        }
     }
 }
 
