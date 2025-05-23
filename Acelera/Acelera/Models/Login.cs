@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QRCoder;
 
 namespace Acelera.Models
 {
@@ -13,13 +14,15 @@ namespace Acelera.Models
             public string Senha { get; set; }
             public string Cnpj { get; set; }
 
+            public string CodeQR { get; set; }
 
             public Login(int id, string email, string senha)
             {
                 Id = id;
                 Email = email;
                 Senha = senha;
-            }
+                CodeQR = Guid.NewGuid().ToString();
+        }
             public Login(int id, string email, string senha, string cnpj)
             {
                 Id = id;

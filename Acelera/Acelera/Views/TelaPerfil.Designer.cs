@@ -42,8 +42,10 @@
             this.menuItemEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowPanelEventos = new System.Windows.Forms.FlowLayoutPanel();
+            this.ss = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).BeginInit();
             this.menuOpcoes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ss)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -181,12 +183,22 @@
             this.flowPanelEventos.TabIndex = 14;
             this.flowPanelEventos.Paint += new System.Windows.Forms.PaintEventHandler(this.flowPanelEventos_Paint);
             // 
+            // ss
+            // 
+            this.ss.Location = new System.Drawing.Point(714, 242);
+            this.ss.Name = "ss";
+            this.ss.Size = new System.Drawing.Size(344, 300);
+            this.ss.TabIndex = 15;
+            this.ss.TabStop = false;
+            this.ss.Click += new System.EventHandler(this.ss_Click);
+            // 
             // TelaPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfil;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.ss);
             this.Controls.Add(this.flowPanelEventos);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.button3);
@@ -205,6 +217,7 @@
             this.Load += new System.EventHandler(this.TelaPerfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).EndInit();
             this.menuOpcoes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ss)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,5 +238,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemEditar;
         private System.Windows.Forms.ToolStripMenuItem excluirContaToolStripMenuItem;
         private System.Windows.Forms.FlowLayoutPanel flowPanelEventos;
+        private System.Windows.Forms.PictureBox ss;
     }
 }

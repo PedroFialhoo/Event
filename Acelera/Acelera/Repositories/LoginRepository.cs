@@ -25,16 +25,16 @@ namespace Acelera.Repositories
             bool existe = logins.Any(login => login.Email == email);
 
             if (existe)
-            {
                 return false;
-            }
 
-            int Id = generateId(); 
-            Login novoLogin = new Login(Id, email, senha);
+            int Id = generateId();
+            Login novoLogin = new Login(Id, email, senha);  // Gera o QR aqui via construtor
             logins.Add(novoLogin);
 
+            usuarioLogadoId = Id;
             return true;
         }
+    
 
         public static Login Autenticar(string email, string senha)
         {
