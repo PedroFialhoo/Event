@@ -86,7 +86,6 @@
     <Compile Include="Controllers\DocumentController.cs" />
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\EmailRecuperacao.cs" />
-    <Compile Include="Controllers\EventoController.cs" />
     <Compile Include="Controllers\FecharJanelas.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\ViaCepService.cs" />
@@ -411,6 +410,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaPrincipal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaLogin2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
