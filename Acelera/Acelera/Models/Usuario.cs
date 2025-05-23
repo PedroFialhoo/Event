@@ -12,8 +12,10 @@ namespace Acelera.Models
         public string Telefone { get; set; }
         public string Cpf { get; set; }
         public string Cidade { get; set; }
+        public string CodeQR { get; set; }
         public string Estado { get; set; }
         public Image Imagem { get; set; }
+
 
     }
 }

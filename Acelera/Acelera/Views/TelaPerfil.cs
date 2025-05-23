@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Acelera.Models;
+using Acelera.Repositories;
+using Acelera.Views;
+using QRCoder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,9 +11,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Acelera.Models;
-using Acelera.Repositories;
-using Acelera.Views;
 
 namespace Acelera.Forms
 {
@@ -38,6 +39,7 @@ namespace Acelera.Forms
             //lblCpf.Text = usuario.Cpf;
             lblCidade.Text = usuario.Cidade;
             lblEstado.Text = usuario.Estado;
+
 
             if (usuario.Imagem != null)
             {
@@ -88,6 +90,8 @@ namespace Acelera.Forms
                 eventoPanel.Controls.Add(pictureBox);
                 eventoPanel.Controls.Add(nomeLabel);
                 flowPanelEventos.Controls.Add(eventoPanel); 
+
+
             }
         }
 
@@ -156,6 +160,24 @@ namespace Acelera.Forms
         private void flowPanelEventos_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void ss_Click(object sender, EventArgs e)
+        {
+            if (idLogado.HasValue)
+            {
+                var login = LoginRepository.ListarTodos().FirstOrDefault(l => l.Id == idLogado.Value);
+
+                if (login != null && !string.IsNullOrEmpty(login.CodeQR))
+                {
+                    QRCodeGenerator qrGenerator = new QRCodeGenerator();
+                    QRCodeData qrCodeData = qrGenerator.CreateQrCode(login.CodeQR, QRCodeGenerator.ECCLevel.Q);
+                    QRCode qrCode = new QRCode(qrCodeData);
+                    Bitmap qrCodeImage = qrCode.GetGraphic(20);
+                    ss.Image = qrCodeImage;
+
+                }
+            }
         }
     }
 }
