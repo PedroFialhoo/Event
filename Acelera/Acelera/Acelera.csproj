@@ -219,6 +219,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\TelaQrCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaQrCode.Designer.cs">
+      <DependentUpon>TelaQrCode.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\TelaBuscarEventos.resx">
       <DependentUpon>TelaBuscarEventos.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +283,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaQrCode.resx">
+      <DependentUpon>TelaQrCode.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -416,6 +425,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaPrincipal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagina_qr_code.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

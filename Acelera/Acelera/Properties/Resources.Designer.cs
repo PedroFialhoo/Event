@@ -103,6 +103,16 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pagina_qr_code {
+            get {
+                object obj = ResourceManager.GetObject("pagina_qr_code", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaBuscarEventos {
             get {
                 object obj = ResourceManager.GetObject("TelaBuscarEventos", resourceCulture);
