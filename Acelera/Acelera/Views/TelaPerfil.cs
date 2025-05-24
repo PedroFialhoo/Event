@@ -164,20 +164,12 @@ namespace Acelera.Forms
 
         private void ss_Click(object sender, EventArgs e)
         {
-            if (idLogado.HasValue)
-            {
-                var login = LoginRepository.ListarTodos().FirstOrDefault(l => l.Id == idLogado.Value);
+        }
 
-                if (login != null && !string.IsNullOrEmpty(login.CodeQR))
-                {
-                    QRCodeGenerator qrGenerator = new QRCodeGenerator();
-                    QRCodeData qrCodeData = qrGenerator.CreateQrCode(login.CodeQR, QRCodeGenerator.ECCLevel.Q);
-                    QRCode qrCode = new QRCode(qrCodeData);
-                    Bitmap qrCodeImage = qrCode.GetGraphic(20);
-                    ss.Image = qrCodeImage;
-
-                }
-            }
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            TelaQrCode telaQrCode = new TelaQrCode();
+            telaQrCode.Show();
         }
     }
 }

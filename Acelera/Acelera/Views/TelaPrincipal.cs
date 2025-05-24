@@ -15,28 +15,32 @@ namespace Acelera.Forms
 {
     public partial class TelaPrincipal: Form
     {
-
+        int? idUsuarioLogado = LoginRepository.GetUsuarioLogadoId();
         public TelaPrincipal()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            int? idUsuarioLogado = LoginRepository.GetUsuarioLogadoId();
+        {            
 
             if (idUsuarioLogado == null)
-            {
-                MessageBox.Show("Nenhum usuário está logado.");
+            {               
+                DialogResult result = MessageBox.Show("Nenhum usuário está logado.\nDeseja se cadastrar?", "Atenção", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    TelaCadastro telaCadastro = new TelaCadastro();
+                    telaCadastro.Show();
+                    this.Close();
+                }
                 return;
             }
 
-            // Busca o usuário no repositório usando o ID
+
             Usuario usuarioLogado = UsuarioRepository.ObterUsuarioPorId(idUsuarioLogado.Value);
 
             if (usuarioLogado != null)
             {
-                // Cria e abre a TelaPerfil com o usuário logado
                 TelaPerfil telaPerfil = new TelaPerfil(usuarioLogado);
                 telaPerfil.Show();
                 this.Close();
@@ -112,9 +116,37 @@ namespace Acelera.Forms
 
         private void button4_Click(object sender, EventArgs e)
         {
-            TelaComunidades telaComunidades = new TelaComunidades();
-            telaComunidades.Show();
-            this.Close();
+            if (idUsuarioLogado.HasValue)
+            {
+                TelaComunidades telaComunidades = new TelaComunidades();
+                telaComunidades.Show();
+                this.Close();
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("Nenhum usuário está logado.\nDeseja se cadastrar?","Atenção",MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    TelaCadastro telaCadastro = new TelaCadastro();
+                    telaCadastro.Show();
+                    this.Close();
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Apenas colaboradores podem criar eventos.\nDeseja se cadastrar como um colaborador?", "Atenção", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                TelaCadastroColaborador telaCadastro = new TelaCadastroColaborador();
+                telaCadastro.Show();
+                this.Close();
+            }
+        }
+
+        private void TelaPrincipal_Load(object sender, EventArgs e)
+        {
         }
     }
 }

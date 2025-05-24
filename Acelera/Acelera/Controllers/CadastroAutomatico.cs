@@ -28,6 +28,7 @@ namespace Acelera.Controllers
                 Id = 0,
                 Nome = "Pedro",
                 Telefone = "11999999999",
+                Cpf = "467.262.218-51",
             };
 
             UsuarioRepository.SalvarUsuario(usuario);
