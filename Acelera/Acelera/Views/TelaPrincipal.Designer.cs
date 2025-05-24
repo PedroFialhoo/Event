@@ -68,6 +68,7 @@
             this.button2.Size = new System.Drawing.Size(343, 95);
             this.button2.TabIndex = 2;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -219,6 +220,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event";
+            this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.ResumeLayout(false);
 
         }

@@ -12,11 +12,10 @@ namespace Acelera.Repositories
 
         public static bool SalvarUsuario(Usuario usuario)
         {
-            // Verifica se o usuário com o mesmo id já existe
             var usuarioExistente = usuarios.Find(u => u.Id == usuario.Id);
             if (usuarioExistente != null)
             {
-                return false; // Usuário com o mesmo ID já existe
+                return false; 
             }
 
             usuarios.Add(usuario);

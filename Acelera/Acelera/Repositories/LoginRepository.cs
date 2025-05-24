@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Acelera.Models;
+using QRCoder;
 
 namespace Acelera.Repositories
 {
@@ -11,7 +12,6 @@ namespace Acelera.Repositories
     {
         public static List<Login> logins = new List<Login>();
 
-        // Variável estática para armazenar o ID do usuário logado
         private static int? usuarioLogadoId;
 
         private static int lastIdGenerated = 0;
@@ -28,10 +28,9 @@ namespace Acelera.Repositories
                 return false;
 
             int Id = generateId();
-            Login novoLogin = new Login(Id, email, senha);  // Gera o QR aqui via construtor
+            Login novoLogin = new Login(Id, email, senha); 
             logins.Add(novoLogin);
 
-            usuarioLogadoId = Id;
             return true;
         }
     
