@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Acelera.Controllers
 {
-    public class EventoController
+    public class ComunidadeController
     {
         private readonly ComunidadeRepository comunidadeRepo = new ComunidadeRepository();
 

@@ -1,4 +1,5 @@
-﻿using Acelera.Models;
+﻿using Acelera.Controllers;
+using Acelera.Models;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,12 +7,19 @@ namespace Acelera.Repositories
 {
     public class ComunidadeRepository
     {
-   
-        private static List<Comunidade> comunidades = new List<Comunidade>();
 
+        private static List<Comunidade> comunidades = CadastroAutomaticoComunidades.comunidades;
+
+        // Novo método só para buscar sem criar
+        public Comunidade ObterPorCategoria(string categoria)
+        {
+            return comunidades.FirstOrDefault(c => c.Categoria.ToLower() == categoria.ToLower());
+        }
+
+        // Método usado para adicionar/criar quando necessário
         public Comunidade ObterOuCriarPorCategoria(string categoria)
         {
-            var comunidade = comunidades.FirstOrDefault(c => c.Categoria.ToLower() == categoria.ToLower());
+            var comunidade = ObterPorCategoria(categoria);
             if (comunidade == null)
             {
                 comunidade = new Comunidade { Categoria = categoria };
@@ -76,15 +84,20 @@ namespace Acelera.Repositories
         }
         public List<Publicacao> ListarPublicacoes(string categoria)
         {
-            var comunidade = ObterOuCriarPorCategoria(categoria);
+            var comunidade = ObterPorCategoria(categoria);
+            if (comunidade == null)
+                return new List<Publicacao>(); // Retorna lista vazia se não achar
             return comunidade.Publicacoes;
         }
 
         public List<string> ListarParticipantes(string categoria)
         {
-            var comunidade = ObterOuCriarPorCategoria(categoria);
+            var comunidade = ObterPorCategoria(categoria);
+            if (comunidade == null)
+                return new List<string>();
             return comunidade.Participantes;
         }
+
     }
 }
 

@@ -34,6 +34,7 @@
             this.opMusica = new System.Windows.Forms.RadioButton();
             this.opComputacao = new System.Windows.Forms.RadioButton();
             this.opEsporte = new System.Windows.Forms.RadioButton();
+            this.flowPanelComentarios = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // opEducacao
@@ -102,12 +103,21 @@
             this.opEsporte.TabStop = true;
             this.opEsporte.UseVisualStyleBackColor = false;
             // 
+            // flowPanelComentarios
+            // 
+            this.flowPanelComentarios.AutoScroll = true;
+            this.flowPanelComentarios.Location = new System.Drawing.Point(464, 186);
+            this.flowPanelComentarios.Name = "flowPanelComentarios";
+            this.flowPanelComentarios.Size = new System.Drawing.Size(1406, 737);
+            this.flowPanelComentarios.TabIndex = 5;
+            // 
             // TelaComunidades
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaComunidades;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.flowPanelComentarios);
             this.Controls.Add(this.opEsporte);
             this.Controls.Add(this.opComputacao);
             this.Controls.Add(this.opMusica);
@@ -121,6 +131,7 @@
             this.Name = "TelaComunidades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event";
+            this.Load += new System.EventHandler(this.TelaComunidades_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +145,6 @@
         private System.Windows.Forms.RadioButton opMusica;
         private System.Windows.Forms.RadioButton opComputacao;
         private System.Windows.Forms.RadioButton opEsporte;
+        private System.Windows.Forms.FlowLayoutPanel flowPanelComentarios;
     }
 }
