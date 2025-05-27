@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CadastroAutomatico.cs" />
+    <Compile Include="Controllers\CadastroAutomaticoComunidades.cs" />
     <Compile Include="Controllers\CodigoRecuperacao.cs" />
     <Compile Include="Controllers\ComunidadeController.cs" />
     <Compile Include="Controllers\DateController.cs" />
