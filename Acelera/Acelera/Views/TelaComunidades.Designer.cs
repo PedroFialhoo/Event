@@ -35,13 +35,16 @@
             this.opComputacao = new System.Windows.Forms.RadioButton();
             this.opEsporte = new System.Windows.Forms.RadioButton();
             this.flowPanelComentarios = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtMensagem = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // opEducacao
             // 
             this.opEducacao.AutoSize = true;
             this.opEducacao.BackColor = System.Drawing.Color.Transparent;
-            this.opEducacao.Location = new System.Drawing.Point(73, 295);
+            this.opEducacao.Location = new System.Drawing.Point(65, 283);
             this.opEducacao.Name = "opEducacao";
             this.opEducacao.Size = new System.Drawing.Size(14, 13);
             this.opEducacao.TabIndex = 0;
@@ -52,7 +55,7 @@
             // 
             this.opEmpreendedorismo.AutoSize = true;
             this.opEmpreendedorismo.BackColor = System.Drawing.Color.Transparent;
-            this.opEmpreendedorismo.Location = new System.Drawing.Point(73, 455);
+            this.opEmpreendedorismo.Location = new System.Drawing.Point(65, 443);
             this.opEmpreendedorismo.Name = "opEmpreendedorismo";
             this.opEmpreendedorismo.Size = new System.Drawing.Size(14, 13);
             this.opEmpreendedorismo.TabIndex = 1;
@@ -63,7 +66,7 @@
             // 
             this.opSaude.AutoSize = true;
             this.opSaude.BackColor = System.Drawing.Color.Transparent;
-            this.opSaude.Location = new System.Drawing.Point(73, 375);
+            this.opSaude.Location = new System.Drawing.Point(65, 363);
             this.opSaude.Name = "opSaude";
             this.opSaude.Size = new System.Drawing.Size(14, 13);
             this.opSaude.TabIndex = 2;
@@ -74,7 +77,7 @@
             // 
             this.opMusica.AutoSize = true;
             this.opMusica.BackColor = System.Drawing.Color.Transparent;
-            this.opMusica.Location = new System.Drawing.Point(73, 795);
+            this.opMusica.Location = new System.Drawing.Point(65, 770);
             this.opMusica.Name = "opMusica";
             this.opMusica.Size = new System.Drawing.Size(14, 13);
             this.opMusica.TabIndex = 3;
@@ -85,7 +88,7 @@
             // 
             this.opComputacao.AutoSize = true;
             this.opComputacao.BackColor = System.Drawing.Color.Transparent;
-            this.opComputacao.Location = new System.Drawing.Point(73, 563);
+            this.opComputacao.Location = new System.Drawing.Point(65, 546);
             this.opComputacao.Name = "opComputacao";
             this.opComputacao.Size = new System.Drawing.Size(14, 13);
             this.opComputacao.TabIndex = 3;
@@ -96,7 +99,7 @@
             // 
             this.opEsporte.AutoSize = true;
             this.opEsporte.BackColor = System.Drawing.Color.Transparent;
-            this.opEsporte.Location = new System.Drawing.Point(73, 717);
+            this.opEsporte.Location = new System.Drawing.Point(65, 692);
             this.opEsporte.Name = "opEsporte";
             this.opEsporte.Size = new System.Drawing.Size(14, 13);
             this.opEsporte.TabIndex = 4;
@@ -106,17 +109,62 @@
             // flowPanelComentarios
             // 
             this.flowPanelComentarios.AutoScroll = true;
+            this.flowPanelComentarios.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowPanelComentarios.Location = new System.Drawing.Point(464, 186);
             this.flowPanelComentarios.Name = "flowPanelComentarios";
-            this.flowPanelComentarios.Size = new System.Drawing.Size(1406, 737);
+            this.flowPanelComentarios.Size = new System.Drawing.Size(1374, 723);
             this.flowPanelComentarios.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(109, 30);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(224, 77);
+            this.button1.TabIndex = 7;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(1773, 935);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(65, 78);
+            this.button2.TabIndex = 8;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtMensagem
+            // 
+            this.txtMensagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(154)))));
+            this.txtMensagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMensagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMensagem.Location = new System.Drawing.Point(562, 962);
+            this.txtMensagem.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMensagem.Multiline = true;
+            this.txtMensagem.Name = "txtMensagem";
+            this.txtMensagem.Size = new System.Drawing.Size(1091, 51);
+            this.txtMensagem.TabIndex = 9;
             // 
             // TelaComunidades
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaComunidades;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.txtMensagem);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.flowPanelComentarios);
             this.Controls.Add(this.opEsporte);
             this.Controls.Add(this.opComputacao);
@@ -146,5 +194,8 @@
         private System.Windows.Forms.RadioButton opComputacao;
         private System.Windows.Forms.RadioButton opEsporte;
         private System.Windows.Forms.FlowLayoutPanel flowPanelComentarios;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtMensagem;
     }
 }
