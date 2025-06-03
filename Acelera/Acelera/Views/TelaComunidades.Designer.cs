@@ -114,6 +114,7 @@
             this.flowPanelComentarios.Name = "flowPanelComentarios";
             this.flowPanelComentarios.Size = new System.Drawing.Size(1374, 723);
             this.flowPanelComentarios.TabIndex = 5;
+            this.flowPanelComentarios.WrapContents = false;
             // 
             // button1
             // 

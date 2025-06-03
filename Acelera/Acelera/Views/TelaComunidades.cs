@@ -69,39 +69,56 @@ namespace Acelera.Views
             {
                 Panel comentarioPanel = new Panel();
                 comentarioPanel.Width = 900;
-                comentarioPanel.Height = 100;
+                comentarioPanel.AutoSize = true;
+                comentarioPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+                comentarioPanel.MinimumSize = new Size(900, 100);
                 comentarioPanel.Margin = new Padding(10);
-                comentarioPanel.BorderStyle = BorderStyle.None;
+                comentarioPanel.BorderStyle = BorderStyle.FixedSingle;  // Melhor visualizar limites
+                comentarioPanel.Padding = new Padding(5);
+
+                FlowLayoutPanel flowInterno = new FlowLayoutPanel();
+                flowInterno.FlowDirection = FlowDirection.TopDown;
+                flowInterno.WrapContents = false;
+                flowInterno.AutoSize = true;
+                flowInterno.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+                flowInterno.Dock = DockStyle.Fill;
+                flowInterno.Padding = new Padding(0);
+                flowInterno.Margin = new Padding(0);
 
                 Label autorLabel = new Label();
                 autorLabel.Text = $"{publicacao.Autor}";
-                autorLabel.Dock = DockStyle.Top;
+                autorLabel.AutoSize = true;
                 autorLabel.Font = new Font("Segoe UI", 15, FontStyle.Bold);
+                autorLabel.Margin = new Padding(0, 0, 0, 5);
 
                 Label mensagemLabel = new Label();
                 mensagemLabel.Text = publicacao.Mensagem;
+                mensagemLabel.MaximumSize = new Size(850, 0);  // quebra automática
                 mensagemLabel.AutoSize = true;
-                mensagemLabel.Dock = DockStyle.Fill;
                 mensagemLabel.Font = new Font("Segoe UI", 15);
-                mensagemLabel.AutoSize = false;
-                mensagemLabel.TextAlign = ContentAlignment.MiddleLeft;
+                mensagemLabel.Margin = new Padding(0, 0, 0, 5);
 
                 Label dataLabel = new Label();
                 dataLabel.Text = publicacao.Data.ToString("g");
-                dataLabel.Dock = DockStyle.Bottom;
+                dataLabel.AutoSize = true;
                 dataLabel.Font = new Font("Segoe UI", 10, FontStyle.Italic);
 
-                comentarioPanel.Controls.Add(autorLabel);
-                comentarioPanel.Controls.Add(mensagemLabel);
-                comentarioPanel.Controls.Add(dataLabel);
+                // Adiciona na ordem correta
+                flowInterno.Controls.Add(autorLabel);
+                flowInterno.Controls.Add(mensagemLabel);
+                flowInterno.Controls.Add(dataLabel);
 
+                // Adiciona o Flow interno no painel
+                comentarioPanel.Controls.Add(flowInterno);
+
+                // Adiciona no FlowPanel principal
                 flowPanelComentarios.Controls.Add(comentarioPanel);
             }
-
             if (publicacoes.Count == 0)
             {
                 MessageBox.Show("Nenhuma publicação encontrada nesta comunidade.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
