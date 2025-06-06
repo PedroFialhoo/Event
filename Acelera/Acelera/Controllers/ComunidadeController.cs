@@ -101,6 +101,14 @@ namespace Acelera.Controllers
                 return false;
             }
         }
+        public bool MarcarVou(string categoria, int indice, string usuario)
+        {
+            return comunidadeRepo.ReagirVou(categoria, indice, usuario);
+        }
+        public bool MarcarFui(string categoria, int indice, string usuario)
+        {
+            return comunidadeRepo.ReagirFui(categoria , indice, usuario);   
+        }
     }
 }
 

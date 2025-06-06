@@ -91,6 +91,17 @@ namespace Acelera.Views
                 autorLabel.Font = new Font("Segoe UI", 15, FontStyle.Bold);
                 autorLabel.Margin = new Padding(0, 0, 0, 5);
 
+                if (!string.IsNullOrEmpty(publicacao.ImagemBase64))
+                {
+                    PictureBox picture = new PictureBox();
+                    picture.Image = publicacao.ObterImagem();
+                    picture.SizeMode = PictureBoxSizeMode.Zoom;
+                    picture.Width = 850;
+                    picture.Height = 300;
+                    picture.Margin = new Padding(0, 0, 0, 5);
+                    flowInterno.Controls.Add(picture);
+                }
+
                 Label mensagemLabel = new Label();
                 mensagemLabel.Text = publicacao.Mensagem;
                 mensagemLabel.MaximumSize = new Size(850, 0);  // quebra automática
@@ -132,16 +143,36 @@ namespace Acelera.Views
 
             int? id = LoginRepository.GetUsuarioLogadoId();
             var u = UsuarioRepository.ObterUsuarioPorId(id.Value);
+
+            Image imagemSelecionada = null;
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Imagens (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    imagemSelecionada = Image.FromFile(ofd.FileName);
+                }
+            }
+
             Publicacao publicacao = new Publicacao
             {
                 Autor = u.Nome,
                 Mensagem = txtMensagem.Text,
-                Data = DateTime.Now
+                Data = DateTime.Now,
+                ImagemBase64 = imagemSelecionada != null ? Publicacao.ConverterImagem(imagemSelecionada) : null
             };
 
             ComunidadeRepository comunidadeRepository = new ComunidadeRepository();
             comunidadeRepository.AdicionarPublicacao(categoria, publicacao);
             AtualizarPublicacoes();
+
+            DialogResult dialog = MessageBox.Show("Esta publicação representa um evento que acontecerá? (Eu Vou)", "Selo Eu Vou", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+                publicacao.SeloVou = true;
+
+            dialog = MessageBox.Show("Esta publicação representa um evento que já ocorreu? (Eu Fui)", "Selo Eu Fui", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+                publicacao.SeloFui = true;
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -97,7 +97,28 @@ namespace Acelera.Repositories
                 return new List<string>();
             return comunidade.Participantes;
         }
-
+        public bool ReagirVou(string categoria, int indicePublicacao, string usuario)
+        {
+            var comunidade = ObterOuCriarPorCategoria(categoria);
+            var pub = comunidade?.Publicacoes.ElementAtOrDefault(indicePublicacao);
+            if (pub != null && !pub.EuVou.Contains(usuario))
+            {
+                pub.EuVou.Add(usuario);
+                return true;
+            }
+            return false;
+        }
+        public bool ReagirFui(string categoria, int indicePublicacao, string usuario)
+        {
+            var comunidade = ObterOuCriarPorCategoria(categoria);
+            var pub = comunidade?.Publicacoes.ElementAtOrDefault(indicePublicacao);
+            if (pub != null && !pub.EuFui.Contains(usuario))
+            {
+                pub.EuFui.Add(usuario);
+                return true;
+            }
+            return false;
+        }
     }
 }
 

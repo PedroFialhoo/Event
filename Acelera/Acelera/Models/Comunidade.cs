@@ -22,6 +22,8 @@ namespace Acelera.Models
         public string ImagemBase64 { get; set; }
         public List<string> Curtidas { get; set; } = new List<string>();
         public List<Comentario> Comentarios { get; set; } = new List<Comentario>();
+        public List<string> EuVou { get; set; } = new List<string>();
+        public List<string> EuFui { get; set; } = new List<string>();
 
         public Publicacao() { }
         public Publicacao(string mensagem, string autor, Image imagem = null)
@@ -57,6 +59,8 @@ namespace Acelera.Models
         {
             return ConverterBase(ImagemBase64);
         }
+        public bool SeloVou { get; set; } = false;
+        public bool SeloFui { get; set; } = false;
     }
 
     public class Comentario
