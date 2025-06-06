@@ -119,6 +119,27 @@ namespace Acelera.Views
                 flowInterno.Controls.Add(mensagemLabel);
                 flowInterno.Controls.Add(dataLabel);
 
+                if (publicacao.SeloVou)
+                {
+                    Label seloVou = new Label();
+                    seloVou.Text = "Selo: Eu Vou";
+                    seloVou.AutoSize = true;
+                    seloVou.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+                    seloVou.ForeColor = Color.DarkGreen;
+                    seloVou.Margin = new Padding(0, 5, 0, 0);
+                    flowInterno.Controls.Add(seloVou);
+                }
+                if (publicacao.SeloFui)
+                {
+                    Label seloFui = new Label();
+                    seloFui.Text = "Selo: Eu Fui";
+                    seloFui.AutoSize = true;
+                    seloFui.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+                    seloFui.ForeColor = Color.DarkBlue;
+                    seloFui.Margin = new Padding(0, 2, 0, 0);
+                    flowInterno.Controls.Add(seloFui);
+                }
+
                 // Adiciona o Flow interno no painel
                 comentarioPanel.Controls.Add(flowInterno);
 
@@ -166,13 +187,19 @@ namespace Acelera.Views
             comunidadeRepository.AdicionarPublicacao(categoria, publicacao);
             AtualizarPublicacoes();
 
-            DialogResult dialog = MessageBox.Show("Esta publicação representa um evento que acontecerá? (Eu Vou)", "Selo Eu Vou", MessageBoxButtons.YesNo);
-            if (dialog == DialogResult.Yes)
+            DialogResult dialog = MessageBox.Show(
+                "Como você deseja marcar este evento?\n\nSim: Evento futuro (Eu Vou)\nNão: Evento passado (Eu Fui)\nCancelar: Nenhum selo",
+                "Selo do evento",
+                MessageBoxButtons.YesNoCancel,
+                MessageBoxIcon.Question
+                );
+            if ( dialog == DialogResult.Yes)
+            {
                 publicacao.SeloVou = true;
-
-            dialog = MessageBox.Show("Esta publicação representa um evento que já ocorreu? (Eu Fui)", "Selo Eu Fui", MessageBoxButtons.YesNo);
-            if (dialog == DialogResult.Yes)
+            } else if ( dialog == DialogResult.No)
+            {
                 publicacao.SeloFui = true;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
