@@ -40,6 +40,7 @@
             this.menuItemDeslogar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.menuOpcoes.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +59,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
-            this.lblNome.Location = new System.Drawing.Point(443, 274);
+            this.lblNome.Location = new System.Drawing.Point(443, 295);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(79, 29);
             this.lblNome.TabIndex = 3;
@@ -70,7 +71,7 @@
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
             this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
-            this.lblTelefone.Location = new System.Drawing.Point(1121, 257);
+            this.lblTelefone.Location = new System.Drawing.Point(1121, 295);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(79, 29);
             this.lblTelefone.TabIndex = 8;
@@ -81,7 +82,7 @@
             this.lblNomeEmpresa.AutoSize = true;
             this.lblNomeEmpresa.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
-            this.lblNomeEmpresa.Location = new System.Drawing.Point(443, 477);
+            this.lblNomeEmpresa.Location = new System.Drawing.Point(443, 464);
             this.lblNomeEmpresa.Name = "lblNomeEmpresa";
             this.lblNomeEmpresa.Size = new System.Drawing.Size(79, 29);
             this.lblNomeEmpresa.TabIndex = 9;
@@ -154,13 +155,27 @@
             this.excluirContaToolStripMenuItem.Text = "Excluir Conta";
             this.excluirContaToolStripMenuItem.Click += new System.EventHandler(this.excluirContaToolStripMenuItem_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(994, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(297, 95);
+            this.button1.TabIndex = 13;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TelaPerfilColaborador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfilColaborador;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfilColaborador1;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.flowPanelEventos);
             this.Controls.Add(this.button2);
@@ -192,5 +207,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemDeslogar;
         private System.Windows.Forms.ToolStripMenuItem menuItemEditar;
         private System.Windows.Forms.ToolStripMenuItem excluirContaToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }

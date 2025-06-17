@@ -152,5 +152,12 @@ namespace Acelera.Views
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos();
+            telaBuscarEventos.Show();
+            this.Close();
+        }
     }
 }
