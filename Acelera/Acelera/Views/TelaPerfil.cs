@@ -171,5 +171,19 @@ namespace Acelera.Forms
             TelaQrCode telaQrCode = new TelaQrCode();
             telaQrCode.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            TelaComunidades telaComunidades = new TelaComunidades();
+            telaComunidades.Show();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos();  
+            telaBuscarEventos.Show();
+            this.Close();
+        }
     }
 }

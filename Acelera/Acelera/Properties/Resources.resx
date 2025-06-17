@@ -124,6 +124,9 @@
   <data name="TelaLogin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaLogin2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TelaComunidade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaComunidade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="adicionar-foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\adicionar-foto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,6 +138,9 @@
   </data>
   <data name="TelaPerfilColaborador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaPerfilColaborador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelaPerfilColaborador1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaPerfilColaborador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TelaPrincipal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaPrincipal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,8 +154,8 @@
   <data name="TelaEditarPerfilColaborador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaEditarPerfilColaborador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TelaEsqueceuSenha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TelaEsqueceuSenha1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TelaCadastroColaborador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaCadastroColaborador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TelaExibirEvento1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaExibirEvento1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,9 +169,6 @@
   <data name="TelaCriarPerfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaCriarPerfil4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TelaCadastroColaborador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TelaCadastroColaborador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="qrCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\qrCode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,6 +181,9 @@
   <data name="TelaCriarPerfilColaborador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaCriarPerfilColaborador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TelaEditarPerfil1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaEditarPerfil1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TelaLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaLogin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -187,8 +193,17 @@
   <data name="festival-de-musica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\festival-de-musica1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TelaPrincipal3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaPrincipal3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cara" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelaPerfilCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaPerfilCliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelaCriarPerfil3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaCriarPerfil7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="festival-de-musica1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\festival-de-musica2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +214,17 @@
   <data name="TelaCriarEvento1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaCriarEvento1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TelaCadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TelaCadastro3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TelaCriarPerfil2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaCriarPerfil6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelaEditarPerfil2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaEditarPerfil2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelaEsqueceuSenha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaEsqueceuSenha1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="qrCode1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qrCode1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TelaPrincipal2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaPrincipal2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +232,14 @@
   <data name="TelaExibirEventos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaExibirEventos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TelaCadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaCadastro3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TelaLoginColaborador1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaLoginColaborador1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelaEditarPerfil3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaEditarPerfil3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TelaCriarPerfil1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaCriarPerfil5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,7 +250,7 @@
   <data name="TelaPerfil2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaPerfil2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="qrCode1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qrCode1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TelaEditarPerfil4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaEditarPerfil4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

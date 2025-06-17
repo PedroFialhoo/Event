@@ -44,22 +44,22 @@
             // 
             // txtNome
             // 
-            this.txtNome.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNome.BackColor = System.Drawing.Color.LightGray;
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtNome.Location = new System.Drawing.Point(439, 338);
+            this.txtNome.Location = new System.Drawing.Point(538, 397);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(678, 31);
+            this.txtNome.Size = new System.Drawing.Size(593, 31);
             this.txtNome.TabIndex = 0;
             // 
             // txtCidade
             // 
-            this.txtCidade.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCidade.BackColor = System.Drawing.Color.LightGray;
             this.txtCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtCidade.Location = new System.Drawing.Point(439, 765);
+            this.txtCidade.Location = new System.Drawing.Point(1288, 704);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(678, 31);
+            this.txtCidade.Size = new System.Drawing.Size(500, 31);
             this.txtCidade.TabIndex = 4;
             this.txtCidade.Text = "\n\r\n";
             // 
@@ -67,7 +67,7 @@
             // 
             this.txtEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.txtEstado.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtEstado.BackColor = System.Drawing.Color.LightGray;
             this.txtEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtEstado.FormattingEnabled = true;
@@ -99,18 +99,18 @@
             "São Paulo - SP",
             "Sergipe - SE",
             "Tocantins - TO"});
-            this.txtEstado.Location = new System.Drawing.Point(1271, 765);
+            this.txtEstado.Location = new System.Drawing.Point(538, 867);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(441, 39);
             this.txtEstado.TabIndex = 5;
             // 
             // txtTelefone
             // 
-            this.txtTelefone.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtTelefone.BackColor = System.Drawing.Color.LightGray;
             this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtTelefone.HidePromptOnLeave = true;
-            this.txtTelefone.Location = new System.Drawing.Point(439, 494);
+            this.txtTelefone.Location = new System.Drawing.Point(538, 542);
             this.txtTelefone.Mask = "(00) 00000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(213, 31);
@@ -118,11 +118,11 @@
             // 
             // txtCPF
             // 
-            this.txtCPF.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCPF.BackColor = System.Drawing.Color.LightGray;
             this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtCPF.HidePromptOnLeave = true;
-            this.txtCPF.Location = new System.Drawing.Point(1271, 494);
+            this.txtCPF.Location = new System.Drawing.Point(1288, 556);
             this.txtCPF.Mask = "000,000,000-00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(213, 31);
@@ -151,20 +151,20 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(94, 861);
+            this.button2.Location = new System.Drawing.Point(117, 692);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(181, 71);
+            this.button2.Size = new System.Drawing.Size(177, 58);
             this.button2.TabIndex = 13;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtCep
             // 
-            this.txtCep.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCep.BackColor = System.Drawing.Color.LightGray;
             this.txtCep.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtCep.HidePromptOnLeave = true;
-            this.txtCep.Location = new System.Drawing.Point(439, 612);
+            this.txtCep.Location = new System.Drawing.Point(538, 704);
             this.txtCep.Mask = "00000-000";
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(213, 31);
@@ -180,7 +180,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(315, 639);
+            this.button1.Location = new System.Drawing.Point(318, 632);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(33, 47);
             this.button1.TabIndex = 11;
@@ -190,20 +190,20 @@
             // picturePerfil
             // 
             this.picturePerfil.Image = global::Acelera.Properties.Resources.cara;
-            this.picturePerfil.Location = new System.Drawing.Point(50, 308);
+            this.picturePerfil.Location = new System.Drawing.Point(50, 296);
             this.picturePerfil.Name = "picturePerfil";
-            this.picturePerfil.Size = new System.Drawing.Size(298, 325);
+            this.picturePerfil.Size = new System.Drawing.Size(308, 330);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picturePerfil.TabIndex = 10;
             this.picturePerfil.TabStop = false;
             // 
             // txtData
             // 
-            this.txtData.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtData.BackColor = System.Drawing.Color.LightGray;
             this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtData.HidePromptOnLeave = true;
-            this.txtData.Location = new System.Drawing.Point(1271, 338);
+            this.txtData.Location = new System.Drawing.Point(1288, 397);
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(160, 31);
@@ -213,7 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarPerfil1;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarPerfil3;
             this.ClientSize = new System.Drawing.Size(1904, 1061);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.txtCep);

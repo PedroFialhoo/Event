@@ -163,6 +163,16 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaComunidade {
+            get {
+                object obj = ResourceManager.GetObject("TelaComunidade", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaComunidades {
             get {
                 object obj = ResourceManager.GetObject("TelaComunidades", resourceCulture);
@@ -223,6 +233,26 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaCriarPerfil2 {
+            get {
+                object obj = ResourceManager.GetObject("TelaCriarPerfil2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaCriarPerfil3 {
+            get {
+                object obj = ResourceManager.GetObject("TelaCriarPerfil3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaCriarPerfilColaborador {
             get {
                 object obj = ResourceManager.GetObject("TelaCriarPerfilColaborador", resourceCulture);
@@ -246,6 +276,46 @@ namespace Acelera.Properties {
         internal static System.Drawing.Bitmap TelaEditarPerfil {
             get {
                 object obj = ResourceManager.GetObject("TelaEditarPerfil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarPerfil1 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarPerfil1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarPerfil2 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarPerfil2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarPerfil3 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarPerfil3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarPerfil4 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarPerfil4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,9 +433,29 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaPerfilCliente {
+            get {
+                object obj = ResourceManager.GetObject("TelaPerfilCliente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaPerfilColaborador {
             get {
                 object obj = ResourceManager.GetObject("TelaPerfilColaborador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaPerfilColaborador1 {
+            get {
+                object obj = ResourceManager.GetObject("TelaPerfilColaborador1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,6 +486,16 @@ namespace Acelera.Properties {
         internal static System.Drawing.Bitmap TelaPrincipal2 {
             get {
                 object obj = ResourceManager.GetObject("TelaPrincipal2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaPrincipal3 {
+            get {
+                object obj = ResourceManager.GetObject("TelaPrincipal3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

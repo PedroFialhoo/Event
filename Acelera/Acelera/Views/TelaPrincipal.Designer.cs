@@ -77,9 +77,9 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(1072, 41);
+            this.button3.Location = new System.Drawing.Point(1027, 41);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(225, 45);
+            this.button3.Size = new System.Drawing.Size(270, 45);
             this.button3.TabIndex = 3;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -91,7 +91,7 @@
             this.btnEducacao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnEducacao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnEducacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEducacao.Location = new System.Drawing.Point(29, 325);
+            this.btnEducacao.Location = new System.Drawing.Point(60, 279);
             this.btnEducacao.Name = "btnEducacao";
             this.btnEducacao.Size = new System.Drawing.Size(197, 150);
             this.btnEducacao.TabIndex = 4;
@@ -105,7 +105,7 @@
             this.btnSaude.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSaude.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSaude.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaude.Location = new System.Drawing.Point(272, 325);
+            this.btnSaude.Location = new System.Drawing.Point(302, 279);
             this.btnSaude.Name = "btnSaude";
             this.btnSaude.Size = new System.Drawing.Size(207, 150);
             this.btnSaude.TabIndex = 5;
@@ -119,7 +119,7 @@
             this.btnEmpreendedorismo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnEmpreendedorismo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnEmpreendedorismo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmpreendedorismo.Location = new System.Drawing.Point(515, 325);
+            this.btnEmpreendedorismo.Location = new System.Drawing.Point(558, 279);
             this.btnEmpreendedorismo.Name = "btnEmpreendedorismo";
             this.btnEmpreendedorismo.Size = new System.Drawing.Size(235, 150);
             this.btnEmpreendedorismo.TabIndex = 6;
@@ -133,7 +133,7 @@
             this.btnComputacao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnComputacao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnComputacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComputacao.Location = new System.Drawing.Point(790, 325);
+            this.btnComputacao.Location = new System.Drawing.Point(823, 279);
             this.btnComputacao.Name = "btnComputacao";
             this.btnComputacao.Size = new System.Drawing.Size(220, 150);
             this.btnComputacao.TabIndex = 7;
@@ -147,7 +147,7 @@
             this.btnEsportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnEsportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnEsportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEsportes.Location = new System.Drawing.Point(1049, 325);
+            this.btnEsportes.Location = new System.Drawing.Point(1089, 268);
             this.btnEsportes.Name = "btnEsportes";
             this.btnEsportes.Size = new System.Drawing.Size(229, 150);
             this.btnEsportes.TabIndex = 8;
@@ -161,7 +161,7 @@
             this.btnMusica.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMusica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMusica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMusica.Location = new System.Drawing.Point(1324, 325);
+            this.btnMusica.Location = new System.Drawing.Point(1357, 279);
             this.btnMusica.Name = "btnMusica";
             this.btnMusica.Size = new System.Drawing.Size(224, 150);
             this.btnMusica.TabIndex = 9;
@@ -175,7 +175,7 @@
             this.btnOutros.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnOutros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnOutros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOutros.Location = new System.Drawing.Point(1587, 325);
+            this.btnOutros.Location = new System.Drawing.Point(1619, 279);
             this.btnOutros.Name = "btnOutros";
             this.btnOutros.Size = new System.Drawing.Size(213, 150);
             this.btnOutros.TabIndex = 10;
@@ -189,9 +189,9 @@
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(566, 41);
+            this.button4.Location = new System.Drawing.Point(660, 41);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(206, 45);
+            this.button4.Size = new System.Drawing.Size(286, 45);
             this.button4.TabIndex = 11;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -200,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaPrincipal2;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaPrincipal3;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnOutros);

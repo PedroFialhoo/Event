@@ -440,5 +440,35 @@
   <ItemGroup>
     <None Include="Resources\qrCode1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaPrincipal3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaPerfilCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaPerfilColaborador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaComunidade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarPerfil6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarPerfil7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarPerfil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarPerfil2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarPerfil3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarPerfil4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

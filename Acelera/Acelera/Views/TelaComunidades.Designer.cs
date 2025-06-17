@@ -38,6 +38,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.txtMensagem = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // opEducacao
@@ -110,9 +111,9 @@
             // 
             this.flowPanelComentarios.AutoScroll = true;
             this.flowPanelComentarios.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowPanelComentarios.Location = new System.Drawing.Point(464, 186);
+            this.flowPanelComentarios.Location = new System.Drawing.Point(421, 186);
             this.flowPanelComentarios.Name = "flowPanelComentarios";
-            this.flowPanelComentarios.Size = new System.Drawing.Size(1374, 723);
+            this.flowPanelComentarios.Size = new System.Drawing.Size(1417, 672);
             this.flowPanelComentarios.TabIndex = 5;
             this.flowPanelComentarios.WrapContents = false;
             // 
@@ -137,32 +138,47 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1773, 935);
+            this.button2.Location = new System.Drawing.Point(1773, 891);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(65, 78);
+            this.button2.Size = new System.Drawing.Size(65, 65);
             this.button2.TabIndex = 8;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtMensagem
             // 
-            this.txtMensagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(154)))));
+            this.txtMensagem.BackColor = System.Drawing.Color.White;
             this.txtMensagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMensagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMensagem.Location = new System.Drawing.Point(562, 962);
+            this.txtMensagem.Location = new System.Drawing.Point(469, 897);
             this.txtMensagem.Margin = new System.Windows.Forms.Padding(4);
             this.txtMensagem.Multiline = true;
             this.txtMensagem.Name = "txtMensagem";
-            this.txtMensagem.Size = new System.Drawing.Size(1091, 51);
+            this.txtMensagem.Size = new System.Drawing.Size(1278, 51);
             this.txtMensagem.TabIndex = 9;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(997, 30);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(291, 59);
+            this.button3.TabIndex = 10;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // TelaComunidades
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaComunidades;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaComunidade;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.txtMensagem);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -198,5 +214,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtMensagem;
+        private System.Windows.Forms.Button button3;
     }
 }
