@@ -40,40 +40,40 @@
             // picturePerfil
             // 
             this.picturePerfil.Image = global::Acelera.Properties.Resources.cara;
-            this.picturePerfil.Location = new System.Drawing.Point(50, 307);
+            this.picturePerfil.Location = new System.Drawing.Point(50, 348);
             this.picturePerfil.Name = "picturePerfil";
-            this.picturePerfil.Size = new System.Drawing.Size(298, 325);
+            this.picturePerfil.Size = new System.Drawing.Size(298, 328);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picturePerfil.TabIndex = 11;
             this.picturePerfil.TabStop = false;
             // 
             // txtNome
             // 
-            this.txtNome.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNome.BackColor = System.Drawing.Color.LightGray;
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtNome.Location = new System.Drawing.Point(468, 409);
+            this.txtNome.Location = new System.Drawing.Point(468, 438);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(678, 31);
             this.txtNome.TabIndex = 12;
             // 
             // txtNomeEmpresa
             // 
-            this.txtNomeEmpresa.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNomeEmpresa.BackColor = System.Drawing.Color.LightGray;
             this.txtNomeEmpresa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomeEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtNomeEmpresa.Location = new System.Drawing.Point(468, 601);
+            this.txtNomeEmpresa.Location = new System.Drawing.Point(468, 630);
             this.txtNomeEmpresa.Name = "txtNomeEmpresa";
             this.txtNomeEmpresa.Size = new System.Drawing.Size(678, 31);
             this.txtNomeEmpresa.TabIndex = 13;
             // 
             // txtTelefone
             // 
-            this.txtTelefone.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtTelefone.BackColor = System.Drawing.Color.LightGray;
             this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtTelefone.HidePromptOnLeave = true;
-            this.txtTelefone.Location = new System.Drawing.Point(468, 768);
+            this.txtTelefone.Location = new System.Drawing.Point(468, 801);
             this.txtTelefone.Mask = "(00) 00000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(213, 31);
@@ -86,9 +86,9 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(92, 859);
+            this.button2.Location = new System.Drawing.Point(104, 754);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(181, 71);
+            this.button2.Size = new System.Drawing.Size(167, 60);
             this.button2.TabIndex = 15;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -102,7 +102,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(315, 638);
+            this.button1.Location = new System.Drawing.Point(315, 682);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(33, 47);
             this.button1.TabIndex = 16;
@@ -114,7 +114,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarPerfilColaborador;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarPerfilColaborador1;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);

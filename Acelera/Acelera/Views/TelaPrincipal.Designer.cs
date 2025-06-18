@@ -40,6 +40,7 @@
             this.btnMusica = new System.Windows.Forms.Button();
             this.btnOutros = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.flowPanelEventos = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // button1
@@ -196,12 +197,23 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // flowPanelEventos
+            // 
+            this.flowPanelEventos.AutoScroll = true;
+            this.flowPanelEventos.BackColor = System.Drawing.Color.Transparent;
+            this.flowPanelEventos.Location = new System.Drawing.Point(28, 680);
+            this.flowPanelEventos.Name = "flowPanelEventos";
+            this.flowPanelEventos.Size = new System.Drawing.Size(1864, 302);
+            this.flowPanelEventos.TabIndex = 12;
+            this.flowPanelEventos.WrapContents = false;
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaPrincipal3;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.flowPanelEventos);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnOutros);
             this.Controls.Add(this.btnMusica);
@@ -238,5 +250,6 @@
         private System.Windows.Forms.Button btnMusica;
         private System.Windows.Forms.Button btnOutros;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.FlowLayoutPanel flowPanelEventos;
     }
 }

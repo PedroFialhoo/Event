@@ -183,6 +183,12 @@
     <Compile Include="Views\TelaExibirEvento.Designer.cs">
       <DependentUpon>TelaExibirEvento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaExibirEventoColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaExibirEventoColaborador.Designer.cs">
+      <DependentUpon>TelaExibirEventoColaborador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaExibirEvento.resx">
       <DependentUpon>TelaExibirEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaExibirEventoColaborador.resx">
+      <DependentUpon>TelaExibirEventoColaborador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
@@ -469,6 +478,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaEditarPerfil4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarPerfilColaborador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarPerfilColaborador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarEvento1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarEvento2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaExibirEvento2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaExibirEventoColaborador.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

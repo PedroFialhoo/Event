@@ -47,7 +47,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNome.BackColor = System.Drawing.Color.LightGray;
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtNome.Location = new System.Drawing.Point(516, 211);
@@ -57,7 +57,7 @@
             // 
             // txtHorario
             // 
-            this.txtHorario.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtHorario.BackColor = System.Drawing.Color.LightGray;
             this.txtHorario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtHorario.HidePromptOnLeave = true;
@@ -69,7 +69,7 @@
             // 
             // txtCidade
             // 
-            this.txtCidade.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCidade.BackColor = System.Drawing.Color.LightGray;
             this.txtCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtCidade.Location = new System.Drawing.Point(516, 475);
@@ -81,7 +81,7 @@
             // 
             this.cbTipo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbTipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbTipo.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.cbTipo.BackColor = System.Drawing.Color.LightGray;
             this.cbTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.cbTipo.FormattingEnabled = true;
@@ -93,18 +93,18 @@
             "Esportes",
             "Música ",
             "Outros"});
-            this.cbTipo.Location = new System.Drawing.Point(1112, 211);
+            this.cbTipo.Location = new System.Drawing.Point(1163, 208);
             this.cbTipo.Name = "cbTipo";
-            this.cbTipo.Size = new System.Drawing.Size(452, 39);
+            this.cbTipo.Size = new System.Drawing.Size(365, 39);
             this.cbTipo.TabIndex = 21;
             // 
             // txtData
             // 
-            this.txtData.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtData.BackColor = System.Drawing.Color.LightGray;
             this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtData.HidePromptOnLeave = true;
-            this.txtData.Location = new System.Drawing.Point(1112, 340);
+            this.txtData.Location = new System.Drawing.Point(1609, 211);
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(160, 31);
@@ -114,7 +114,7 @@
             // 
             this.txtEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.txtEstado.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtEstado.BackColor = System.Drawing.Color.LightGray;
             this.txtEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtEstado.FormattingEnabled = true;
@@ -146,14 +146,14 @@
             "São Paulo - SP",
             "Sergipe - SE",
             "Tocantins - TO"});
-            this.txtEstado.Location = new System.Drawing.Point(1112, 475);
+            this.txtEstado.Location = new System.Drawing.Point(1163, 475);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(428, 39);
             this.txtEstado.TabIndex = 23;
             // 
             // txtRua
             // 
-            this.txtRua.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtRua.BackColor = System.Drawing.Color.LightGray;
             this.txtRua.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtRua.Location = new System.Drawing.Point(516, 614);
@@ -163,21 +163,21 @@
             // 
             // txtNumero
             // 
-            this.txtNumero.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNumero.BackColor = System.Drawing.Color.LightGray;
             this.txtNumero.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtNumero.Location = new System.Drawing.Point(1112, 614);
+            this.txtNumero.Location = new System.Drawing.Point(1163, 614);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(142, 31);
             this.txtNumero.TabIndex = 25;
             // 
             // txtCep
             // 
-            this.txtCep.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCep.BackColor = System.Drawing.Color.LightGray;
             this.txtCep.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtCep.HidePromptOnLeave = true;
-            this.txtCep.Location = new System.Drawing.Point(1494, 340);
+            this.txtCep.Location = new System.Drawing.Point(1163, 340);
             this.txtCep.Mask = "00000-000";
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(213, 31);
@@ -186,7 +186,7 @@
             // 
             // txtDescricao
             // 
-            this.txtDescricao.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtDescricao.BackColor = System.Drawing.Color.LightGray;
             this.txtDescricao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtDescricao.Location = new System.Drawing.Point(516, 755);
@@ -228,7 +228,7 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(39, 707);
+            this.button2.Location = new System.Drawing.Point(119, 658);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(204, 51);
             this.button2.TabIndex = 30;
@@ -242,9 +242,9 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(287, 707);
+            this.button3.Location = new System.Drawing.Point(137, 742);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 55);
+            this.button3.Size = new System.Drawing.Size(157, 50);
             this.button3.TabIndex = 31;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -254,7 +254,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaEditarEvento;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaEditarEvento2;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
