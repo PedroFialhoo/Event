@@ -39,89 +39,19 @@ namespace Acelera.Views
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            menuOpcoes.Show(btnMenu, new Point(0, btnMenu.Height));
         }
 
         private void menuItemEditar_Click(object sender, EventArgs e)
         {
-            int? idColaboradorLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
-            if (idColaboradorLogado == null)
-            {
-                MessageBox.Show("Apenas Colaboradores podem editar eventos");
-                return;
-            }
-
-            TelaEditarEvento telaEditarEvento = new TelaEditarEvento(evento);
-            telaEditarEvento.Show();
-            this.Close();
+            
         }
 
         private void fecharEventoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int? idColaboradorLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
-
-            if (idColaboradorLogado != null)
-            {
-                Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idColaboradorLogado.Value);
-                if (colaboradorLogado != null)
-                {
-                    TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
-                    telaPerfil.Show();
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Perfil de colaborador não encontrado.");
-                }
-            }
-            else
-            {
-                TelaPrincipal telaPrincipal = new TelaPrincipal();
-                telaPrincipal.Show();
-                this.Close();
-            }
         }
 
         private void excluirEventoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int? idColaboradorLogado = LoginColaboradorRepository.GetUsuarioLogadoId();
-            if (idColaboradorLogado == null)
-            {
-                MessageBox.Show("Apenas Colaboradores podem editar eventos");
-                return;
-            }
-
-            DialogResult resultado = MessageBox.Show("Deseja exluir permanentemente o evento?", "Excluir evento!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (resultado == DialogResult.Yes)
-            {
-                int idEvento = evento.Id;
-                bool sucesso = EventoRepository.RemoverEvento(idEvento);
-                if (sucesso)
-                {
-                    MessageBox.Show("Evento deletado com sucesso");
-
-                    if (idColaboradorLogado != null)
-                    {
-                        Colaborador colaboradorLogado = ColaboradorRepository.ObterColaboradorPorId(idColaboradorLogado.Value);
-                        if (colaboradorLogado != null)
-                        {
-                            TelaPerfilColaborador telaPerfil = new TelaPerfilColaborador(colaboradorLogado);
-                            telaPerfil.Show();
-                            this.Close();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Perfil de colaborador não encontrado.");
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Erro ao excluir evento");
-                    }
-
-                }
-
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)

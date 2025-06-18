@@ -29,6 +29,7 @@ namespace Acelera.Controllers
                 Nome = "Pedro",
                 Telefone = "11999999999",
                 Cpf = "467.262.218-51",
+                Estado = "SP"
             };
 
             UsuarioRepository.SalvarUsuario(usuario);
@@ -43,7 +44,7 @@ namespace Acelera.Controllers
             ColaboradorRepository.CadastrarColaborador(colaborador);
             List<Eventos> listaEventos = new List<Eventos>
 {
-    new Eventos { Id = EventoRepository.generateId(), NomeEvento = "Workshop de Programação", Colaborador = "Pedro Colaborador", Descricao = "Evento sobre C#", Tipo = "Tecnologia" },
+    new Eventos { Id = EventoRepository.generateId(), NomeEvento = "Workshop de Programação", Colaborador = "Pedro Colaborador", Descricao = "Evento sobre C#", Tipo = "Tecnologia", Estado = "SP" },
     new Eventos { Id = EventoRepository.generateId(), NomeEvento = "Feira de Ciências", Colaborador = "Pedro Colaborador", Descricao = "Experimentos escolares", Tipo = "Educação" },
     new Eventos { Id = EventoRepository.generateId(), NomeEvento = "Oficina de Artes", Colaborador = "Pedro Colaborador", Descricao = "Outros" },
     new Eventos { Id = EventoRepository.generateId(), NomeEvento = "Hackathon 2025", Colaborador = "Pedro Colaborador", Descricao = "Maratona de programação", Tipo = "Tecnologia" },

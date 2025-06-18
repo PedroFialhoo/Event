@@ -82,7 +82,7 @@ namespace Acelera.Views
                 {
                     var pic = s as PictureBox;
                     var eventoSelecionado = pic.Tag as Eventos;
-                    TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
+                    TelaExibirEventoColaborador tela = new TelaExibirEventoColaborador(eventoSelecionado);
                     tela.Show();
                     this.Close();
                 };

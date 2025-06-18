@@ -263,9 +263,39 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaCriarPerfilColaborador1 {
+            get {
+                object obj = ResourceManager.GetObject("TelaCriarPerfilColaborador1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaEditarEvento {
             get {
                 object obj = ResourceManager.GetObject("TelaEditarEvento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarEvento1 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarEvento1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarEvento2 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarEvento2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,6 +363,16 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarPerfilColaborador1 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarPerfilColaborador1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaEsqueceuSenha {
             get {
                 object obj = ResourceManager.GetObject("TelaEsqueceuSenha", resourceCulture);
@@ -356,6 +396,26 @@ namespace Acelera.Properties {
         internal static System.Drawing.Bitmap TelaExibirEvento1 {
             get {
                 object obj = ResourceManager.GetObject("TelaExibirEvento1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaExibirEvento2 {
+            get {
+                object obj = ResourceManager.GetObject("TelaExibirEvento2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaExibirEventoColaborador {
+            get {
+                object obj = ResourceManager.GetObject("TelaExibirEventoColaborador", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

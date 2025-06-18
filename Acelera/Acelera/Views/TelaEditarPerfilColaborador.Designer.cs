@@ -40,7 +40,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNome.BackColor = System.Drawing.Color.LightGray;
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtNome.Location = new System.Drawing.Point(469, 401);
@@ -50,7 +50,7 @@
             // 
             // txtNomeEmpresa
             // 
-            this.txtNomeEmpresa.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNomeEmpresa.BackColor = System.Drawing.Color.LightGray;
             this.txtNomeEmpresa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomeEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtNomeEmpresa.Location = new System.Drawing.Point(469, 593);
@@ -60,7 +60,7 @@
             // 
             // txtTelefone
             // 
-            this.txtTelefone.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtTelefone.BackColor = System.Drawing.Color.LightGray;
             this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtTelefone.HidePromptOnLeave = true;
@@ -117,9 +117,9 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(251, 706);
+            this.button3.Location = new System.Drawing.Point(50, 778);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 55);
+            this.button3.Size = new System.Drawing.Size(97, 50);
             this.button3.TabIndex = 24;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -129,7 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaEditarPerfilColaborador;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaEditarPerfilColaborador1;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

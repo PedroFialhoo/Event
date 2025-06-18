@@ -32,21 +32,32 @@ namespace Acelera.Repositories
 
         public static List<Eventos> ObterEventosPorTipo(string tipo)
         {
-            return eventos.Where(e => e.Tipo != null && e.Tipo.IndexOf(tipo, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+            return eventos
+                .Where(e => e.Tipo != null && e.Tipo.IndexOf(tipo, StringComparison.OrdinalIgnoreCase) >= 0)
+                .ToList();
         }
+
         public static List<Eventos> ObterEventosPorNome(string nomeEvento)
         {
-            return eventos.Where(e => e.NomeEvento != null && e.NomeEvento.IndexOf(nomeEvento, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+            return eventos
+                .Where(e => e.NomeEvento != null && e.NomeEvento.IndexOf(nomeEvento, StringComparison.OrdinalIgnoreCase) >= 0)
+                .ToList();
         }
 
         public static List<Eventos> ObterEventosPorEstado(string estado)
         {
-            return eventos.Where(e => e.Estado.Equals(estado, StringComparison.OrdinalIgnoreCase)).ToList();
+            return eventos
+                .Where(e => !string.IsNullOrEmpty(e.Estado) && e.Estado.Equals(estado, StringComparison.OrdinalIgnoreCase))
+                .ToList();
         }
+
         public static List<Eventos> ObterEventosPorColaborador(string colaborador)
         {
-            return eventos.Where(e => e.Colaborador.Equals(colaborador, StringComparison.OrdinalIgnoreCase)).ToList();
+            return eventos
+                .Where(e => !string.IsNullOrEmpty(e.Colaborador) && e.Colaborador.Equals(colaborador, StringComparison.OrdinalIgnoreCase))
+                .ToList();
         }
+
         public static int? ObterIdDoEventoPorColaboradorENome(string colaborador, string nome)
         {
             var evento = eventos.FirstOrDefault(e =>
