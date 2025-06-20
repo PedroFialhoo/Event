@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera.Controllers;
 using Acelera.Models;
 using Acelera.Repositories;
 using Newtonsoft.Json;
@@ -77,7 +78,8 @@ namespace Acelera.Views
                 Rua = txtRua.Text,
                 Numero = txtNumero.Text,
                 Colaborador = colaborador,
-                Imagem = pictureEvento.Image
+                Imagem = pictureEvento.Image,
+                Code = CodigoRecuperacao.GerarCodigoNumerico()
             };
 
             bool sucesso = EventoRepository.CadastrarEvento(evento);

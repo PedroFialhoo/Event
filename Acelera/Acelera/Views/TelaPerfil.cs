@@ -168,8 +168,6 @@ namespace Acelera.Forms
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            TelaQrCode telaQrCode = new TelaQrCode();
-            telaQrCode.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
