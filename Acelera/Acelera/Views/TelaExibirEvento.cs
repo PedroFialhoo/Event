@@ -35,6 +35,13 @@ namespace Acelera.Views
             txtDescricao.Text = evento.Descricao;
             pictureEvento.Image = evento.Imagem;
 
+            int? id = LoginRepository.GetUsuarioLogadoId().Value;
+            string codigo = EventoRepository.ObterCodigoParticipante(evento.Id, id.Value);
+            if (codigo != null)
+                label1.Text = codigo;
+            else
+                label1.Text = "Usuário não está inscrito nesse evento.";
+
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -136,5 +143,28 @@ namespace Acelera.Views
             }
 
         }
-    }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int? id = LoginRepository.GetUsuarioLogadoId().Value;
+            string codigo = EventoRepository.ObterCodigoParticipante(evento.Id, id.Value);
+            if (codigo != null)
+            {
+                TelaQrCode telaQrCode = new TelaQrCode(codigo);
+                telaQrCode.Show();
+            }
+            else
+            {
+                MessageBox.Show("Você não está participando deste evento.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+            
+        }
 }
+

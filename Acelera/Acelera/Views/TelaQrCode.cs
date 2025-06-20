@@ -16,32 +16,22 @@ namespace Acelera.Views
 {
     public partial class TelaQrCode : Form
     {
-        int? idLogado = LoginRepository.GetUsuarioLogadoId();
-        public TelaQrCode()
+        private string code;
+        public TelaQrCode(string code)
         {
             InitializeComponent();
+            this.code = code;
         }
 
         private void TelaQrCode_Load(object sender, EventArgs e)
         {
-            if (idLogado.HasValue)
-            {
-                var login = LoginRepository.ListarTodos().FirstOrDefault(l => l.Id == idLogado.Value);
 
-                if (login != null && !string.IsNullOrEmpty(login.CodeQR))
-                {
-                    Usuario u = UsuarioRepository.ObterUsuarioPorId(idLogado.Value);
-                    string cpf = u.Cpf;
-
-                    QRCodeGenerator qrGenerator = new QRCodeGenerator();
-                    QRCodeData qrCodeData = qrGenerator.CreateQrCode(cpf, QRCodeGenerator.ECCLevel.Q);
-                    QRCode qrCode = new QRCode(qrCodeData);
-                    Bitmap qrCodeImage = qrCode.GetGraphic(30);
-                    pictureBox1.Image = qrCodeImage;
-
-
-                }
-            }
+             QRCodeGenerator qrGenerator = new QRCodeGenerator();
+             QRCodeData qrCodeData = qrGenerator.CreateQrCode(code, QRCodeGenerator.ECCLevel.Q);
+             QRCode qrCode = new QRCode(qrCodeData);
+             Bitmap qrCodeImage = qrCode.GetGraphic(30);
+             pictureBox1.Image = qrCodeImage;               
+            
 
         }
 

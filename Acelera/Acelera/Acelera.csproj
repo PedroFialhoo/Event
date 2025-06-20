@@ -102,6 +102,7 @@
     <Compile Include="Models\Comunidade.cs" />
     <Compile Include="Models\Endereço.cs" />
     <Compile Include="Models\Eventos.cs" />
+    <Compile Include="Models\ListaParticipantes.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Repositories\ColaboradorRepository.cs" />

@@ -120,27 +120,36 @@ namespace Acelera.Repositories
 
         public static bool ParticiparDoEvento(int eventoId, int usuarioId)
         {
-            Eventos evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            var evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
             if (evento == null)
                 return false;
 
-            if (!evento.ParticipantesIds.Contains(usuarioId))
+            bool jaParticipa = evento.ParticipantesIds.Any(p => p.idParticipante == usuarioId);
+            if (!jaParticipa)
             {
-                evento.ParticipantesIds.Add(usuarioId);
-                return true; 
+                var user = UsuarioRepository.ObterUsuarioPorId(usuarioId);
+                evento.ParticipantesIds.Add(new ListaParticipantes
+                {
+                    idParticipante = usuarioId,
+                    codeParticipante = evento.Code + user.Cpf.Replace(".", "").Replace("-", ""),
+                });
+
+                return true;
             }
 
-            return false; 
+            return false;
         }
+
         public static bool DesinscreverDoEvento(int eventoId, int usuarioId)
         {
-            Eventos evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            var evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
             if (evento == null)
                 return false;
 
-            if (evento.ParticipantesIds.Contains(usuarioId))
+            var participante = evento.ParticipantesIds.FirstOrDefault(p => p.idParticipante == usuarioId);
+            if (participante != null)
             {
-                evento.ParticipantesIds.Remove(usuarioId);
+                evento.ParticipantesIds.Remove(participante);
                 return true;
             }
 
@@ -149,21 +158,41 @@ namespace Acelera.Repositories
 
         public static List<Usuario> ListarParticipantes(int eventoId)
         {
-            Eventos evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            var evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
             if (evento == null)
                 return new List<Usuario>();
 
             return UsuarioRepository.ListarUsuarios()
-                .Where(u => evento.ParticipantesIds.Contains(u.Id))
+                .Where(u => evento.ParticipantesIds.Any(p => p.idParticipante == u.Id))
                 .ToList();
         }
 
         public static List<Eventos> BuscarEventosDoUsuario(int usuarioId)
         {
             return EventoRepository.eventos
-                .Where(e => e.ParticipantesIds.Contains(usuarioId))
+                .Where(e => e.ParticipantesIds.Any(p => p.idParticipante == usuarioId))
                 .ToList();
         }
+
+        public static bool VerificarParticipacao(int eventoId, int usuarioId)
+        {
+            var evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            if (evento == null)
+                return false;
+
+            return evento.ParticipantesIds.Any(p => p.idParticipante == usuarioId);
+        }
+
+        public static string ObterCodigoParticipante(int eventoId, int usuarioId)
+        {
+            var evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            if (evento == null)
+                return null;
+
+            var participante = evento.ParticipantesIds.FirstOrDefault(p => p.idParticipante == usuarioId);
+            return participante?.codeParticipante;
+        }
+
 
     }
 }
