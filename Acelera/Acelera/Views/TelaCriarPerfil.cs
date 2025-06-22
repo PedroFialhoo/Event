@@ -69,6 +69,7 @@ namespace Acelera.Forms
                 Nome = txtNome.Text,
                 DataNascimento = dataNascimento,
                 Telefone = txtTelefone.Text,
+                Cep = txtCep.Text,
                 Cpf = txtCPF.Text,
                 Cidade = txtCidade.Text,
                 Estado = txtEstado.Text,

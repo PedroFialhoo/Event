@@ -100,12 +100,32 @@ namespace Acelera.Views
             int? id = LoginColaboradorRepository.GetUsuarioLogadoId();
             var colaborador = ColaboradorRepository.ObterColaboradorPorId(id.Value);
             TelaPerfilColaborador telaPerfilColaborador = new TelaPerfilColaborador(colaborador);
+            telaPerfilColaborador.Show();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             TelaParticipantes telaParticipantes = new TelaParticipantes(evento);
             telaParticipantes.Show();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int? id = LoginColaboradorRepository.GetUsuarioLogadoId();
+            var colaborador = ColaboradorRepository.ObterColaboradorPorId(id.Value);
+            TelaPerfilColaborador telaPerfilColaborador = new TelaPerfilColaborador(colaborador);
+            telaPerfilColaborador.Show();
+            this.Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int? id = LoginColaboradorRepository.GetUsuarioLogadoId();
+            var colaborador = ColaboradorRepository.ObterColaboradorPorId(id.Value);
+            TelaPerfilColaborador telaPerfilColaborador = new TelaPerfilColaborador(colaborador);
+            telaPerfilColaborador.Show();
             this.Close();
         }
     }
