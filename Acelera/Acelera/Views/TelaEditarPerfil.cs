@@ -123,9 +123,10 @@ namespace Acelera.Views
         private void TelaEditarPerfil_Load(object sender, EventArgs e)
         {
             txtNome.Text = usuario.Nome;
-            //lblIdade.Text = usuario.Idade.ToString();
+            txtData.Text = usuario.DataNascimento.ToString();
             txtTelefone.Text = usuario.Telefone;
-            //lblCpf.Text = usuario.Cpf;
+            txtCPF.Text = usuario.Cpf;
+            txtCep.Text = usuario.Cep;
             txtCidade.Text = usuario.Cidade;
             txtEstado.Text = usuario.Estado;
 
