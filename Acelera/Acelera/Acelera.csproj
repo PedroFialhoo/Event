@@ -208,6 +208,12 @@
     <Compile Include="Views\TelaLoginColaborador.Designer.cs">
       <DependentUpon>TelaLoginColaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaParticipantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaParticipantes.Designer.cs">
+      <DependentUpon>TelaParticipantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaLoginColaborador.resx">
       <DependentUpon>TelaLoginColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaParticipantes.resx">
+      <DependentUpon>TelaParticipantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaPerfil.resx">
       <DependentUpon>TelaPerfil.cs</DependentUpon>
@@ -497,6 +506,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaExibirEventoColaborador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaExibirEventoColaborador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaParticipantes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,14 +34,6 @@ namespace Acelera.Views
             lblTipo.Text = evento.Tipo;
             txtDescricao.Text = evento.Descricao;
             pictureEvento.Image = evento.Imagem;
-
-            int? id = LoginRepository.GetUsuarioLogadoId().Value;
-            string codigo = EventoRepository.ObterCodigoParticipante(evento.Id, id.Value);
-            if (codigo != null)
-                label1.Text = codigo;
-            else
-                label1.Text = "Usuário não está inscrito nesse evento.";
-
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -164,7 +156,15 @@ namespace Acelera.Views
                 MessageBox.Show("Você não está participando deste evento.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-            
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int? id = LoginRepository.GetUsuarioLogadoId();
+            var user = UsuarioRepository.ObterUsuarioPorId(id.Value);
+            TelaPerfil telaPerfil = new TelaPerfil(user);
+            telaPerfil.Show();
+            this.Close();
         }
+    }
 }
 

@@ -41,6 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureEvento = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,7 +154,7 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(133, 737);
+            this.button2.Location = new System.Drawing.Point(82, 738);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(174, 61);
             this.button2.TabIndex = 21;
@@ -167,7 +168,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(133, 652);
+            this.button1.Location = new System.Drawing.Point(82, 653);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(174, 61);
             this.button1.TabIndex = 20;
@@ -197,12 +198,27 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(82, 822);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(281, 61);
+            this.button4.TabIndex = 23;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // TelaExibirEventoColaborador
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaExibirEventoColaborador;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaExibirEventoColaborador1;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -243,5 +259,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureEvento;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
