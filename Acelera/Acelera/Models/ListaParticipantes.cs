@@ -10,5 +10,6 @@ namespace Acelera.Models
     {
         public int idParticipante { get; set; }
         public string codeParticipante { get; set; } //codigo do evento + cpf
+        public bool participacao { get; set; }
     }
 }

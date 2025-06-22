@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Windows;
 using Acelera.Models;
 
 namespace Acelera.Repositories
@@ -132,12 +133,36 @@ namespace Acelera.Repositories
                 {
                     idParticipante = usuarioId,
                     codeParticipante = evento.Code + user.Cpf.Replace(".", "").Replace("-", ""),
+                    participacao = false,
                 });
 
                 return true;
             }
 
             return false;
+        }
+
+        public static void ConfirmarParticipacao(int eventoId, int usuarioId)
+        {
+            var evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            if (evento == null)
+                System.Diagnostics.Debug.WriteLine("Evento não encontrado");
+
+
+            var participante = evento.ParticipantesIds.FirstOrDefault(p => p.idParticipante == usuarioId);
+
+            participante.participacao = true;
+        }
+        public static void RetirarParticipacao(int eventoId, int usuarioId)
+        {
+            var evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            if (evento == null)
+                System.Diagnostics.Debug.WriteLine("Evento não encontrado");
+
+
+            var participante = evento.ParticipantesIds.FirstOrDefault(p => p.idParticipante == usuarioId);
+
+            participante.participacao = false;
         }
 
         public static bool DesinscreverDoEvento(int eventoId, int usuarioId)
@@ -156,15 +181,13 @@ namespace Acelera.Repositories
             return false;
         }
 
-        public static List<Usuario> ListarParticipantes(int eventoId)
+        public static List<ListaParticipantes> ListarParticipantes(int eventoId)
         {
             var evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
             if (evento == null)
-                return new List<Usuario>();
+                return new List<ListaParticipantes>();
 
-            return UsuarioRepository.ListarUsuarios()
-                .Where(u => evento.ParticipantesIds.Any(p => p.idParticipante == u.Id))
-                .ToList();
+            return evento.ParticipantesIds;
         }
 
         public static List<Eventos> BuscarEventosDoUsuario(int usuarioId)

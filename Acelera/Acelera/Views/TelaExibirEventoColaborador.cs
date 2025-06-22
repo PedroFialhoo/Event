@@ -101,5 +101,12 @@ namespace Acelera.Views
             var colaborador = ColaboradorRepository.ObterColaboradorPorId(id.Value);
             TelaPerfilColaborador telaPerfilColaborador = new TelaPerfilColaborador(colaborador);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            TelaParticipantes telaParticipantes = new TelaParticipantes(evento);
+            telaParticipantes.Show();
+            this.Close();
+        }
     }
 }
