@@ -513,5 +513,26 @@
   <ItemGroup>
     <None Include="Resources\TelaParticipantes.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarEvento3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaCriarEvento4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarEvento3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarEvento4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarEvento5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarEvento6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaEditarEventos.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,6 +24,7 @@ namespace Acelera.Views
         private void button2_Click(object sender, EventArgs e)
 
         {
+            bool online = false;
         if (string.IsNullOrWhiteSpace(txtNome.Text) ||
             string.IsNullOrWhiteSpace(txtDescricao.Text) ||
             string.IsNullOrEmpty(cbTipo.Text) ||
@@ -52,7 +53,19 @@ namespace Acelera.Views
                 MessageBox.Show("Data inválida. Use o formato dd/MM/yyyy.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+            if (rbOnline.Checked)
+            {
+                online = true;
+            }
+            else if (rbPresencial.Checked)
+            {
+                online = false;
+            }
+            else
+            {
+                MessageBox.Show("Por favor, preencha todos os campos antes de continuar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             string colaborador = ColaboradorRepository.ObterNomeColaboradorPorId(idUsuarioLogado.Value);
 
             string mensagem = $"ID: {idUsuarioLogado}\n" +
@@ -79,7 +92,8 @@ namespace Acelera.Views
                 Numero = txtNumero.Text,
                 Colaborador = colaborador,
                 Imagem = pictureEvento.Image,
-                Code = CodigoRecuperacao.GerarCodigoNumerico()
+                Code = CodigoRecuperacao.GerarCodigoNumerico(),
+                Online = online
             };
 
             bool sucesso = EventoRepository.CadastrarEvento(evento);
@@ -180,6 +194,11 @@ namespace Acelera.Views
             {
                 MessageBox.Show("Perfil não encontrado.");
             }
+        }
+
+        private void TelaCriarEvento_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

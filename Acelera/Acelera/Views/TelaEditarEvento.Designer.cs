@@ -42,6 +42,8 @@
             this.pictureEvento = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.rbOnline = new System.Windows.Forms.RadioButton();
+            this.rbPresencial = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,7 +150,7 @@
             "Tocantins - TO"});
             this.txtEstado.Location = new System.Drawing.Point(1163, 475);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(428, 39);
+            this.txtEstado.Size = new System.Drawing.Size(365, 39);
             this.txtEstado.TabIndex = 23;
             // 
             // txtRua
@@ -249,13 +251,35 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // rbOnline
+            // 
+            this.rbOnline.AutoSize = true;
+            this.rbOnline.Location = new System.Drawing.Point(1637, 415);
+            this.rbOnline.Name = "rbOnline";
+            this.rbOnline.Size = new System.Drawing.Size(14, 13);
+            this.rbOnline.TabIndex = 33;
+            this.rbOnline.TabStop = true;
+            this.rbOnline.UseVisualStyleBackColor = true;
+            // 
+            // rbPresencial
+            // 
+            this.rbPresencial.AutoSize = true;
+            this.rbPresencial.Location = new System.Drawing.Point(1637, 344);
+            this.rbPresencial.Name = "rbPresencial";
+            this.rbPresencial.Size = new System.Drawing.Size(14, 13);
+            this.rbPresencial.TabIndex = 32;
+            this.rbPresencial.TabStop = true;
+            this.rbPresencial.UseVisualStyleBackColor = true;
+            // 
             // TelaEditarEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaEditarEvento2;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaEditarEventos;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.rbOnline);
+            this.Controls.Add(this.rbPresencial);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureEvento);
@@ -297,5 +321,7 @@
         private System.Windows.Forms.PictureBox pictureEvento;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.RadioButton rbOnline;
+        private System.Windows.Forms.RadioButton rbPresencial;
     }
 }

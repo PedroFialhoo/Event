@@ -22,10 +22,11 @@ namespace Acelera.Models
         public string Colaborador { get; set; }
         public Image Imagem { get; set; }
         public string Code { get; set; }
+        public bool Online { get; set; }
 
         public List<ListaParticipantes> ParticipantesIds { get; set; } = new List<ListaParticipantes>();
 
-        public Eventos(int id, string nome, string descricao, string tipo, string cidade, string estado, string horario, DateTime data, string rua, string numero, string colaborador, Image imagem, string code)
+        public Eventos(int id, string nome, string descricao, string tipo, string cidade, string estado, string horario, DateTime data, string rua, string numero, string colaborador, Image imagem, string code, bool online)
         {
             Id = id;
             NomeEvento = nome;
@@ -40,6 +41,7 @@ namespace Acelera.Models
             Colaborador = colaborador;
             Imagem = imagem;
             Code = code;
+            Online = online;
         }
         public Eventos() { }
 
