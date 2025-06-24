@@ -147,8 +147,19 @@ namespace Acelera.Forms
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
-            var user = UsuarioRepository.ObterUsuarioPorId(LoginRepository.GetUsuarioLogadoId().Value);
-            var eventosEncontrados = EventoRepository.ObterEventosPorEstado(user.Estado);
+            int? usuarioId = LoginRepository.GetUsuarioLogadoId();
+            List<Eventos> eventosEncontrados;
+
+            if (usuarioId != null)
+            {
+                var user = UsuarioRepository.ObterUsuarioPorId(usuarioId.Value);
+                eventosEncontrados = EventoRepository.ObterEventosPorEstado(user.Estado);
+            }
+            else
+            {
+                MessageBox.Show("Você está acessando como visitante. Faça login para ver eventos da sua região.", "Visitante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                eventosEncontrados = EventoRepository.ListarEventos(); 
+            }
 
             flowPanelEventos.Controls.Clear(); 
 
