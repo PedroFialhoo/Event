@@ -131,7 +131,21 @@ namespace Acelera.Views
                 MessageBox.Show("Usuário não está logado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            bool online = false;
 
+            if (rbOnline.Checked)
+            {
+                online = true;
+            }
+            else if (rbPresencial.Checked)
+            {
+                online = false;
+            }
+            else
+            {
+                MessageBox.Show("Por favor, preencha todos os campos antes de continuar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             DateTime dataEvento;
             if (!DateTime.TryParse(txtData.Text, out dataEvento))
             {
@@ -165,7 +179,8 @@ namespace Acelera.Views
                 Rua = txtRua.Text,
                 Numero = txtNumero.Text,
                 Colaborador = colaborador,
-                Imagem = pictureEvento.Image
+                Imagem = pictureEvento.Image,
+                Online = online
             };
 
             bool sucesso = EventoRepository.AtualizarEvento(idEventoAtual.Value, evento);
@@ -183,7 +198,7 @@ namespace Acelera.Views
         }
 
         private void TelaEditarEvento_Load(object sender, EventArgs e)
-        {
+        {            
             txtNome.Text = evento.NomeEvento;
             txtRua.Text = evento.Rua;
             txtNumero.Text = evento.Numero;

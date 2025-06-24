@@ -42,6 +42,8 @@
             this.txtHorario = new System.Windows.Forms.MaskedTextBox();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.rbPresencial = new System.Windows.Forms.RadioButton();
+            this.rbOnline = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,9 +124,9 @@
             "São Paulo - SP",
             "Sergipe - SE",
             "Tocantins - TO"});
-            this.txtEstado.Location = new System.Drawing.Point(1114, 484);
+            this.txtEstado.Location = new System.Drawing.Point(1160, 484);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(428, 39);
+            this.txtEstado.Size = new System.Drawing.Size(382, 39);
             this.txtEstado.TabIndex = 6;
             // 
             // cbTipo
@@ -145,10 +147,9 @@
             "Esportes",
             "Música ",
             "Outros"});
-            this.cbTipo.SelectedIndex = 0;
-            this.cbTipo.Location = new System.Drawing.Point(1114, 213);
+            this.cbTipo.Location = new System.Drawing.Point(1160, 213);
             this.cbTipo.Name = "cbTipo";
-            this.cbTipo.Size = new System.Drawing.Size(452, 39);
+            this.cbTipo.Size = new System.Drawing.Size(382, 39);
             this.cbTipo.TabIndex = 7;
             // 
             // txtCep
@@ -157,7 +158,7 @@
             this.txtCep.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtCep.HidePromptOnLeave = true;
-            this.txtCep.Location = new System.Drawing.Point(1501, 342);
+            this.txtCep.Location = new System.Drawing.Point(1160, 342);
             this.txtCep.Mask = "00000-000";
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(213, 31);
@@ -171,9 +172,9 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(38, 708);
+            this.button2.Location = new System.Drawing.Point(139, 688);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(204, 51);
+            this.button2.Size = new System.Drawing.Size(160, 56);
             this.button2.TabIndex = 14;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -213,7 +214,7 @@
             this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.txtData.HidePromptOnLeave = true;
-            this.txtData.Location = new System.Drawing.Point(1114, 342);
+            this.txtData.Location = new System.Drawing.Point(1604, 221);
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(160, 31);
@@ -236,7 +237,7 @@
             this.txtNumero.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtNumero.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.txtNumero.Location = new System.Drawing.Point(1114, 623);
+            this.txtNumero.Location = new System.Drawing.Point(1160, 623);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(142, 31);
             this.txtNumero.TabIndex = 19;
@@ -248,20 +249,42 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(286, 706);
+            this.button3.Location = new System.Drawing.Point(139, 776);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 55);
+            this.button3.Size = new System.Drawing.Size(160, 55);
             this.button3.TabIndex = 25;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // rbPresencial
+            // 
+            this.rbPresencial.AutoSize = true;
+            this.rbPresencial.Location = new System.Drawing.Point(1627, 342);
+            this.rbPresencial.Name = "rbPresencial";
+            this.rbPresencial.Size = new System.Drawing.Size(14, 13);
+            this.rbPresencial.TabIndex = 26;
+            this.rbPresencial.TabStop = true;
+            this.rbPresencial.UseVisualStyleBackColor = true;
+            // 
+            // rbOnline
+            // 
+            this.rbOnline.AutoSize = true;
+            this.rbOnline.Location = new System.Drawing.Point(1627, 413);
+            this.rbOnline.Name = "rbOnline";
+            this.rbOnline.Size = new System.Drawing.Size(14, 13);
+            this.rbOnline.TabIndex = 27;
+            this.rbOnline.TabStop = true;
+            this.rbOnline.UseVisualStyleBackColor = true;
             // 
             // TelaCriarEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarEvento2;
+            this.BackgroundImage = global::Acelera.Properties.Resources.TelaCriarEvento4;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.rbOnline);
+            this.Controls.Add(this.rbPresencial);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.txtHorario);
@@ -278,6 +301,7 @@
             this.Controls.Add(this.pictureEvento);
             this.Name = "TelaCriarEvento";
             this.Text = "Event";
+            this.Load += new System.EventHandler(this.TelaCriarEvento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -300,5 +324,7 @@
         private System.Windows.Forms.MaskedTextBox txtHorario;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.RadioButton rbPresencial;
+        private System.Windows.Forms.RadioButton rbOnline;
     }
 }

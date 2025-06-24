@@ -213,6 +213,26 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaCriarEvento3 {
+            get {
+                object obj = ResourceManager.GetObject("TelaCriarEvento3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaCriarEvento4 {
+            get {
+                object obj = ResourceManager.GetObject("TelaCriarEvento4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaCriarPerfil {
             get {
                 object obj = ResourceManager.GetObject("TelaCriarPerfil", resourceCulture);
@@ -296,6 +316,56 @@ namespace Acelera.Properties {
         internal static System.Drawing.Bitmap TelaEditarEvento2 {
             get {
                 object obj = ResourceManager.GetObject("TelaEditarEvento2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarEvento3 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarEvento3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarEvento4 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarEvento4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarEvento5 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarEvento5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarEvento6 {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarEvento6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaEditarEventos {
+            get {
+                object obj = ResourceManager.GetObject("TelaEditarEventos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

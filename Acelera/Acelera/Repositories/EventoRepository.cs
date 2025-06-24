@@ -113,6 +113,9 @@ namespace Acelera.Repositories
                 if (eventoAtualizado.Imagem != null)
                     eventoExistente.Imagem = eventoAtualizado.Imagem;
 
+                if (eventoAtualizado.Online != null)
+                    eventoExistente.Online = eventoAtualizado.Online;
+
                 return true;
             }
 
