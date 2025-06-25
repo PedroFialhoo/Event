@@ -128,5 +128,11 @@ namespace Acelera.Views
             telaPerfilColaborador.Show();
             this.Close();
         }
+
+        private void buttonLink_Click(object sender, EventArgs e)
+        {
+            TelaGerarLink telaGerarLink = new TelaGerarLink();
+            telaGerarLink.Show();
+        }
     }
 }

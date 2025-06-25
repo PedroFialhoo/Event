@@ -200,5 +200,17 @@ namespace Acelera.Views
         {
 
         }
+
+        private void rbOnline_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (rbOnline.Checked)
+            {
+                txtCidade.Text = "- Evento Online -";
+                txtEstado.Text = "- Evento Online -";
+                txtRua.Text = "- Evento Online -";
+                txtNumero.Text = "- Evento Online -";
+                txtCep.Text = "00000000";
+            }           
+        }
     }
 }

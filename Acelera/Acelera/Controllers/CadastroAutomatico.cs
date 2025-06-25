@@ -44,7 +44,7 @@ namespace Acelera.Controllers
             ColaboradorRepository.CadastrarColaborador(colaborador);
             List<Eventos> listaEventos = new List<Eventos>
 {
-    new Eventos { Id = EventoRepository.generateId(), NomeEvento = "Workshop de Programação", Colaborador = "Pedro Colaborador", Descricao = "Evento sobre C#", Tipo = "Tecnologia", Estado = "SP", Code = "123123" },
+    new Eventos { Id = EventoRepository.generateId(), NomeEvento = "Workshop de Programação", Colaborador = "Pedro Colaborador", Descricao = "Evento sobre C#", Tipo = "Tecnologia", Estado = "SP", Code = "123123", Online = false },
     new Eventos { Id = EventoRepository.generateId(), NomeEvento = "Feira de Ciências", Colaborador = "Pedro Colaborador", Descricao = "Experimentos escolares", Tipo = "Educação", Code = "321321" },
     new Eventos { Id = EventoRepository.generateId(), NomeEvento = "Oficina de Artes", Colaborador = "Pedro Colaborador", Descricao = "Outros" },
     new Eventos { Id = EventoRepository.generateId(), NomeEvento = "Hackathon 2025", Colaborador = "Pedro Colaborador", Descricao = "Maratona de programação", Tipo = "Tecnologia" },

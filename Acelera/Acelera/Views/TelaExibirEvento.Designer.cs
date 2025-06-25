@@ -43,6 +43,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.buttonLink = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -229,6 +230,22 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // buttonLink
+            // 
+            this.buttonLink.BackColor = System.Drawing.Color.Transparent;
+            this.buttonLink.BackgroundImage = global::Acelera.Properties.Resources.Ver_Link;
+            this.buttonLink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonLink.FlatAppearance.BorderSize = 0;
+            this.buttonLink.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonLink.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonLink.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLink.Location = new System.Drawing.Point(119, 816);
+            this.buttonLink.Name = "buttonLink";
+            this.buttonLink.Size = new System.Drawing.Size(175, 61);
+            this.buttonLink.TabIndex = 21;
+            this.buttonLink.UseVisualStyleBackColor = false;
+            this.buttonLink.Click += new System.EventHandler(this.buttonLink_Click);
+            // 
             // TelaExibirEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,6 +253,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaExibirEvento2;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.buttonLink);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -278,5 +296,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonLink;
     }
 }

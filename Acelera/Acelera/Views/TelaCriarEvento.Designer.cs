@@ -275,6 +275,7 @@
             this.rbOnline.TabIndex = 27;
             this.rbOnline.TabStop = true;
             this.rbOnline.UseVisualStyleBackColor = true;
+            this.rbOnline.MouseClick += new System.Windows.Forms.MouseEventHandler(this.rbOnline_MouseClick);
             // 
             // TelaCriarEvento
             // 

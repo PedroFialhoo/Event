@@ -83,6 +83,16 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Disponibilizar_Link {
+            get {
+                object obj = ResourceManager.GetObject("Disponibilizar Link", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap festival_de_musica {
             get {
                 object obj = ResourceManager.GetObject("festival-de-musica", resourceCulture);
@@ -513,6 +523,26 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaGerarLink {
+            get {
+                object obj = ResourceManager.GetObject("TelaGerarLink", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaLink {
+            get {
+                object obj = ResourceManager.GetObject("TelaLink", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TelaLogin {
             get {
                 object obj = ResourceManager.GetObject("TelaLogin", resourceCulture);
@@ -656,6 +686,16 @@ namespace Acelera.Properties {
         internal static System.Drawing.Bitmap TelaQrCode {
             get {
                 object obj = ResourceManager.GetObject("TelaQrCode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ver_Link {
+            get {
+                object obj = ResourceManager.GetObject("Ver Link", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
