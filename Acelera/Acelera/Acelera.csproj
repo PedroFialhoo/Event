@@ -190,11 +190,23 @@
     <Compile Include="Views\TelaExibirEventoColaborador.Designer.cs">
       <DependentUpon>TelaExibirEventoColaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaGerarLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaGerarLink.Designer.cs">
+      <DependentUpon>TelaGerarLink.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\TelaInicial.Designer.cs">
       <DependentUpon>TelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TelaLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaLink.Designer.cs">
+      <DependentUpon>TelaLink.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\TelaLogin.cs">
       <SubType>Form</SubType>
@@ -279,8 +291,14 @@
     <EmbeddedResource Include="Views\TelaExibirEventoColaborador.resx">
       <DependentUpon>TelaExibirEventoColaborador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaGerarLink.resx">
+      <DependentUpon>TelaGerarLink.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaLink.resx">
+      <DependentUpon>TelaLink.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
@@ -533,6 +551,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TelaEditarEventos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaLink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ver Link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disponibilizar Link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaGerarLink.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

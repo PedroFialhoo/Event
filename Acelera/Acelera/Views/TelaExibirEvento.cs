@@ -34,6 +34,10 @@ namespace Acelera.Views
             lblTipo.Text = evento.Tipo;
             txtDescricao.Text = evento.Descricao;
             pictureEvento.Image = evento.Imagem;
+            if (!evento.Online)
+            {
+                buttonLink.Visible = false;
+            }
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -164,6 +168,12 @@ namespace Acelera.Views
             TelaPerfil telaPerfil = new TelaPerfil(user);
             telaPerfil.Show();
             this.Close();
+        }
+
+        private void buttonLink_Click(object sender, EventArgs e)
+        {
+            TelaLink telaLink = new TelaLink();
+            telaLink.Show();
         }
     }
 }
