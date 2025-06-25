@@ -172,7 +172,7 @@ namespace Acelera.Views
 
         private void buttonLink_Click(object sender, EventArgs e)
         {
-            TelaLink telaLink = new TelaLink();
+            TelaLink telaLink = new TelaLink(evento);
             telaLink.Show();
         }
     }
