@@ -44,6 +44,16 @@ namespace Acelera.Views
             var nomeColaborador = colaborador.Nome;
 
             lblNome.Text = nomeColaborador;
+
+
+            string telefoneFormatado = "";
+
+            string numeros = new string(colaborador.Telefone.Where(char.IsDigit).ToArray());
+            if (numeros.Length == 11)
+                telefoneFormatado = $"({numeros.Substring(0, 2)}) {numeros.Substring(2, 5)}-{numeros.Substring(7, 4)}";
+            else
+                telefoneFormatado = colaborador.Telefone;
+            lblTelefone.Text = telefoneFormatado;
             lblTelefone.Text = colaborador.Telefone;
             lblNomeEmpresa.Text = colaborador.NomeEmpresa;
 

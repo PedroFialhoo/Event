@@ -93,7 +93,8 @@ namespace Acelera.Views
                 Colaborador = colaborador,
                 Imagem = pictureEvento.Image,
                 Code = CodigoRecuperacao.GerarCodigoNumerico(),
-                Online = online
+                Online = online,
+                Cep = txtCep.Text,
             };
 
             bool sucesso = EventoRepository.CadastrarEvento(evento);

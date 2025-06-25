@@ -35,6 +35,10 @@ namespace Acelera.Views
             lblTipo.Text = evento.Tipo;
             txtDescricao.Text = evento.Descricao;
             pictureEvento.Image = evento.Imagem;
+            if (!evento.Online)
+            {
+                buttonLink.Visible = false;
+            }
 
         }
 
@@ -131,7 +135,7 @@ namespace Acelera.Views
 
         private void buttonLink_Click(object sender, EventArgs e)
         {
-            TelaGerarLink telaGerarLink = new TelaGerarLink();
+            TelaGerarLink telaGerarLink = new TelaGerarLink(evento);
             telaGerarLink.Show();
         }
     }

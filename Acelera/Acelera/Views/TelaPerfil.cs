@@ -35,7 +35,15 @@ namespace Acelera.Forms
         {
             lblNome.Text = usuario.Nome;
             //lblIdade.Text = usuario.Idade.ToString();
-            lblTelefone.Text = usuario.Telefone;
+
+            string telefoneFormatado = "";
+
+            string numeros = new string(usuario.Telefone.Where(char.IsDigit).ToArray());
+            if (numeros.Length == 11)
+                telefoneFormatado = $"({numeros.Substring(0, 2)}) {numeros.Substring(2, 5)}-{numeros.Substring(7, 4)}";
+            else
+                telefoneFormatado = usuario.Telefone;
+            lblTelefone.Text = telefoneFormatado;
             //lblCpf.Text = usuario.Cpf;
             lblCidade.Text = usuario.Cidade;
             lblEstado.Text = usuario.Estado;

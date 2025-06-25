@@ -230,7 +230,7 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(119, 658);
+            this.button2.Location = new System.Drawing.Point(118, 694);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(204, 51);
             this.button2.TabIndex = 30;
@@ -244,7 +244,7 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(137, 742);
+            this.button3.Location = new System.Drawing.Point(139, 783);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(157, 50);
             this.button3.TabIndex = 31;
@@ -260,6 +260,7 @@
             this.rbOnline.TabIndex = 33;
             this.rbOnline.TabStop = true;
             this.rbOnline.UseVisualStyleBackColor = true;
+            this.rbOnline.CheckedChanged += new System.EventHandler(this.rbOnline_CheckedChanged);
             // 
             // rbPresencial
             // 
@@ -270,6 +271,7 @@
             this.rbPresencial.TabIndex = 32;
             this.rbPresencial.TabStop = true;
             this.rbPresencial.UseVisualStyleBackColor = true;
+            this.rbPresencial.CheckedChanged += new System.EventHandler(this.rbPresencial_CheckedChanged);
             // 
             // TelaEditarEvento
             // 

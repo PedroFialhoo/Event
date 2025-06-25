@@ -166,14 +166,14 @@ namespace Acelera.Views
             var u = UsuarioRepository.ObterUsuarioPorId(id.Value);
 
             Image imagemSelecionada = null;
-            using (OpenFileDialog ofd = new OpenFileDialog())
+            /*using (OpenFileDialog ofd = new OpenFileDialog())
             {
                 ofd.Filter = "Imagens (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     imagemSelecionada = Image.FromFile(ofd.FileName);
                 }
-            }
+            }*/
 
             Publicacao publicacao = new Publicacao
             {
@@ -187,7 +187,7 @@ namespace Acelera.Views
             comunidadeRepository.AdicionarPublicacao(categoria, publicacao);
             AtualizarPublicacoes();
 
-            DialogResult dialog = MessageBox.Show(
+           /* DialogResult dialog = MessageBox.Show(
                 "Como você deseja marcar este evento?\n\nSim: Evento futuro (Eu Vou)\nNão: Evento passado (Eu Fui)\nCancelar: Nenhum selo",
                 "Selo do evento",
                 MessageBoxButtons.YesNoCancel,
@@ -199,7 +199,7 @@ namespace Acelera.Views
             } else if ( dialog == DialogResult.No)
             {
                 publicacao.SeloFui = true;
-            }
+            }*/
         }
 
         private void button1_Click(object sender, EventArgs e)

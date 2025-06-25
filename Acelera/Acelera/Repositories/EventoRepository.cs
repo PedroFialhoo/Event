@@ -113,13 +113,20 @@ namespace Acelera.Repositories
                 if (eventoAtualizado.Imagem != null)
                     eventoExistente.Imagem = eventoAtualizado.Imagem;
 
-                if (eventoAtualizado.Online != null)
-                    eventoExistente.Online = eventoAtualizado.Online;
+                eventoExistente.Online = eventoAtualizado.Online;
 
                 return true;
             }
 
             return false;
+        }
+        public static bool SalvarLink(int eventoId, string link)
+        {
+            var evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);
+            if (evento == null)
+                return false;
+            evento.Link = link;
+            return true;
         }
 
         public static bool ParticiparDoEvento(int eventoId, int usuarioId)

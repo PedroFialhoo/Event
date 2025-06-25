@@ -205,10 +205,40 @@ namespace Acelera.Views
             txtHorario.Text = evento.Horario;
             txtEstado.Text = evento.Estado;
             txtCidade.Text = evento.Cidade;
+            txtCep.Text = evento.Cep;
             txtData.Text = evento.Data.ToString("dd/MM/yyyy");
             cbTipo.Text = evento.Tipo;
             txtDescricao.Text = evento.Descricao;
             pictureEvento.Image = evento.Imagem;
+            if (evento.Online)
+            {
+                rbOnline.Checked = true;
+            }
+            else
+            {
+                rbPresencial.Checked = true;
+            }
+        }
+
+        private void rbOnline_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbOnline.Checked)
+            {
+                txtRua.Text = "-Evento Online-";
+                txtNumero.Text = "-Evento Online-";
+                txtEstado.Text = "-Evento Online-";
+                txtCidade.Text = "-Evento Online-";
+                txtCep.Text = "00000000";
+            }
+        }
+
+        private void rbPresencial_CheckedChanged(object sender, EventArgs e)
+        {
+            txtRua.Clear();
+            txtNumero.Clear();
+            txtEstado.Text = "";
+            txtCidade.Clear();
+            txtCep.Clear();
         }
     }
 }
