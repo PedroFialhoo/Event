@@ -207,6 +207,13 @@ namespace Acelera.Repositories
                 .ToList();
         }
 
+        public static List<Eventos> BuscarEventosDoUsuarioSelo(int usuarioId, bool selo)
+        {
+            return EventoRepository.eventos
+                .Where(e => e.ParticipantesIds.Any(p => p.idParticipante == usuarioId &&  p.participacao == selo))
+                .ToList();
+        }
+
         public static bool VerificarParticipacao(int eventoId, int usuarioId)
         {
             var evento = EventoRepository.eventos.FirstOrDefault(e => e.Id == eventoId);

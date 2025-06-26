@@ -44,6 +44,7 @@
             this.flowPanelEventos = new System.Windows.Forms.FlowLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.cbEventos = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).BeginInit();
             this.menuOpcoes.SuspendLayout();
             this.SuspendLayout();
@@ -211,12 +212,33 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // cbEventos
+            // 
+            this.cbEventos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbEventos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbEventos.BackColor = System.Drawing.SystemColors.Control;
+            this.cbEventos.CausesValidation = false;
+            this.cbEventos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbEventos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.cbEventos.FormattingEnabled = true;
+            this.cbEventos.Items.AddRange(new object[] {
+            "Todos",
+            "Eu vou!",
+            "Eu fui!"});
+            this.cbEventos.Location = new System.Drawing.Point(295, 616);
+            this.cbEventos.Name = "cbEventos";
+            this.cbEventos.Size = new System.Drawing.Size(191, 39);
+            this.cbEventos.TabIndex = 18;
+            this.cbEventos.SelectedIndexChanged += new System.EventHandler(this.cbEventos_SelectedIndexChanged);
+            // 
             // TelaPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaPerfilCliente;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.cbEventos);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.flowPanelEventos);
@@ -259,5 +281,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowPanelEventos;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ComboBox cbEventos;
     }
 }
