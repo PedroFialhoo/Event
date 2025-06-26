@@ -564,5 +564,11 @@
   <ItemGroup>
     <None Include="Resources\TelaGerarLink.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addImage1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

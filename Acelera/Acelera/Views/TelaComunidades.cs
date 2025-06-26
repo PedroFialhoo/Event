@@ -18,7 +18,8 @@ namespace Acelera.Views
     {
         private string categoria = "computacao";
 
-            
+        private Image imagemSelecionada = null;
+
         public TelaComunidades()
         {
             InitializeComponent();
@@ -75,6 +76,8 @@ namespace Acelera.Views
                 comentarioPanel.Margin = new Padding(10);
                 comentarioPanel.BorderStyle = BorderStyle.FixedSingle;  // Melhor visualizar limites
                 comentarioPanel.Padding = new Padding(5);
+                comentarioPanel.BackColor = Color.FromArgb(217, 238, 252);
+
 
                 FlowLayoutPanel flowInterno = new FlowLayoutPanel();
                 flowInterno.FlowDirection = FlowDirection.TopDown;
@@ -165,15 +168,7 @@ namespace Acelera.Views
             int? id = LoginRepository.GetUsuarioLogadoId();
             var u = UsuarioRepository.ObterUsuarioPorId(id.Value);
 
-            Image imagemSelecionada = null;
-            /*using (OpenFileDialog ofd = new OpenFileDialog())
-            {
-                ofd.Filter = "Imagens (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    imagemSelecionada = Image.FromFile(ofd.FileName);
-                }
-            }*/
+            
 
             Publicacao publicacao = new Publicacao
             {
@@ -214,6 +209,44 @@ namespace Acelera.Views
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos();
             telaBuscarEventos.Show();
             this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Imagens (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    imagemSelecionada = Image.FromFile(ofd.FileName);
+                }
+            }
+        }
+
+        private void txtMensagem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button2.PerformClick(); // Aciona o clique do botão
+                e.Handled = true;
+                e.SuppressKeyPress = true; // Impede o "beep" do Enter
+            }
+        }
+
+        private void txtMensagem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var user = UsuarioRepository.ObterUsuarioPorId(LoginRepository.GetUsuarioLogadoId().Value);
+            if (user != null)
+            {
+                TelaPerfil telaPerfil = new TelaPerfil(user);
+                telaPerfil.Show();
+                this.Close();
+            }
         }
     }
 }
