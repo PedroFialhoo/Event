@@ -39,6 +39,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.txtMensagem = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // opEducacao
@@ -110,6 +113,7 @@
             // flowPanelComentarios
             // 
             this.flowPanelComentarios.AutoScroll = true;
+            this.flowPanelComentarios.BackColor = System.Drawing.SystemColors.Control;
             this.flowPanelComentarios.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowPanelComentarios.Location = new System.Drawing.Point(421, 186);
             this.flowPanelComentarios.Name = "flowPanelComentarios";
@@ -150,12 +154,14 @@
             this.txtMensagem.BackColor = System.Drawing.Color.White;
             this.txtMensagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMensagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMensagem.Location = new System.Drawing.Point(469, 897);
+            this.txtMensagem.Location = new System.Drawing.Point(466, 897);
             this.txtMensagem.Margin = new System.Windows.Forms.Padding(4);
             this.txtMensagem.Multiline = true;
             this.txtMensagem.Name = "txtMensagem";
-            this.txtMensagem.Size = new System.Drawing.Size(1278, 51);
+            this.txtMensagem.Size = new System.Drawing.Size(1281, 51);
             this.txtMensagem.TabIndex = 9;
+            this.txtMensagem.TextChanged += new System.EventHandler(this.txtMensagem_TextChanged);
+            this.txtMensagem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMensagem_KeyDown);
             // 
             // button3
             // 
@@ -164,12 +170,55 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(997, 30);
+            this.button3.Location = new System.Drawing.Point(1348, 30);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(291, 59);
             this.button3.TabIndex = 10;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Silver;
+            this.button4.BackgroundImage = global::Acelera.Properties.Resources.addImage1;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Location = new System.Drawing.Point(422, 901);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(37, 38);
+            this.button4.TabIndex = 11;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(807, 491);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(291, 59);
+            this.button5.TabIndex = 12;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(1773, 12);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(102, 95);
+            this.button6.TabIndex = 13;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // TelaComunidades
             // 
@@ -178,6 +227,9 @@
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaComunidade;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.txtMensagem);
             this.Controls.Add(this.button2);
@@ -215,5 +267,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtMensagem;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
