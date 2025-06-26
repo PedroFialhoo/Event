@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,6 +34,7 @@ namespace Acelera.Forms
 
         private void TelaPerfil_Load(object sender, EventArgs e)
         {
+            cbEventos.SelectedIndex = 0;
             lblNome.Text = usuario.Nome;
             //lblIdade.Text = usuario.Idade.ToString();
 
@@ -54,53 +56,127 @@ namespace Acelera.Forms
                 pictureBoxPerfil.Image = usuario.Imagem;
             }
 
-            var eventosDoUsuario = EventoRepository.BuscarEventosDoUsuario(usuario.Id);
+            CarregarPagina();            
+        }
 
-            foreach (var evento in eventosDoUsuario)
+        private void CarregarPagina()
+        {
+            foreach (var evento in EventoRepository.BuscarEventosDoUsuario(usuario.Id))
             {
-                Panel eventoPanel = new Panel();
-                eventoPanel.Width = 150;
-                eventoPanel.Height = 180;
-                eventoPanel.Margin = new Padding(10);
-
-                PictureBox pictureBox = new PictureBox();
-                pictureBox.Width = 150;
-                pictureBox.Height = 120;
-                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-
-                if (evento.Imagem != null)
-                {
-                    pictureBox.Image = evento.Imagem;
-                }
-                else
-                {
-                    pictureBox.Image = Properties.Resources.festival_de_musica;
-                }
-
-                pictureBox.Tag = evento;
-                pictureBox.Cursor = Cursors.Hand;
-
-                pictureBox.Click += (s, args) =>
-                {
-                    var pic = s as PictureBox;
-                    var eventoSelecionado = pic.Tag as Eventos;
-                    TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
-                    tela.Show();
-                    this.Close();
-                };
-
-                Label nomeLabel = new Label();
-                nomeLabel.Text = evento.NomeEvento;
-                nomeLabel.TextAlign = ContentAlignment.MiddleCenter;
-                nomeLabel.Dock = DockStyle.Bottom;
-                nomeLabel.Font = new Font("Segoe UI", 14, FontStyle.Regular);
-
-                eventoPanel.Controls.Add(pictureBox);
-                eventoPanel.Controls.Add(nomeLabel);
-                flowPanelEventos.Controls.Add(eventoPanel); 
-
-
+                var participante = evento.ParticipantesIds.FirstOrDefault(p => p.idParticipante == usuario.Id);
+                Debug.WriteLine($"Evento: {evento.NomeEvento} | Participação: {participante?.participacao}");
             }
+
+            flowPanelEventos.Controls.Clear();
+
+            if (cbEventos.SelectedIndex == 0)
+            {
+                var eventosDoUsuario = EventoRepository.BuscarEventosDoUsuario(usuario.Id);
+
+                foreach (var evento in eventosDoUsuario)
+                {
+                    Panel eventoPanel = new Panel();
+                    eventoPanel.Width = 150;
+                    eventoPanel.Height = 180;
+                    eventoPanel.Margin = new Padding(10);
+
+                    PictureBox pictureBox = new PictureBox();
+                    pictureBox.Width = 150;
+                    pictureBox.Height = 120;
+                    pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+
+                    if (evento.Imagem != null)
+                    {
+                        pictureBox.Image = evento.Imagem;
+                    }
+                    else
+                    {
+                        pictureBox.Image = Properties.Resources.festival_de_musica;
+                    }
+
+                    pictureBox.Tag = evento;
+                    pictureBox.Cursor = Cursors.Hand;
+
+                    pictureBox.Click += (s, args) =>
+                    {
+                        var pic = s as PictureBox;
+                        var eventoSelecionado = pic.Tag as Eventos;
+                        TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
+                        tela.Show();
+                        this.Close();
+                    };
+
+                    Label nomeLabel = new Label();
+                    nomeLabel.Text = evento.NomeEvento;
+                    nomeLabel.TextAlign = ContentAlignment.MiddleCenter;
+                    nomeLabel.Dock = DockStyle.Bottom;
+                    nomeLabel.Font = new Font("Segoe UI", 14, FontStyle.Regular);
+
+                    eventoPanel.Controls.Add(pictureBox);
+                    eventoPanel.Controls.Add(nomeLabel);
+                    flowPanelEventos.Controls.Add(eventoPanel);
+                }
+            }
+            else
+            {
+                bool selo = false;
+                if(cbEventos.SelectedIndex == 1)
+                {
+                     selo = false;
+                }
+                else if(cbEventos.SelectedIndex == 2)
+                {
+                     selo = true;
+                }
+                
+                var eventosDoUsuario = EventoRepository.BuscarEventosDoUsuarioSelo(usuario.Id, selo);
+
+                foreach (var evento in eventosDoUsuario)
+                {
+                    Panel eventoPanel = new Panel();
+                    eventoPanel.Width = 150;
+                    eventoPanel.Height = 180;
+                    eventoPanel.Margin = new Padding(10);
+
+                    PictureBox pictureBox = new PictureBox();
+                    pictureBox.Width = 150;
+                    pictureBox.Height = 120;
+                    pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+
+                    if (evento.Imagem != null)
+                    {
+                        pictureBox.Image = evento.Imagem;
+                    }
+                    else
+                    {
+                        pictureBox.Image = Properties.Resources.festival_de_musica;
+                    }
+
+                    pictureBox.Tag = evento;
+                    pictureBox.Cursor = Cursors.Hand;
+
+                    pictureBox.Click += (s, args) =>
+                    {
+                        var pic = s as PictureBox;
+                        var eventoSelecionado = pic.Tag as Eventos;
+                        TelaExibirEvento tela = new TelaExibirEvento(eventoSelecionado);
+                        tela.Show();
+                        this.Close();
+                    };
+
+                    Label nomeLabel = new Label();
+                    nomeLabel.Text = evento.NomeEvento;
+                    nomeLabel.TextAlign = ContentAlignment.MiddleCenter;
+                    nomeLabel.Dock = DockStyle.Bottom;
+                    nomeLabel.Font = new Font("Segoe UI", 14, FontStyle.Regular);
+
+                    eventoPanel.Controls.Add(pictureBox);
+                    eventoPanel.Controls.Add(nomeLabel);
+                    flowPanelEventos.Controls.Add(eventoPanel);
+                }
+            }
+
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -190,6 +266,11 @@ namespace Acelera.Forms
             TelaBuscarEventos telaBuscarEventos = new TelaBuscarEventos();  
             telaBuscarEventos.Show();
             this.Close();
+        }
+
+        private void cbEventos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CarregarPagina();
         }
     }
 }
