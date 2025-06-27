@@ -47,6 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "TelaInicial";
             this.Text = "Event";
             this.ResumeLayout(false);

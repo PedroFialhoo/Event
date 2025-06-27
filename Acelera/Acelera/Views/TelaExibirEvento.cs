@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera.Controllers;
 using Acelera.Forms;
 using Acelera.Models;
 using Acelera.Repositories;
@@ -174,6 +175,14 @@ namespace Acelera.Views
         {
             TelaLink telaLink = new TelaLink(evento);
             telaLink.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            int? id = LoginRepository.GetUsuarioLogadoId();
+            var user = UsuarioRepository.ObterUsuarioPorId(id.Value);
+            CertificateController.GerarCertificado(user, evento);
         }
     }
 }
