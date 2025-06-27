@@ -25,6 +25,7 @@ namespace Acelera
             CadastroAutomaticoComunidades.Executar();
             Console.WriteLine($"Comunidades cadastradas: {CadastroAutomaticoComunidades.comunidades.Count}");
             Application.Run(new TelaInicial());
+
         }
     }
 }

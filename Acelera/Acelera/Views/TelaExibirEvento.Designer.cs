@@ -44,6 +44,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.buttonLink = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -209,9 +210,9 @@
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(1680, 29);
+            this.button4.Location = new System.Drawing.Point(219, 187);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 69);
+            this.button4.Size = new System.Drawing.Size(43, 54);
             this.button4.TabIndex = 19;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -246,6 +247,16 @@
             this.buttonLink.UseVisualStyleBackColor = false;
             this.buttonLink.Click += new System.EventHandler(this.buttonLink_Click);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(316, 203);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 22;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // TelaExibirEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -253,6 +264,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaExibirEvento2;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.buttonLink);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -297,5 +309,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button buttonLink;
+        private System.Windows.Forms.Button button6;
     }
 }
