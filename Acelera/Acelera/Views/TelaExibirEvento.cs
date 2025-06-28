@@ -25,6 +25,17 @@ namespace Acelera.Views
 
         private void TelaExibirEvento_Load(object sender, EventArgs e)
         {
+            CarregarPagina();            
+        }
+
+        private void CarregarPagina()
+        {
+            if (evento == null)
+            {
+                System.Diagnostics.Debug.WriteLine("Evento não inicializado!");
+                return;
+            }
+
             lblNome.Text = evento.NomeEvento;
             lblRua.Text = evento.Rua;
             lblNumero.Text = evento.Numero;
@@ -35,9 +46,36 @@ namespace Acelera.Views
             lblTipo.Text = evento.Tipo;
             txtDescricao.Text = evento.Descricao;
             pictureEvento.Image = evento.Imagem;
-            if (!evento.Online)
+
+            buttonLink.Visible = evento.Online;
+
+            int? id = LoginRepository.GetUsuarioLogadoId();
+            if (id == null)
             {
-                buttonLink.Visible = false;
+                System.Diagnostics.Debug.WriteLine("Usuário não está logado!");
+                return;
+            }
+
+            string codigo = EventoRepository.ObterCodigoParticipante(evento.Id, id.Value);
+            if (string.IsNullOrEmpty(codigo))
+            {
+                bQr.Visible = false;
+                lQr.Visible = false;   
+                panel1.Visible = false;
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine($"Código: {codigo}");
+            }
+            var participante = evento.ParticipantesIds.FirstOrDefault(p => p.idParticipante == id);
+            if (participante == null || !participante.participacao)
+            {
+                bCert.Visible = false;
+                lCert.Visible = false;
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine($"Participante válido: {participante.idParticipante} com participação: {participante.participacao}");
             }
         }
 
@@ -79,13 +117,17 @@ namespace Acelera.Views
             if(EventoRepository.ParticiparDoEvento(evento.Id, usuarioLogado.Value))
             {
                 MessageBox.Show("Você está participando deste evento!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                evento = EventoRepository.ObterEventoPorId(evento.Id);
+                TelaExibirEvento telaExibirEvento = new TelaExibirEvento(evento);
+                telaExibirEvento.Show();
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Você já está participando deste evento.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         
-
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -133,6 +175,10 @@ namespace Acelera.Views
             if (EventoRepository.DesinscreverDoEvento(evento.Id, usuarioLogado.Value))
             {
                 MessageBox.Show("Participação do evento removida!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                evento = EventoRepository.ObterEventoPorId(evento.Id);
+                TelaExibirEvento telaExibirEvento = new TelaExibirEvento(evento);
+                telaExibirEvento.Show();
+                this.Close();
             }
             else
             {

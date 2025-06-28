@@ -67,6 +67,12 @@ namespace Acelera.Repositories
 
             return evento?.Id;
         }
+        public static Eventos ObterEventoPorId(int id)
+        {
+            var evento = eventos.FirstOrDefault(e => e.Id == id);
+
+            return evento;
+        }
         public static bool RemoverEvento(int id)
         {
             var evento = eventos.FirstOrDefault(e => e.Id == id);

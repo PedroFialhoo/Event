@@ -41,10 +41,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.bQr = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.buttonLink = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.bCert = new System.Windows.Forms.Button();
+            this.lQr = new System.Windows.Forms.Label();
+            this.lCert = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEvento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -201,21 +204,21 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // bQr
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::Acelera.Properties.Resources.qrCode1;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(219, 187);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(43, 54);
-            this.button4.TabIndex = 19;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.bQr.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bQr.BackgroundImage = global::Acelera.Properties.Resources.qrCode1;
+            this.bQr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bQr.FlatAppearance.BorderSize = 0;
+            this.bQr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bQr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.bQr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bQr.Location = new System.Drawing.Point(351, 883);
+            this.bQr.Name = "bQr";
+            this.bQr.Size = new System.Drawing.Size(38, 64);
+            this.bQr.TabIndex = 19;
+            this.bQr.UseVisualStyleBackColor = false;
+            this.bQr.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -247,15 +250,51 @@
             this.buttonLink.UseVisualStyleBackColor = false;
             this.buttonLink.Click += new System.EventHandler(this.buttonLink_Click);
             // 
-            // button6
+            // bCert
             // 
-            this.button6.Location = new System.Drawing.Point(316, 203);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 22;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.bCert.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bCert.BackgroundImage = global::Acelera.Properties.Resources.download;
+            this.bCert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bCert.FlatAppearance.BorderSize = 0;
+            this.bCert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bCert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.bCert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bCert.Location = new System.Drawing.Point(351, 953);
+            this.bCert.Name = "bCert";
+            this.bCert.Size = new System.Drawing.Size(38, 43);
+            this.bCert.TabIndex = 22;
+            this.bCert.UseVisualStyleBackColor = false;
+            this.bCert.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // lQr
+            // 
+            this.lQr.AutoSize = true;
+            this.lQr.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lQr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lQr.Location = new System.Drawing.Point(77, 898);
+            this.lQr.Name = "lQr";
+            this.lQr.Size = new System.Drawing.Size(254, 25);
+            this.lQr.TabIndex = 23;
+            this.lQr.Text = "QrCode de Participação -";
+            // 
+            // lCert
+            // 
+            this.lCert.AutoSize = true;
+            this.lCert.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lCert.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCert.Location = new System.Drawing.Point(48, 959);
+            this.lCert.Name = "lCert";
+            this.lCert.Size = new System.Drawing.Size(283, 25);
+            this.lCert.TabIndex = 24;
+            this.lCert.Text = "Certificado de Participação -";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Location = new System.Drawing.Point(28, 880);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(397, 126);
+            this.panel1.TabIndex = 25;
             // 
             // TelaExibirEvento
             // 
@@ -264,10 +303,12 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Acelera.Properties.Resources.TelaExibirEvento2;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.lCert);
+            this.Controls.Add(this.lQr);
+            this.Controls.Add(this.bCert);
             this.Controls.Add(this.buttonLink);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.bQr);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -281,6 +322,7 @@
             this.Controls.Add(this.lblRua);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.pictureEvento);
+            this.Controls.Add(this.panel1);
             this.Name = "TelaExibirEvento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event";
@@ -306,9 +348,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button bQr;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button buttonLink;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button bCert;
+        private System.Windows.Forms.Label lQr;
+        private System.Windows.Forms.Label lCert;
+        private System.Windows.Forms.Panel panel1;
     }
 }

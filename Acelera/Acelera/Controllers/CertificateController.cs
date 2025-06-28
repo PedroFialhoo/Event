@@ -40,7 +40,9 @@ namespace Acelera.Controllers
                     Font fonteCodigo = new Font("Arial", 18);
                     Brush corTexto = Brushes.Black;
 
-                    PointF posicaoNome = new PointF(420, 677);
+                    SizeF tamanhoTexto = g.MeasureString(nomeUsuario, fonteNome);
+                    float posicaoXNome = (imagem.Width - tamanhoTexto.Width) / 2;
+                    PointF posicaoNome = new PointF(posicaoXNome, 677);
                     g.DrawString(nomeUsuario, fonteNome, corTexto, posicaoNome);
 
                     PointF posicaoNomeEvento = new PointF(590, 930);
