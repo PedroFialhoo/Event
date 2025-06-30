@@ -149,10 +149,6 @@ namespace Acelera.Views
                 // Adiciona no FlowPanel principal
                 flowPanelComentarios.Controls.Add(comentarioPanel);
             }
-            if (publicacoes.Count == 0)
-            {
-                MessageBox.Show("Nenhuma publicação encontrada nesta comunidade.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
 
         }
 

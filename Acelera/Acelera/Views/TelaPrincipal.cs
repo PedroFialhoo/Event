@@ -207,10 +207,6 @@ namespace Acelera.Forms
                 flowPanelEventos.Controls.Add(eventoPanel);
             }
 
-            if (eventosEncontrados.Count == 0)
-            {
-                MessageBox.Show("Nenhum evento encontrado na sua região.", "Busca", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
         }
     }
     

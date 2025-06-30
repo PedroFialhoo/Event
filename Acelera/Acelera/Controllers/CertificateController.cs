@@ -5,6 +5,7 @@ using System.IO;
 using System.Drawing.Text;
 using Acelera.Models;
 using Acelera.Repositories;
+using System.Windows;
 
 namespace Acelera.Controllers
 {
@@ -35,8 +36,8 @@ namespace Acelera.Controllers
                     PrivateFontCollection pfc = new PrivateFontCollection();
                     pfc.AddFontFile(caminhoFonte);
 
-                    Font fonteNome = new Font(pfc.Families[0], 45, FontStyle.Regular);
-                    Font fonteNomeEvento = new Font(pfc.Families[0], 36, FontStyle.Regular);
+                    Font fonteNome = new Font(pfc.Families[0], 45, System.Drawing.FontStyle.Regular);
+                    Font fonteNomeEvento = new Font(pfc.Families[0], 36, System.Drawing.FontStyle.Regular);
                     Font fonteCodigo = new Font("Arial", 18);
                     Brush corTexto = Brushes.Black;
 
@@ -55,6 +56,7 @@ namespace Acelera.Controllers
                 imagem.Save(caminhoSaida);
                 System.Diagnostics.Debug.WriteLine($"CERTIFICADO: {caminhoSaida}");
             }
+            MessageBox.Show("Certificado salvo na pasta Downloads!");
         }
         private static string GerarNomeArquivoUnico(string pasta, string nomeBase, string extensao)
         {
