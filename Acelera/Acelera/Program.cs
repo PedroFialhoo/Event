@@ -21,9 +21,9 @@ namespace Acelera
         static void Main()
         {
             Application.EnableVisualStyles();
-            CadastroAutomatico.Executar();
-            CadastroAutomaticoComunidades.Executar();
-            Console.WriteLine($"Comunidades cadastradas: {CadastroAutomaticoComunidades.comunidades.Count}");
+            //CadastroAutomatico.Executar();
+            //CadastroAutomaticoComunidades.Executar();
+            //Console.WriteLine($"Comunidades cadastradas: {CadastroAutomaticoComunidades.comunidades.Count}");
             Application.Run(new TelaInicial());
 
         }
