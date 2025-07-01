@@ -253,6 +253,7 @@
     <Compile Include="Views\TelaQrCode.Designer.cs">
       <DependentUpon>TelaQrCode.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\COMEÇAR.png" />
     <None Include="Resources\download.png" />
     <EmbeddedResource Include="Views\TelaBuscarEventos.resx">
       <DependentUpon>TelaBuscarEventos.cs</DependentUpon>
