@@ -113,6 +113,16 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap COMEÇAR {
+            get {
+                object obj = ResourceManager.GetObject("COMEÇAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Disponibilizar_Link {
             get {
                 object obj = ResourceManager.GetObject("Disponibilizar Link", resourceCulture);
