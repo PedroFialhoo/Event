@@ -253,6 +253,16 @@
     <Compile Include="Views\TelaQrCode.Designer.cs">
       <DependentUpon>TelaQrCode.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TelaVerPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaVerPerfil.Designer.cs">
+      <DependentUpon>TelaVerPerfil.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\TelaVerPerfil.png" />
+    <EmbeddedResource Include="Views\TelaVerPerfil.resx">
+      <DependentUpon>TelaVerPerfil.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Resources\COMEÇAR.png" />
     <None Include="Resources\download.png" />
     <EmbeddedResource Include="Views\TelaBuscarEventos.resx">

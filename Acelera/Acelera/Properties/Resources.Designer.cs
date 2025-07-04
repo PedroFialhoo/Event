@@ -743,6 +743,16 @@ namespace Acelera.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TelaVerPerfil {
+            get {
+                object obj = ResourceManager.GetObject("TelaVerPerfil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ver_Link {
             get {
                 object obj = ResourceManager.GetObject("Ver Link", resourceCulture);

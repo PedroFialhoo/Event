@@ -40,7 +40,6 @@ namespace Acelera.Views
 
         private void Categoria_CheckedChanged(object sender, EventArgs e)
         {
-            // Só atualiza se a opção foi marcada (Checked == true)
             RadioButton rb = sender as RadioButton;
             if (rb != null && rb.Checked)
             {
@@ -74,7 +73,7 @@ namespace Acelera.Views
                 comentarioPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
                 comentarioPanel.MinimumSize = new Size(900, 100);
                 comentarioPanel.Margin = new Padding(10);
-                comentarioPanel.BorderStyle = BorderStyle.FixedSingle;  // Melhor visualizar limites
+                comentarioPanel.BorderStyle = BorderStyle.FixedSingle;  
                 comentarioPanel.Padding = new Padding(5);
                 comentarioPanel.BackColor = Color.FromArgb(217, 238, 252);
 
@@ -92,18 +91,7 @@ namespace Acelera.Views
                 autorLabel.Text = $"{publicacao.Autor}";
                 autorLabel.AutoSize = true;
                 autorLabel.Font = new Font("Segoe UI", 15, FontStyle.Bold);
-                autorLabel.Margin = new Padding(0, 0, 0, 5);
-
-                if (!string.IsNullOrEmpty(publicacao.ImagemBase64))
-                {
-                    PictureBox picture = new PictureBox();
-                    picture.Image = publicacao.ObterImagem();
-                    picture.SizeMode = PictureBoxSizeMode.Zoom;
-                    picture.Width = 850;
-                    picture.Height = 300;
-                    picture.Margin = new Padding(0, 0, 0, 5);
-                    flowInterno.Controls.Add(picture);
-                }
+                autorLabel.Margin = new Padding(0, 0, 0, 5);                
 
                 Label mensagemLabel = new Label();
                 mensagemLabel.Text = publicacao.Mensagem;
@@ -117,8 +105,28 @@ namespace Acelera.Views
                 dataLabel.AutoSize = true;
                 dataLabel.Font = new Font("Segoe UI", 10, FontStyle.Italic);
 
-                // Adiciona na ordem correta
+                Button btnAcao = new Button
+                {
+                    Size = new Size(100, 20),
+                    Font = new Font("Segoe UI", 8, FontStyle.Bold),
+                    Tag = publicacao,
+                    FlatStyle = FlatStyle.Flat,
+                    Text = "Ver perfil",
+                    BackColor = Color.White,
+                };
+
                 flowInterno.Controls.Add(autorLabel);
+                flowInterno.Controls.Add(btnAcao);
+                if (!string.IsNullOrEmpty(publicacao.ImagemBase64))
+                {
+                    PictureBox picture = new PictureBox();
+                    picture.Image = publicacao.ObterImagem();
+                    picture.SizeMode = PictureBoxSizeMode.Zoom;
+                    picture.Width = 850;
+                    picture.Height = 300;
+                    picture.Margin = new Padding(0, 0, 0, 5);
+                    flowInterno.Controls.Add(picture);
+                }
                 flowInterno.Controls.Add(mensagemLabel);
                 flowInterno.Controls.Add(dataLabel);
 
@@ -143,15 +151,26 @@ namespace Acelera.Views
                     flowInterno.Controls.Add(seloFui);
                 }
 
-                // Adiciona o Flow interno no painel
+                btnAcao.Click += (s, args) =>
+                {
+                    var p = (Publicacao)((Control)s).Tag;
+                    System.Diagnostics.Debug.WriteLine("Clicando");
+                    var answer = MessageBox.Show($"Deseja ver o perfil do autor: {p.Autor}?", "Ver perfil", MessageBoxButtons.YesNo);
+                    if (answer == DialogResult.Yes)
+                    {
+                        TelaVerPerfil telaPerfil = new TelaVerPerfil(p.IdAutor);
+                        telaPerfil.Show();
+                        this.Close();
+                    }
+                };
+
                 comentarioPanel.Controls.Add(flowInterno);
 
-                // Adiciona no FlowPanel principal
                 flowPanelComentarios.Controls.Add(comentarioPanel);
             }
 
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             if (opComputacao.Checked) categoria = "computacao";
@@ -171,6 +190,7 @@ namespace Acelera.Views
                 Autor = u.Nome,
                 Mensagem = txtMensagem.Text,
                 Data = DateTime.Now,
+                IdAutor = u.Id,
                 ImagemBase64 = imagemSelecionada != null ? Publicacao.ConverterImagem(imagemSelecionada) : null
             };
 
