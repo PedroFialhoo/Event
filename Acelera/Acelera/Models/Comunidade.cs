@@ -25,8 +25,10 @@ namespace Acelera.Models
         public List<string> EuVou { get; set; } = new List<string>();
         public List<string> EuFui { get; set; } = new List<string>();
 
+        public int IdAutor {  get; set; }
+
         public Publicacao() { }
-        public Publicacao(string mensagem, string autor, Image imagem = null)
+        public Publicacao(string mensagem, string autor, int idAutor, Image imagem = null)
         {
             if (mensagem.Length > 1000)
                 throw new ArgumentException("A publicação deve ter no máximo 1000 caracteres.");
@@ -37,7 +39,10 @@ namespace Acelera.Models
 
             if (imagem != null)
                 ImagemBase64 = ConverterImagem(imagem);
+            
+            IdAutor = idAutor;
         }
+
         public static string ConverterImagem(Image imagem)
         {
             using (var ms = new MemoryStream())

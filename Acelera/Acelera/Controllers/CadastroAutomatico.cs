@@ -17,6 +17,11 @@ namespace Acelera.Controllers
 
             LoginRepository.Cadastrar(email, senha);
 
+            string email1 = "pedro1@gmail.com";
+            string senha1 = "pedro1@gmail.com";
+
+            LoginRepository.Cadastrar(email1, senha1);
+
             string email2 = "pedro@gmail.com";
             string senha2 = "pedro@gmail.com";
             string cnpj = "1";
@@ -33,6 +38,17 @@ namespace Acelera.Controllers
             };
 
             UsuarioRepository.SalvarUsuario(usuario);
+
+            Usuario usuario2 = new Usuario
+            {
+                Id = 1,
+                Nome = "Pedro",
+                Telefone = "11999999999",
+                Cpf = "467.262.218-51",
+                Estado = "SP"
+            };
+
+            UsuarioRepository.SalvarUsuario(usuario2);
 
             Colaborador colaborador = new Colaborador
             {

@@ -23,7 +23,7 @@ namespace Acelera
             Application.EnableVisualStyles();
             //CadastroAutomatico.Executar();
             //CadastroAutomaticoComunidades.Executar();
-            //Console.WriteLine($"Comunidades cadastradas: {CadastroAutomaticoComunidades.comunidades.Count}");
+            //Console.WriteLine($"Comunidades cadastradas: {CadastroAutomaticoComunidades.comunidades.Count}");  cadastros para teste
             Application.Run(new TelaInicial());
 
         }
